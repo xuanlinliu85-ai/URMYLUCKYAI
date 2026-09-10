@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mikko 宏观研究主框架"
+  short_description: "Mikko为主框架，Kevin与行业模块按需附加"
+  default_prompt: "Use $mikko-kevin-research-system with Mikko as the main framework and attach Kevin only when genuinely needed."

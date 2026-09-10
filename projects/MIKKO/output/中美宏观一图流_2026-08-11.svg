@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="2400" viewBox="0 0 1080 2400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#09111f"/>
+      <stop offset="1" stop-color="#101827"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+    <style>
+      .sans{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC",Arial,sans-serif}
+      .title{font-size:58px;font-weight:800;fill:#f7f9fc;letter-spacing:2px}
+      .sub{font-size:26px;fill:#98a6bb}
+      .section{font-size:31px;font-weight:750;fill:#f5bd55}
+      .country{font-size:35px;font-weight:800;fill:#fff}
+      .h{font-size:27px;font-weight:750;fill:#f1f4f8}
+      .body{font-size:24px;fill:#c9d2df}
+      .small{font-size:21px;fill:#98a6bb}
+      .num{font-size:28px;font-weight:800;fill:#fff}
+      .gold{fill:#f5bd55}
+      .us{fill:#61a8ff}
+      .cn{fill:#ff776f}
+      .card{fill:#151f30;stroke:#28354a;stroke-width:2}
+      .rule{stroke:#344259;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="1080" height="2400" fill="url(#bg)"/>
+  <rect x="0" y="0" width="12" height="2400" fill="#f5bd55"/>
+
+  <!-- Header -->
+  <text x="70" y="105" class="sans title">中美宏观一图流</text>
+  <text x="72" y="150" class="sans sub">2026.08.03—08.11｜增长、通胀与政策约束重新错位</text>
+  <line x1="70" y1="182" x2="1010" y2="182" class="rule"/>
+
+  <!-- Thesis -->
+  <rect x="60" y="220" width="960" height="224" rx="24" class="card" filter="url(#shadow)"/>
+  <text x="92" y="270" class="sans section">本周核心判断</text>
+  <circle cx="95" cy="329" r="8" fill="#61a8ff"/>
+  <text x="120" y="338" class="sans h">美国：就业降温，但油价限制宽松</text>
+  <circle cx="95" cy="386" r="8" fill="#ff776f"/>
+  <text x="120" y="395" class="sans h">中国：出口强劲，但内需与价格偏弱</text>
+
+  <!-- Two columns -->
+  <text x="60" y="505" class="sans section">01｜中美宏观对照</text>
+  <rect x="60" y="535" width="465" height="670" rx="24" class="card"/>
+  <rect x="555" y="535" width="465" height="670" rx="24" class="card"/>
+
+  <rect x="60" y="535" width="465" height="72" rx="24" fill="#173354"/>
+  <rect x="555" y="535" width="465" height="72" rx="24" fill="#4a252c"/>
+  <text x="92" y="582" class="sans country">美国</text>
+  <text x="587" y="582" class="sans country">中国</text>
+
+  <text x="92" y="656" class="sans h">7月非农</text>
+  <text x="245" y="656" class="sans num us">-2.3万人</text>
+  <text x="92" y="692" class="sans small">显著低于预期，新增招聘明显降温</text>
+  <line x1="92" y1="724" x2="493" y2="724" class="rule"/>
+  <text x="92" y="775" class="sans h">经济状态</text>
+  <text x="92" y="814" class="sans body">总量尚未衰退</text>
+  <text x="92" y="850" class="sans body">后周期降温，滞胀约束上升</text>
+  <line x1="92" y1="882" x2="493" y2="882" class="rule"/>
+  <text x="92" y="933" class="sans h">政策含义</text>
+  <text x="92" y="972" class="sans body">加息门槛上升</text>
+  <text x="92" y="1008" class="sans body">快速降息仍受通胀约束</text>
+  <rect x="92" y="1050" width="401" height="112" rx="15" fill="#102b46"/>
+  <text x="112" y="1090" class="sans small">就业弱 → 降息预期</text>
+  <text x="112" y="1128" class="sans h us">利好短债、黄金、成长股</text>
+
+  <text x="587" y="656" class="sans h">制造业PMI</text>
+  <text x="808" y="656" class="sans num cn">49.2</text>
+  <text x="587" y="692" class="sans small">新订单偏弱，内生需求尚未确认</text>
+  <line x1="587" y1="724" x2="988" y2="724" class="rule"/>
+  <text x="587" y="775" class="sans h">7月出口</text>
+  <text x="808" y="775" class="sans num cn">约+24%</text>
+  <text x="587" y="814" class="sans body">外需仍有韧性</text>
+  <text x="587" y="850" class="sans body">但不等于国内全面复苏</text>
+  <line x1="587" y1="882" x2="988" y2="882" class="rule"/>
+  <text x="587" y="933" class="sans h">7月CPI</text>
+  <text x="808" y="933" class="sans num cn">约+0.5%</text>
+  <text x="587" y="972" class="sans body">国内定价能力仍弱</text>
+  <text x="587" y="1008" class="sans body">私人信用需求谨慎</text>
+  <rect x="587" y="1050" width="401" height="112" rx="15" fill="#3a2027"/>
+  <text x="607" y="1090" class="sans small">出口强 → 制造业订单有支撑</text>
+  <text x="607" y="1128" class="sans h cn">结构性市场，非全面复苏</text>
+
+  <!-- Oil shock -->
+  <text x="60" y="1275" class="sans section">02｜共同冲击：原油供应风险</text>
+  <rect x="60" y="1305" width="960" height="263" rx="24" class="card"/>
+  <rect x="92" y="1342" width="896" height="72" rx="15" fill="#3b3021"/>
+  <text x="540" y="1389" text-anchor="middle" class="sans h gold">霍尔木兹风险 → 原油供应溢价上升</text>
+  <path d="M310 1435 L310 1470 M770 1435 L770 1470" stroke="#f5bd55" stroke-width="3"/>
+  <path d="M303 1462 L310 1472 L317 1462" fill="none" stroke="#f5bd55" stroke-width="3"/>
+  <path d="M763 1462 L770 1472 L777 1462" fill="none" stroke="#f5bd55" stroke-width="3"/>
+  <text x="310" y="1513" text-anchor="middle" class="sans h us">美国：通胀更黏、长债承压</text>
+  <text x="770" y="1513" text-anchor="middle" class="sans h cn">中国：进口成本与利润率承压</text>
+  <text x="540" y="1550" text-anchor="middle" class="sans small">供应驱动的油价上涨 ≠ 全球需求繁荣</text>
+
+  <!-- Assets -->
+  <text x="60" y="1638" class="sans section">03｜资产映射</text>
+  <rect x="60" y="1668" width="465" height="140" rx="20" class="card"/>
+  <rect x="555" y="1668" width="465" height="140" rx="20" class="card"/>
+  <rect x="60" y="1832" width="465" height="166" rx="20" class="card"/>
+  <rect x="555" y="1832" width="465" height="166" rx="20" class="card"/>
+  <text x="92" y="1712" class="sans h gold">美债</text>
+  <text x="92" y="1753" class="sans body">短端优于长端</text>
+  <text x="92" y="1787" class="sans small">就业压低短端，油价与期限溢价托住长端</text>
+  <text x="587" y="1712" class="sans h gold">黄金</text>
+  <text x="587" y="1753" class="sans body">中期逻辑仍在</text>
+  <text x="587" y="1787" class="sans small">避险支撑，但实际利率上升会放大波动</text>
+  <text x="92" y="1878" class="sans h gold">美股科技</text>
+  <text x="92" y="1919" class="sans body">从估值扩张转向业绩验证</text>
+  <text x="92" y="1955" class="sans small">重点看订单、收入、毛利率与现金流</text>
+  <text x="587" y="1878" class="sans h gold">A股 / 港股</text>
+  <text x="587" y="1919" class="sans body">结构行情为主</text>
+  <text x="587" y="1955" class="sans small">等待信用、地产与盈利广度共同改善</text>
+
+  <!-- Watchpoints -->
+  <text x="60" y="2070" class="sans section">04｜未来一周验证点</text>
+  <rect x="60" y="2100" width="960" height="170" rx="24" class="card"/>
+  <text x="92" y="2152" class="sans body">① 美国 CPI、PPI</text>
+  <text x="560" y="2152" class="sans body">② 美国零售与就业数据</text>
+  <text x="92" y="2208" class="sans body">③ 中国社融、M1、居民中长贷</text>
+  <text x="560" y="2208" class="sans body">④ 霍尔木兹通航与油价</text>
+
+  <!-- Footer -->
+  <rect x="60" y="2310" width="960" height="58" rx="16" fill="#f5bd55"/>
+  <text x="540" y="2349" text-anchor="middle" class="sans h" fill="#121822">重结构｜看现金流｜盯利率与油价｜不把单一利好外推成全面复苏</text>
+</svg>

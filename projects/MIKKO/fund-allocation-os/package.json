@@ -1,0 +1,17 @@
+{
+  "name": "fund-allocation-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "ifind:check": "node scripts/check-ifind-fund-provider.mjs",
+    "ifind:universe": "node scripts/run-ifind-provider.mjs universe 20",
+    "test:providers": "node --test tests/ifind-provider.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  }
+}

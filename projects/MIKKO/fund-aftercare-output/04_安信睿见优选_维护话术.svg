@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102b28"/><stop offset="1" stop-color="#315b4c"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".10"/></filter></defs>
+  <rect width="1080" height="1440" fill="#f1f4ed"/><rect width="1080" height="220" fill="url(#bg)"/>
+  <text x="72" y="64" fill="#a8d8b7" font-size="22" font-weight="700" letter-spacing="5" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客户经理 · 售后沟通卡</text>
+  <text x="72" y="132" fill="#fff" font-size="52" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">安信睿见优选混合A</text>
+  <text x="72" y="178" fill="#bdd0c7" font-size="25" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">017477.OF  ·  偏股混合型</text>
+  <rect x="760" y="72" width="248" height="76" rx="38" fill="#89c69a"/><text x="884" y="121" text-anchor="middle" fill="#16382e" font-size="27" font-weight="800" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">建议：持续维护</text>
+  <g filter="url(#shadow)"><rect x="72" y="260" width="936" height="150" rx="28" fill="#fff"/></g>
+  <circle cx="126" cy="315" r="26" fill="#deede1"/><text x="126" y="324" text-anchor="middle" fill="#316b48" font-size="25" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客</text>
+  <text x="176" y="310" fill="#2d4038" font-size="28" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客户：AI板块调整，这只基金的逻辑还在吗？</text>
+  <text x="176" y="358" fill="#708078" font-size="23" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">重点回应：区分交易调整与产业逻辑，持续复盘组合</text>
+  <rect x="72" y="446" width="936" height="470" rx="30" fill="#e7efe7" stroke="#c5d9ca" stroke-width="2"/>
+  <rect x="104" y="478" width="152" height="42" rx="21" fill="#316b48"/><text x="180" y="507" text-anchor="middle" fill="#fff" font-size="21" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客户经理回应</text>
+  <g fill="#2e443a" font-size="28" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">
+    <text x="108" y="568">“产品近期波动，主要与高拥挤科技资产调整及市场</text>
+    <text x="108" y="614">风格再平衡有关，并不等于AI产业趋势已经结束。</text>
+    <text x="108" y="660">基金同时配置有色、医药、消费和港股，管理人也在</text>
+    <text x="108" y="706">做结构调整。截至8月17日，今年以来约下跌3.16%，</text>
+    <text x="108" y="752">期间最大回撤约-19.41%，说明短期风险仍需跟踪。</text>
+    <text x="108" y="798">现阶段更适合做好售后维护，观察后续持仓变化和</text>
+    <text x="108" y="844">业绩修复，不因为单一月份表现仓促下结论。”</text>
+  </g>
+  <text x="72" y="972" fill="#316b48" font-size="22" font-weight="800" letter-spacing="3" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">沟通依据 · IFIND</text>
+  <g font-family="Microsoft YaHei, Noto Sans SC, sans-serif">
+    <rect x="72" y="1000" width="292" height="138" rx="22" fill="#fff"/><text x="98" y="1042" fill="#768179" font-size="20">基金规模</text><text x="98" y="1094" fill="#234a38" font-size="34" font-weight="800">28.24亿元</text>
+    <rect x="394" y="1000" width="292" height="138" rx="22" fill="#fff"/><text x="420" y="1042" fill="#768179" font-size="20">基金经理</text><text x="420" y="1094" fill="#234a38" font-size="34" font-weight="800">聂世林</text>
+    <rect x="716" y="1000" width="292" height="138" rx="22" fill="#fff"/><text x="742" y="1042" fill="#768179" font-size="20">期间最大回撤</text><text x="742" y="1094" fill="#8f4d43" font-size="34" font-weight="800">-19.41%</text>
+  </g>
+  <rect x="72" y="1176" width="936" height="154" rx="26" fill="#214536"/>
+  <text x="106" y="1222" fill="#a8d8b7" font-size="20" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">一句收口</text>
+  <text x="106" y="1271" fill="#fff" font-size="27" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">“我们先持续跟踪组合调整和净值修复，不让您自己面对</text>
+  <text x="106" y="1309" fill="#fff" font-size="27" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">波动；有关键变化，我会及时向您解释和反馈。”</text>
+  <text x="72" y="1388" fill="#78847d" font-size="18" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">数据来源：iFinD MCP，截至2026-08-17。偏股基金波动较高；基金有风险，投资须谨慎。</text>
+</svg>

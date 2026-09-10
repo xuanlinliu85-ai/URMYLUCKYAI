@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b2531"/><stop offset="1" stop-color="#123f47"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".10"/></filter>
+  </defs>
+  <rect width="1080" height="1440" fill="#f4f1e9"/>
+  <rect x="0" y="0" width="1080" height="220" fill="url(#bg)"/>
+  <text x="72" y="64" fill="#8fd8c6" font-size="22" font-weight="700" letter-spacing="5" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客户经理 · 售后沟通卡</text>
+  <text x="72" y="132" fill="#ffffff" font-size="54" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">中欧多利债券A</text>
+  <text x="72" y="178" fill="#a9c7c8" font-size="25" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">023040.OF  ·  固收+ / 二级债基</text>
+  <rect x="760" y="72" width="248" height="76" rx="38" fill="#5fd1a8"/>
+  <text x="884" y="121" text-anchor="middle" fill="#0b2e31" font-size="28" font-weight="800" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">当前建议：持有</text>
+
+  <g filter="url(#shadow)"><rect x="72" y="260" width="936" height="150" rx="28" fill="#ffffff"/></g>
+  <circle cx="126" cy="315" r="26" fill="#dceee9"/><text x="126" y="324" text-anchor="middle" fill="#176653" font-size="25" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客</text>
+  <text x="176" y="310" fill="#1d3437" font-size="28" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客户：最近市场有波动，这只产品还要继续拿吗？</text>
+  <text x="176" y="358" fill="#697879" font-size="23" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">重点回应：回撤、持有逻辑、下一步关注什么</text>
+
+  <rect x="72" y="446" width="936" height="470" rx="30" fill="#e8f1ed" stroke="#bfd7cf" stroke-width="2"/>
+  <rect x="104" y="478" width="152" height="42" rx="21" fill="#176653"/><text x="180" y="507" text-anchor="middle" fill="#fff" font-size="21" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">客户经理回应</text>
+  <g fill="#203b3c" font-size="28" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">
+    <text x="108" y="568">“这只产品目前更适合继续持有。它以债券打底，</text>
+    <text x="108" y="614">权益仓位相对克制，主要作用是给组合提供稳定性，</text>
+    <text x="108" y="660">而不是追求短期高弹性。今年以来截至8月17日，</text>
+    <text x="108" y="706">复权净值约上涨0.86%，期间最大回撤约-1.91%，</text>
+    <text x="108" y="752">说明整体回撤控制仍在产品定位之内。短期市场分化</text>
+    <text x="108" y="798">可能让表现不突出，但持仓逻辑没有明显变化。我们</text>
+    <text x="108" y="844">建议耐心持有，后续重点跟踪权益仓位和回撤控制。”</text>
+  </g>
+
+  <text x="72" y="972" fill="#176653" font-size="22" font-weight="800" letter-spacing="3" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">沟通依据 · IFIND</text>
+  <g font-family="Microsoft YaHei, Noto Sans SC, sans-serif">
+    <rect x="72" y="1000" width="292" height="138" rx="22" fill="#fff"/><text x="98" y="1042" fill="#738080" font-size="20">基金规模</text><text x="98" y="1094" fill="#15383b" font-size="34" font-weight="800">36.21亿元</text>
+    <rect x="394" y="1000" width="292" height="138" rx="22" fill="#fff"/><text x="420" y="1042" fill="#738080" font-size="20">基金经理</text><text x="420" y="1094" fill="#15383b" font-size="34" font-weight="800">华李成</text>
+    <rect x="716" y="1000" width="292" height="138" rx="22" fill="#fff"/><text x="742" y="1042" fill="#738080" font-size="20">期间最大回撤</text><text x="742" y="1094" fill="#176653" font-size="34" font-weight="800">-1.91%</text>
+  </g>
+
+  <rect x="72" y="1176" width="936" height="154" rx="26" fill="#123f47"/>
+  <text x="106" y="1222" fill="#8fd8c6" font-size="20" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">一句收口</text>
+  <text x="106" y="1271" fill="#ffffff" font-size="27" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">“您先安心持有，我会持续跟踪；若回撤或策略发生变化，</text>
+  <text x="106" y="1309" fill="#ffffff" font-size="27" font-weight="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">我第一时间和您沟通。”</text>
+  <text x="72" y="1388" fill="#7b8583" font-size="18" font-family="Microsoft YaHei, Noto Sans SC, sans-serif">数据来源：iFinD MCP，截至2026-08-17。基金有风险，投资须谨慎；不承诺收益。</text>
+</svg>

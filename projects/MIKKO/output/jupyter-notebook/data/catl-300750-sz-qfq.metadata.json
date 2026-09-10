@@ -1,0 +1,20 @@
+{
+  "source": "iFinD MCP",
+  "tool": "THS_HQ",
+  "thscode": "300750.SZ",
+  "adjustment": "CPS:2 (forward adjusted)",
+  "fields": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "amount"
+  ],
+  "requestedBegin": "2021-07-31",
+  "requestedEnd": "2026-07-31",
+  "actualBegin": "2021-08-02",
+  "actualEnd": "2026-07-30",
+  "rowCount": 1210,
+  "exportedAt": "2026-07-31T05:05:44.849Z"
+}
