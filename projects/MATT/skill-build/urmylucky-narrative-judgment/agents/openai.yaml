@@ -1,0 +1,4 @@
+interface:
+  display_name: "urmylucky叙事判断"
+  short_description: "用MATT体系核验A股叙事、赔率、反证与完整执行条件"
+  default_prompt: "请使用 $urmylucky-narrative-judgment 分析这个A股行业或公司，并给出已核事实、叙事导通率与执行条件。"
