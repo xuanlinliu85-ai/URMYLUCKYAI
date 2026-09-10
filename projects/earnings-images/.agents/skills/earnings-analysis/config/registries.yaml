@@ -1,0 +1,58 @@
+version: 1
+
+provider_registry:
+  CN:
+    primary: ifind
+  HK:
+    primary: ifind
+  US:
+    official: edgar
+    consensus: ifind
+
+skill_registry:
+  earnings_analysis:
+    skill: earnings-company-research
+    version: "1.5"
+    role: what_happened_and_company_fundamentals
+  legacy_earnings_analysis:
+    skill: earnings-analysis
+    status: reference_only
+    reason: superseded_by_v1_5_baseline
+  analyst_tiantuan:
+    routing: dynamic_relevant_only
+    modules:
+      - skill: mikko-kevin-research-system
+        role: macro_ai_industry_and_cross_asset_transmission
+      - skill: mikko-macro-analyst
+        role: macro_regime_policy_rates_and_cycle
+      - skill: urmylucky-narrative-judgment
+        role: a_share_narrative_payer_budget_and_price_in
+      - skill: fundamental-review
+        role: business_industry_valuation_and_falsification
+      - skill: catalyst-calendar
+        role: forward_catalysts_when_requested_or_material
+      - skill: thesis-tracker
+        role: ongoing_thesis_continuity_when_requested
+  research_council:
+    implementation: embedded_in_earnings_company_research
+    version: "1.5"
+  presentation:
+    skill: presentations:Presentations
+    invocation: explicit_user_request_only
+
+
+model_registry:
+  extraction: default_fast
+  analysis: default_reasoning
+  council: default_reasoning
+  writing: default_writing
+
+renderer_registry:
+  presentation: presentations:Presentations
+
+
+upgrade:
+  channels:
+    - current
+    - candidate
+    - previous_good

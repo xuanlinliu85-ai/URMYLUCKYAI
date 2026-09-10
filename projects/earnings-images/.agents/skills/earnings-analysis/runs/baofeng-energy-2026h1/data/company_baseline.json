@@ -1,0 +1,28 @@
+{
+  "company": "宁夏宝丰能源集团股份有限公司",
+  "ticker": "600989.SH",
+  "as_of": "2026-09-07",
+  "business_model": "煤制烯烃为核心，配套焦化与精细化工；核心优势来自一体化、低成本和规模化项目复制。",
+  "core_segments": [
+    "烯烃（PE/PP/EVA）",
+    "焦化",
+    "精细化工"
+  ],
+  "cycle_judgment": "2026H1属于供给与成本冲击驱动的高盈利阶段，终端需求尚未形成广泛上行周期。",
+  "capacity_context": "内蒙古项目在2025年4-5月全面达产，2026H1首次完整贡献高负荷半年；宁东四期计划2026年底建成，完整盈利贡献更偏向2027年。",
+  "key_kpis": [
+    "油煤相对价格与PE/PP价差",
+    "装置负荷及销量",
+    "内蒙古项目单位成本",
+    "宁东四期建设/试车进度",
+    "出口量与海外溢价",
+    "经营现金流和资本开支"
+  ],
+  "call_status": {
+    "status": "pending",
+    "event": "2026年半年度业绩说明会",
+    "scheduled_date": "2026-09-17",
+    "source": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12504194&stockid=600989",
+    "note": "研究截止日为2026-09-07，会议尚未举行，因此没有电话会Q&A可分析。"
+  }
+}

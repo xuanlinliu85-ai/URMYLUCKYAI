@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "company": "宁夏宝丰能源集团股份有限公司",
+  "period": "2026H1",
+  "earnings_release_date": "2026-08-13",
+  "expectations": [
+    {
+      "metric": "2026H1 attributable net income vs company preannouncement",
+      "basis": "consolidated attributable net income",
+      "actual": 9727818696.5,
+      "pre_earnings_consensus": null,
+      "prior_guidance_low": 9300000000,
+      "prior_guidance_high": 10200000000,
+      "post_earnings_consensus": null,
+      "analyst_count": null,
+      "consensus_as_of": "2026-07-14 company preannouncement; professional H1 consensus unresolved",
+      "source": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12442017&stockid=600989",
+      "evidence_ids": [
+        "E050",
+        "E100",
+        "E109"
+      ]
+    },
+    {
+      "metric": "FY2026 revenue consensus",
+      "basis": "FY1 consensus; annual, never substituted for 2026H1 consensus",
+      "actual": null,
+      "pre_earnings_consensus": 57574756451.613,
+      "post_earnings_consensus": 58287692352.941,
+      "analyst_count": null,
+      "consensus_as_of": "pre=2026-08-12; post=2026-09-04",
+      "source": "iFinD MCP licensed dataset; retrieved 2026-09-06",
+      "evidence_ids": [
+        "E101",
+        "E102"
+      ]
+    },
+    {
+      "metric": "FY2026 attributable net income consensus",
+      "basis": "FY1 consensus; annual, never substituted for 2026H1 consensus",
+      "actual": null,
+      "pre_earnings_consensus": 15968816623.529,
+      "post_earnings_consensus": 16478536333.333,
+      "analyst_count": null,
+      "consensus_as_of": "pre=2026-08-12; post=2026-09-04",
+      "source": "iFinD MCP licensed dataset; retrieved 2026-09-06",
+      "evidence_ids": [
+        "E103",
+        "E104"
+      ]
+    },
+    {
+      "metric": "FY2026 EPS consensus",
+      "basis": "FY1 consensus; annual, never substituted for 2026H1 consensus",
+      "actual": null,
+      "pre_earnings_consensus": 2.1783,
+      "post_earnings_consensus": 2.2478,
+      "analyst_count": null,
+      "consensus_as_of": "pre=2026-08-12; post=2026-09-04",
+      "source": "iFinD MCP licensed dataset; retrieved 2026-09-06",
+      "evidence_ids": [
+        "E105",
+        "E106"
+      ]
+    },
+    {
+      "metric": "FY2027 attributable net income consensus",
+      "basis": "FY2 consensus",
+      "actual": null,
+      "pre_earnings_consensus": 16978569529.412,
+      "post_earnings_consensus": 17440326322.222,
+      "analyst_count": null,
+      "consensus_as_of": "pre=2026-08-12; post=2026-09-04",
+      "source": "iFinD MCP licensed dataset; retrieved 2026-09-06",
+      "evidence_ids": [
+        "E107",
+        "E108"
+      ]
+    }
+  ]
+}

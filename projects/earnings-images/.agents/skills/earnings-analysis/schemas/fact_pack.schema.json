@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FactPack",
+  "type": "object",
+  "required": [
+    "company",
+    "period",
+    "as_of",
+    "datapoints"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "default": "1.0"
+    },
+    "company": {
+      "type": "string"
+    },
+    "ticker": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "market": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "period": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "reporting_basis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "latest_reported_period": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "latest_report_publication_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "datapoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "metric",
+          "value",
+          "period",
+          "source",
+          "source_tier",
+          "evidence_id"
+        ],
+        "properties": {
+          "metric": {
+            "type": "string"
+          },
+          "value": {},
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "currency": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "period": {
+            "type": "string"
+          },
+          "basis": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "source_tier": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "evidence_id": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}

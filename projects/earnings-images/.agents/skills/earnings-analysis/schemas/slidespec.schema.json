@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SlideSpec",
+  "type": "object",
+  "required": [
+    "company",
+    "period",
+    "slides"
+  ],
+  "properties": {
+    "company": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slide_id",
+          "title",
+          "message",
+          "evidence",
+          "visual",
+          "speaker_goal"
+        ],
+        "properties": {
+          "slide_id": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "visual": {
+            "type": "string"
+          },
+          "speaker_goal": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

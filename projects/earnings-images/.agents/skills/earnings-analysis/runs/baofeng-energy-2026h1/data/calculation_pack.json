@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0",
+  "company": "宁夏宝丰能源集团股份有限公司",
+  "period": "2026H1",
+  "calculation_method": "Python deterministic arithmetic; no language-model arithmetic",
+  "calculations": [
+    {
+      "calculation_id": "C001",
+      "label": "FY2024 revenue YoY",
+      "result": 13.205118243469794,
+      "unit": "%",
+      "inputs": [
+        "E006",
+        "E001"
+      ],
+      "formula": "FY2024/FY2023-1"
+    },
+    {
+      "calculation_id": "C002",
+      "label": "FY2024 net income YoY",
+      "result": 12.159056414446368,
+      "unit": "%",
+      "inputs": [
+        "E007",
+        "E002"
+      ],
+      "formula": "FY2024/FY2023-1"
+    },
+    {
+      "calculation_id": "C003",
+      "label": "FY2025 revenue YoY",
+      "result": 45.64397867742165,
+      "unit": "%",
+      "inputs": [
+        "E011",
+        "E006"
+      ],
+      "formula": "FY2025/FY2024-1"
+    },
+    {
+      "calculation_id": "C004",
+      "label": "FY2025 net income YoY",
+      "result": 79.09238262644551,
+      "unit": "%",
+      "inputs": [
+        "E012",
+        "E007"
+      ],
+      "formula": "FY2025/FY2024-1"
+    },
+    {
+      "calculation_id": "C005",
+      "label": "2026H1 revenue YoY",
+      "result": 32.33211152618456,
+      "unit": "%",
+      "inputs": [
+        "E048",
+        "E057"
+      ],
+      "formula": "2026H1/2025H1-1"
+    },
+    {
+      "calculation_id": "C006",
+      "label": "2026H1 net income YoY",
+      "result": 70.13737708053154,
+      "unit": "%",
+      "inputs": [
+        "E050",
+        "E058"
+      ],
+      "formula": "2026H1/2025H1-1"
+    },
+    {
+      "calculation_id": "C007",
+      "label": "2026Q2 revenue YoY",
+      "result": 40.76757217844027,
+      "unit": "%",
+      "inputs": [
+        "E044",
+        "E028"
+      ],
+      "formula": "2026Q2/2025Q2-1"
+    },
+    {
+      "calculation_id": "C008",
+      "label": "2026Q2 net income YoY",
+      "result": 84.92268573064095,
+      "unit": "%",
+      "inputs": [
+        "E045",
+        "E029"
+      ],
+      "formula": "2026Q2/2025Q2-1"
+    },
+    {
+      "calculation_id": "C009",
+      "label": "2026Q2 revenue QoQ",
+      "result": 28.133953173054206,
+      "unit": "%",
+      "inputs": [
+        "E044",
+        "E040"
+      ],
+      "formula": "2026Q2/2026Q1-1"
+    },
+    {
+      "calculation_id": "C010",
+      "label": "2026Q2 net income QoQ",
+      "result": 65.73841285158221,
+      "unit": "%",
+      "inputs": [
+        "E045",
+        "E041"
+      ],
+      "formula": "2026Q2/2026Q1-1"
+    },
+    {
+      "calculation_id": "C011",
+      "label": "2026Q2 gross margin",
+      "result": 48.36987907030444,
+      "unit": "%",
+      "inputs": [
+        "E046",
+        "E044"
+      ],
+      "formula": "gross profit/revenue"
+    },
+    {
+      "calculation_id": "C012",
+      "label": "2026Q1 gross margin",
+      "result": 37.40428785972198,
+      "unit": "%",
+      "inputs": [
+        "E042",
+        "E040"
+      ],
+      "formula": "gross profit/revenue"
+    },
+    {
+      "calculation_id": "C013",
+      "label": "2025Q2 gross margin",
+      "result": 37.96502982469394,
+      "unit": "%",
+      "inputs": [
+        "E030",
+        "E028"
+      ],
+      "formula": "gross profit/revenue"
+    },
+    {
+      "calculation_id": "C014",
+      "label": "2026H1 gross margin",
+      "result": 43.56323321243673,
+      "unit": "%",
+      "inputs": [
+        "E052",
+        "E048"
+      ],
+      "formula": "gross profit/revenue"
+    },
+    {
+      "calculation_id": "C015",
+      "label": "2025H1 gross margin",
+      "result": 36.736842875324,
+      "unit": "%",
+      "inputs": [
+        "E059",
+        "E057"
+      ],
+      "formula": "gross profit/revenue"
+    },
+    {
+      "calculation_id": "C016",
+      "label": "2026H1 CFO/net income",
+      "result": 122.99096918464039,
+      "unit": "%",
+      "inputs": [
+        "E053",
+        "E050"
+      ],
+      "formula": "CFO/net income"
+    },
+    {
+      "calculation_id": "C017",
+      "label": "2026H1 simplified FCF",
+      "result": 7361349100.410001,
+      "unit": "CNY",
+      "inputs": [
+        "E053",
+        "E054"
+      ],
+      "formula": "CFO-capex"
+    },
+    {
+      "calculation_id": "C018",
+      "label": "2026H1 simplified FCF margin",
+      "result": 24.377278699584924,
+      "unit": "%",
+      "inputs": [
+        "E053",
+        "E054",
+        "E048"
+      ],
+      "formula": "(CFO-capex)/revenue"
+    },
+    {
+      "calculation_id": "C019",
+      "label": "2026H1 simplified FCF YoY",
+      "result": 40.60964126064401,
+      "unit": "%",
+      "inputs": [
+        "E053",
+        "E054",
+        "E060",
+        "E061"
+      ],
+      "formula": "current FCF/prior FCF-1"
+    },
+    {
+      "calculation_id": "C020",
+      "label": "2026-06-30 liability ratio",
+      "result": 41.83613770762605,
+      "unit": "%",
+      "inputs": [
+        "E063",
+        "E062"
+      ],
+      "formula": "liabilities/assets"
+    },
+    {
+      "calculation_id": "C021",
+      "label": "2025-12-31 liability ratio",
+      "result": 46.32436648713538,
+      "unit": "%",
+      "inputs": [
+        "E067",
+        "E066"
+      ],
+      "formula": "liabilities/assets"
+    },
+    {
+      "calculation_id": "C022",
+      "label": "cash change vs FY2025",
+      "result": 96.28418883964358,
+      "unit": "%",
+      "inputs": [
+        "E064",
+        "E068"
+      ],
+      "formula": "cash/current prior-1"
+    },
+    {
+      "calculation_id": "C023",
+      "label": "inventory change vs FY2025",
+      "result": -0.24612353880084648,
+      "unit": "%",
+      "inputs": [
+        "E065",
+        "E069"
+      ],
+      "formula": "inventory/current prior-1"
+    },
+    {
+      "calculation_id": "C024",
+      "label": "actual vs preannouncement midpoint",
+      "result": -0.22750054871795156,
+      "unit": "%",
+      "inputs": [
+        "E050",
+        "E100",
+        "E109"
+      ],
+      "formula": "actual/midpoint-1"
+    },
+    {
+      "calculation_id": "C025",
+      "label": "FY2026 revenue consensus revision",
+      "result": 1.238278622901623,
+      "unit": "%",
+      "inputs": [
+        "E102",
+        "E101"
+      ],
+      "formula": "post/pre-1"
+    },
+    {
+      "calculation_id": "C026",
+      "label": "FY2026 net income consensus revision",
+      "result": 3.191969209872214,
+      "unit": "%",
+      "inputs": [
+        "E104",
+        "E103"
+      ],
+      "formula": "post/pre-1"
+    },
+    {
+      "calculation_id": "C027",
+      "label": "FY2026 EPS consensus revision",
+      "result": 3.19056144699994,
+      "unit": "%",
+      "inputs": [
+        "E106",
+        "E105"
+      ],
+      "formula": "post/pre-1"
+    },
+    {
+      "calculation_id": "C028",
+      "label": "FY2027 net income consensus revision",
+      "result": 2.7196448558878705,
+      "unit": "%",
+      "inputs": [
+        "E108",
+        "E107"
+      ],
+      "formula": "post/pre-1"
+    },
+    {
+      "calculation_id": "C029",
+      "label": "forward PE on FY2026 consensus",
+      "result": 10.85861003553149,
+      "unit": "x",
+      "inputs": [
+        "E090",
+        "E104"
+      ],
+      "formula": "market cap/FY1 net income consensus"
+    },
+    {
+      "calculation_id": "C030",
+      "label": "olefins gross margin",
+      "result": 45.87722944110808,
+      "unit": "%",
+      "inputs": [
+        "E077",
+        "E078"
+      ],
+      "formula": "(revenue-cost)/revenue"
+    },
+    {
+      "calculation_id": "C031",
+      "label": "phase 4 remaining budget",
+      "result": 7152100000,
+      "unit": "CNY",
+      "inputs": [
+        "E081",
+        "E082"
+      ],
+      "formula": "budget-CIP"
+    },
+    {
+      "calculation_id": "C032",
+      "label": "headline vs adjusted net income gap",
+      "result": 517931676.7600002,
+      "unit": "CNY",
+      "inputs": [
+        "E050",
+        "E051"
+      ],
+      "formula": "reported net income-adjusted net income"
+    },
+    {
+      "calculation_id": "C033",
+      "label": "price return 2026-07-13 to 2026-09-04",
+      "result": 19.78,
+      "unit": "%",
+      "inputs": [
+        "E110"
+      ],
+      "formula": "adjusted-close return from iFinD daily series"
+    },
+    {
+      "calculation_id": "C034",
+      "label": "excess return vs CSI300",
+      "result": 22.92,
+      "unit": "percentage points",
+      "inputs": [
+        "E110",
+        "E111"
+      ],
+      "formula": "stock return-index return"
+    }
+  ]
+}

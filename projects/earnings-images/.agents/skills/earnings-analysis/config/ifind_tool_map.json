@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "discovery": {
+    "inspected_at": "2026-09-03",
+    "status": "ready_via_existing_client",
+    "ifind_mcp_server": "ifind",
+    "transport": "sse",
+    "live_schema_verified": true,
+    "tool_count": 19,
+    "session_catalog_exposure": false,
+    "discovered_tools": [
+      "THS_BD",
+      "THS_DS",
+      "THS_HQ",
+      "THS_HF",
+      "THS_RQ",
+      "THS_SS",
+      "THS_EDB",
+      "THS_DR",
+      "THS_WCQuery",
+      "THS_ReportQuery",
+      "THS_Special_ShapePredict",
+      "THS_Special_StockLink",
+      "THS_realTimeValuation",
+      "THS_DateQuery",
+      "THS_DateOffset",
+      "lookup_field_reference",
+      "get_stock_list",
+      "get_price_change",
+      "get_guide"
+    ],
+    "inspected_callable_mcp_servers": [
+      "ifind",
+      "a_share_trading_library",
+      "codex_app",
+      "codex_apps",
+      "node_repl"
+    ],
+    "note": "Live tools/list was read from the authorized iFinD MCP. The current Codex session catalog has not loaded this server, so calls use the existing local iFinD MCP client until the Codex host reloads its MCP configuration."
+  },
+  "runtime_adapter": {
+    "type": "existing_local_client",
+    "path": "C:/Users/urmylucky/Documents/每日复盘更新/scripts/ifind-mcp-client.mjs",
+    "credential_env": "IFIND_API_KEY",
+    "base_url_env": "IFIND_MCP_BASE_URL",
+    "authentication_query_parameter": "api_key"
+  },
+  "company_lookup": "get_stock_list",
+  "financial_statements": "THS_BD",
+  "consensus": {
+    "annual": {
+      "tool": "THS_BD",
+      "fields": {
+        "revenue_fy1": "ths_fore_mbi_fy1_stock",
+        "net_profit_fy1": "ths_fore_np_fy1_stock"
+      },
+      "as_of_rule": "Pass the last trading date before the earnings release through paramOption and retain provider, timestamp, horizon, statistic and analyst count when returned."
+    },
+    "reported_period": null
+  },
+  "estimate_revisions": {
+    "tool": "THS_BD",
+    "method": "Compare the same FY1 field and horizon at a pre-release as-of date and a post-release as-of date."
+  },
+  "valuation": "THS_BD",
+  "price_history": "THS_HQ",
+  "peers": "THS_DR",
+  "industry_data": "THS_EDB",
+  "kpi": "THS_BD",
+  "documents": "THS_ReportQuery",
+  "helpers": {
+    "field_discovery": "lookup_field_reference",
+    "time_series": "THS_DS",
+    "price_change": "get_price_change",
+    "screening": "THS_WCQuery",
+    "trading_calendar": "THS_DateQuery",
+    "trading_day_offset": "THS_DateOffset"
+  },
+  "field_controls": {
+    "ths_roe_stock": {
+      "status": "disabled_for_reported_roe",
+      "reason": "The live China smoke test returned 17.9543% for 2026H1 while the official weighted-average ROE was 16.75%. Use the official filing definition or a documented deterministic calculation."
+    },
+    "ths_net_asset_stock": {
+      "status": "disabled_for_consolidated_equity",
+      "reason": "The live China smoke test returned CNY 158.149bn for 2026H1, which did not reconcile to official consolidated attributable equity or total equity. Use the official filing until a verified field is mapped."
+    }
+  },
+  "capability_limits": {
+    "consensus": "FY1 revenue and net-profit forecasts were verified in the live China smoke test. Historical half-year and quarter consensus snapshots remain unavailable, and tested ths_west_* / ths_pred_* fields return -209.",
+    "estimate_revisions": "No dedicated revision tool is exposed. A comparable FY1 revision is calculated from two THS_BD as-of snapshots with the same field and horizon.",
+    "peers": "THS_DR supplies index or sector constituents; analytical peer selection remains a research step.",
+    "company_lookup": "get_stock_list supplies canonical codes and names; THS_WCQuery is screening-oriented.",
+    "permissions": "THS_Special_ShapePredict returned -209 and THS_realTimeValuation returned -4219 in the live account capability check."
+  }
+}

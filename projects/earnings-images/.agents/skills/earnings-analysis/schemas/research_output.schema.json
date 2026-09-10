@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResearchOutput",
+  "type": "object",
+  "required": [
+    "company",
+    "period",
+    "core_view",
+    "expectation_gap",
+    "final_view"
+  ],
+  "properties": {
+    "company": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "core_view": {
+      "type": "string"
+    },
+    "expectation_gap": {
+      "type": "string"
+    },
+    "final_view": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "object"
+    }
+  }
+}

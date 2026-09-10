@@ -1,0 +1,19 @@
+{
+  "company": "宁夏宝丰能源集团股份有限公司",
+  "ticker": "600989.SH",
+  "period": "2026H1",
+  "as_of": "2026-09-07",
+  "status": "complete_pending_scheduled_briefing",
+  "artifacts": [
+    "data/fact_pack.json",
+    "data/expectation_pack.json",
+    "data/company_baseline.json",
+    "data/calculation_pack.json",
+    "data/research_output.json",
+    "research/final_research.md"
+  ],
+  "known_gaps": [
+    "2026H1/Q2 pre-earnings professional consensus snapshot unavailable from current iFinD fields",
+    "2026H1 results briefing scheduled for 2026-09-17 and therefore pending"
+  ]
+}

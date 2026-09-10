@@ -1,0 +1,22 @@
+version: 1
+allow_paid_provider: false
+
+providers:
+  CN:
+    primary: ifind
+    official_fallback: company_or_exchange
+  HK:
+    primary: ifind
+    official_fallback: hkex_or_ir
+  US:
+    official: edgar
+    consensus: ifind
+
+renderers:
+  presentation: auto_detect_existing_ppt_skill
+
+features:
+  management_credibility: true
+  earnings_call_intelligence: true
+  targeted_challenge: true
+  deep_peer_check: false

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExpectationPack",
+  "type": "object",
+  "required": [
+    "company",
+    "period",
+    "earnings_release_date",
+    "expectations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "default": "1.0"
+    },
+    "company": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "earnings_release_date": {
+      "type": "string"
+    },
+    "expectations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "metric",
+          "consensus_as_of",
+          "source"
+        ],
+        "properties": {
+          "metric": {
+            "type": "string"
+          },
+          "basis": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "actual": {},
+          "pre_earnings_consensus": {},
+          "prior_guidance_low": {},
+          "prior_guidance_high": {},
+          "new_guidance_low": {},
+          "new_guidance_high": {},
+          "post_earnings_consensus": {},
+          "consensus_mean": {},
+          "consensus_median": {},
+          "consensus_high": {},
+          "consensus_low": {},
+          "analyst_count": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "consensus_as_of": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

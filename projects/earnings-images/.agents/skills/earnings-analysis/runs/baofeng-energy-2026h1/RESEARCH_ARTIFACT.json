@@ -1,0 +1,1355 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_id": "earnings-600989-sh-2026h1",
+  "artifact_type": "earnings_analysis",
+  "title": "宁夏宝丰能源集团股份有限公司 2026H1 财报研究",
+  "as_of": "2026-09-07",
+  "generated_at": "2026-09-09T15:59:00.199786Z",
+  "subject": {
+    "kind": "company",
+    "name": "宁夏宝丰能源集团股份有限公司",
+    "identifiers": {
+      "ticker": "600989.SH"
+    },
+    "market": "A-share",
+    "period": "2026H1"
+  },
+  "request": {
+    "user_goal": "复用已完成的财报事实包、预期包和研究结论生成统一研究底稿",
+    "requested_outputs": [
+      "research_report",
+      "ppt"
+    ],
+    "constraints": [
+      "保留财报期与预期快照口径",
+      "下游不重新研究"
+    ]
+  },
+  "facts": [
+    {
+      "fact_id": "E001",
+      "statement": "revenue (FY2023)",
+      "value": 29135511197.96,
+      "unit": "CNY",
+      "timestamp": "FY2023",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E002",
+      "statement": "net_income (FY2023)",
+      "value": 5650614862.71,
+      "unit": "CNY",
+      "timestamp": "FY2023",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E003",
+      "statement": "gross_profit (FY2023)",
+      "value": 8856519735.4,
+      "unit": "CNY",
+      "timestamp": "FY2023",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E004",
+      "statement": "cfo (FY2023)",
+      "value": 8692623772.83,
+      "unit": "CNY",
+      "timestamp": "FY2023",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E005",
+      "statement": "eps (FY2023)",
+      "value": 0.77,
+      "unit": "CNY/share",
+      "timestamp": "FY2023",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E006",
+      "statement": "revenue (FY2024)",
+      "value": 32982889902.49,
+      "unit": "CNY",
+      "timestamp": "FY2024",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E007",
+      "statement": "net_income (FY2024)",
+      "value": 6337676311.63,
+      "unit": "CNY",
+      "timestamp": "FY2024",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E008",
+      "statement": "gross_profit (FY2024)",
+      "value": 10932724619.9,
+      "unit": "CNY",
+      "timestamp": "FY2024",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E009",
+      "statement": "cfo (FY2024)",
+      "value": 8897635369.03,
+      "unit": "CNY",
+      "timestamp": "FY2024",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E010",
+      "statement": "eps (FY2024)",
+      "value": 0.87,
+      "unit": "CNY/share",
+      "timestamp": "FY2024",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E011",
+      "statement": "revenue (FY2025)",
+      "value": 48037593136.78,
+      "unit": "CNY",
+      "timestamp": "FY2025",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E012",
+      "statement": "net_income (FY2025)",
+      "value": 11350295509.65,
+      "unit": "CNY",
+      "timestamp": "FY2025",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E013",
+      "statement": "gross_profit (FY2025)",
+      "value": 17253144364.28,
+      "unit": "CNY",
+      "timestamp": "FY2025",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E014",
+      "statement": "cfo (FY2025)",
+      "value": 16851078343.67,
+      "unit": "CNY",
+      "timestamp": "FY2025",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E015",
+      "statement": "eps (FY2025)",
+      "value": 1.56,
+      "unit": "CNY/share",
+      "timestamp": "FY2025",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E016",
+      "statement": "revenue (2024Q3)",
+      "value": 7377425714.67,
+      "unit": "CNY",
+      "timestamp": "2024Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E017",
+      "statement": "net_income (2024Q3)",
+      "value": 1232101600.42,
+      "unit": "CNY",
+      "timestamp": "2024Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E018",
+      "statement": "gross_profit (2024Q3)",
+      "value": 2517262333.09,
+      "unit": "CNY",
+      "timestamp": "2024Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E019",
+      "statement": "cfo (2024Q3)",
+      "value": 1634193219.27,
+      "unit": "CNY",
+      "timestamp": "2024Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E020",
+      "statement": "revenue (2024Q4)",
+      "value": 8708325898.16,
+      "unit": "CNY",
+      "timestamp": "2024Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E021",
+      "statement": "net_income (2024Q4)",
+      "value": 1800885906.83,
+      "unit": "CNY",
+      "timestamp": "2024Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E022",
+      "statement": "gross_profit (2024Q4)",
+      "value": 2738045091.0,
+      "unit": "CNY",
+      "timestamp": "2024Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E023",
+      "statement": "cfo (2024Q4)",
+      "value": 3118086869.39,
+      "unit": "CNY",
+      "timestamp": "2024Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E024",
+      "statement": "revenue (2025Q1)",
+      "value": 10770741271.32,
+      "unit": "CNY",
+      "timestamp": "2025Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E025",
+      "statement": "net_income (2025Q1)",
+      "value": 2436717409.01,
+      "unit": "CNY",
+      "timestamp": "2025Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E026",
+      "statement": "gross_profit (2025Q1)",
+      "value": 3808848482.8,
+      "unit": "CNY",
+      "timestamp": "2025Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E027",
+      "statement": "cfo (2025Q1)",
+      "value": 3417082722.16,
+      "unit": "CNY",
+      "timestamp": "2025Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E028",
+      "statement": "revenue (2025Q2)",
+      "value": 12048802067.83,
+      "unit": "CNY",
+      "timestamp": "2025Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E029",
+      "statement": "net_income (2025Q2)",
+      "value": 3280908466.87,
+      "unit": "CNY",
+      "timestamp": "2025Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E030",
+      "statement": "gross_profit (2025Q2)",
+      "value": 4574331298.57,
+      "unit": "CNY",
+      "timestamp": "2025Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E031",
+      "statement": "cfo (2025Q2)",
+      "value": 4572726204.32,
+      "unit": "CNY",
+      "timestamp": "2025Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E032",
+      "statement": "revenue (2025Q3)",
+      "value": 12725335447.14,
+      "unit": "CNY",
+      "timestamp": "2025Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E033",
+      "statement": "net_income (2025Q3)",
+      "value": 3232261154.84,
+      "unit": "CNY",
+      "timestamp": "2025Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E034",
+      "statement": "gross_profit (2025Q3)",
+      "value": 4879696707.92,
+      "unit": "CNY",
+      "timestamp": "2025Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E035",
+      "statement": "cfo (2025Q3)",
+      "value": 5591983308.37,
+      "unit": "CNY",
+      "timestamp": "2025Q3",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E036",
+      "statement": "revenue (2025Q4)",
+      "value": 12492714350.49,
+      "unit": "CNY",
+      "timestamp": "2025Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E037",
+      "statement": "net_income (2025Q4)",
+      "value": 2400408478.93,
+      "unit": "CNY",
+      "timestamp": "2025Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E038",
+      "statement": "gross_profit (2025Q4)",
+      "value": 3990267874.99,
+      "unit": "CNY",
+      "timestamp": "2025Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E039",
+      "statement": "cfo (2025Q4)",
+      "value": 3269286108.82,
+      "unit": "CNY",
+      "timestamp": "2025Q4",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E040",
+      "statement": "revenue (2026Q1)",
+      "value": 13236777393.86,
+      "unit": "CNY",
+      "timestamp": "2026Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E041",
+      "statement": "net_income (2026Q1)",
+      "value": 3660674643.2,
+      "unit": "CNY",
+      "timestamp": "2026Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E042",
+      "statement": "gross_profit (2026Q1)",
+      "value": 4951122319.75,
+      "unit": "CNY",
+      "timestamp": "2026Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E043",
+      "statement": "cfo (2026Q1)",
+      "value": 5563194631.76,
+      "unit": "CNY",
+      "timestamp": "2026Q1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E044",
+      "statement": "revenue (2026Q2)",
+      "value": 16960806147.47,
+      "unit": "CNY",
+      "timestamp": "2026Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E045",
+      "statement": "net_income (2026Q2)",
+      "value": 6067144053.3,
+      "unit": "CNY",
+      "timestamp": "2026Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E046",
+      "statement": "gross_profit (2026Q2)",
+      "value": 8203921422.88,
+      "unit": "CNY",
+      "timestamp": "2026Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E047",
+      "statement": "cfo (2026Q2)",
+      "value": 6401143863.59,
+      "unit": "CNY",
+      "timestamp": "2026Q2",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E048",
+      "statement": "revenue (2026H1)",
+      "value": 30197583541.33,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E049",
+      "statement": "profit_before_tax (2026H1)",
+      "value": 11507078100.1,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E050",
+      "statement": "net_income (2026H1)",
+      "value": 9727818696.5,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E051",
+      "statement": "adjusted_net_income (2026H1)",
+      "value": 9209887019.74,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E052",
+      "statement": "gross_profit (2026H1)",
+      "value": 13155043742.63,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E053",
+      "statement": "cfo (2026H1)",
+      "value": 11964338495.35,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E054",
+      "statement": "capex (2026H1)",
+      "value": 4602989394.94,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E055",
+      "statement": "eps (2026H1)",
+      "value": 1.33,
+      "unit": "CNY/share",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E056",
+      "statement": "roe (2026H1)",
+      "value": 18.61,
+      "unit": "%",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E057",
+      "statement": "revenue (2025H1)",
+      "value": 22819543339.15,
+      "unit": "CNY",
+      "timestamp": "2025H1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E058",
+      "statement": "net_income (2025H1)",
+      "value": 5717625875.88,
+      "unit": "CNY",
+      "timestamp": "2025H1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E059",
+      "statement": "gross_profit (2025H1)",
+      "value": 8383179781.37,
+      "unit": "CNY",
+      "timestamp": "2025H1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E060",
+      "statement": "cfo (2025H1)",
+      "value": 7989808926.48,
+      "unit": "CNY",
+      "timestamp": "2025H1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E061",
+      "statement": "capex (2025H1)",
+      "value": 2754500000.0,
+      "unit": "CNY",
+      "timestamp": "2025H1",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E062",
+      "statement": "total_assets (2026-06-30)",
+      "value": 94913197407.9,
+      "unit": "CNY",
+      "timestamp": "2026-06-30",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E063",
+      "statement": "total_liabilities (2026-06-30)",
+      "value": 39708015970.28,
+      "unit": "CNY",
+      "timestamp": "2026-06-30",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E064",
+      "statement": "cash (2026-06-30)",
+      "value": 2639964551.61,
+      "unit": "CNY",
+      "timestamp": "2026-06-30",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E065",
+      "statement": "inventory (2026-06-30)",
+      "value": 1961574875.5,
+      "unit": "CNY",
+      "timestamp": "2026-06-30",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E066",
+      "statement": "total_assets_prior (2025-12-31)",
+      "value": 90152489325.37,
+      "unit": "CNY",
+      "timestamp": "2025-12-31",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E067",
+      "statement": "total_liabilities_prior (2025-12-31)",
+      "value": 41762569552.36,
+      "unit": "CNY",
+      "timestamp": "2025-12-31",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E068",
+      "statement": "cash_prior (2025-12-31)",
+      "value": 1344970558.87,
+      "unit": "CNY",
+      "timestamp": "2025-12-31",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E069",
+      "statement": "inventory_prior (2025-12-31)",
+      "value": 1966414684.91,
+      "unit": "CNY",
+      "timestamp": "2025-12-31",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E070",
+      "statement": "polymer_output (2026H1)",
+      "value": 2973100,
+      "unit": "tonnes",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E071",
+      "statement": "coke_output (2026H1)",
+      "value": 3468100,
+      "unit": "tonnes",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E072",
+      "statement": "pe_sales (2026H1)",
+      "value": 1434500,
+      "unit": "tonnes",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E073",
+      "statement": "pe_asp (2026H1)",
+      "value": 6824.69,
+      "unit": "CNY/tonne",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E074",
+      "statement": "pp_sales (2026H1)",
+      "value": 1391500,
+      "unit": "tonnes",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E075",
+      "statement": "pp_asp (2026H1)",
+      "value": 7122.95,
+      "unit": "CNY/tonne",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E076",
+      "statement": "feed_coal_purchase_price (2026H1)",
+      "value": 491.01,
+      "unit": "CNY/tonne",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E077",
+      "statement": "olefins_revenue (2026H1)",
+      "value": 24108060000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E078",
+      "statement": "olefins_cost (2026H1)",
+      "value": 13047950000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E079",
+      "statement": "inner_mongolia_revenue (2026H1)",
+      "value": 14186820000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E080",
+      "statement": "inner_mongolia_net_income (2026H1)",
+      "value": 4725190000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E081",
+      "statement": "phase4_budget (2026H1)",
+      "value": 10547700000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E082",
+      "statement": "phase4_cip (2026H1)",
+      "value": 3395600000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E083",
+      "statement": "fair_value_gain (2026H1)",
+      "value": 948237000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E084",
+      "statement": "donation_expense (2026H1)",
+      "value": 301000000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E085",
+      "statement": "close (2026-08-12)",
+      "value": 23.03521,
+      "unit": "CNY/share",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E086",
+      "statement": "market_cap (2026-08-12)",
+      "value": 171820600000,
+      "unit": "CNY",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E087",
+      "statement": "pe_ttm (2026-08-12)",
+      "value": 11.1859,
+      "unit": "x",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E088",
+      "statement": "pb (2026-08-12)",
+      "value": 3.2968,
+      "unit": "x",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E089",
+      "statement": "close (2026-09-04)",
+      "value": 24.4,
+      "unit": "CNY/share",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E090",
+      "statement": "market_cap (2026-09-04)",
+      "value": 178934000000,
+      "unit": "CNY",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E091",
+      "statement": "pe_ttm (2026-09-04)",
+      "value": 11.649,
+      "unit": "x",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E092",
+      "statement": "pb (2026-09-04)",
+      "value": 3.2413,
+      "unit": "x",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E093",
+      "statement": "dividend_yield (2026-09-04)",
+      "value": 3.4426,
+      "unit": "%",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E094",
+      "statement": "brent_average (2026H1)",
+      "value": 88.0,
+      "unit": "USD/bbl",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E095",
+      "statement": "ordos_coal_5000kcal (2026H1)",
+      "value": 472.0,
+      "unit": "CNY/tonne",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E096",
+      "statement": "imported_propane (2026H1)",
+      "value": 815.0,
+      "unit": "USD/tonne",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E097",
+      "statement": "polymer_apparent_consumption_yoy (2026H1)",
+      "value": -12.9,
+      "unit": "%",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E098",
+      "statement": "polymer_net_imports_yoy (2026H1)",
+      "value": -70.5,
+      "unit": "%",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E099",
+      "statement": "polymer_exports_yoy (2026H1)",
+      "value": 111.5,
+      "unit": "%",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "Sa247e9860f"
+      ]
+    },
+    {
+      "fact_id": "E100",
+      "statement": "h1_np_guidance_low (2026H1)",
+      "value": 9300000000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "S0006986d15"
+      ]
+    },
+    {
+      "fact_id": "E101",
+      "statement": "fy1_revenue_consensus_pre (2026-08-12)",
+      "value": 57574756451.613,
+      "unit": "CNY",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E102",
+      "statement": "fy1_revenue_consensus_post (2026-09-04)",
+      "value": 58287692352.941,
+      "unit": "CNY",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E103",
+      "statement": "fy1_net_income_consensus_pre (2026-08-12)",
+      "value": 15968816623.529,
+      "unit": "CNY",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E104",
+      "statement": "fy1_net_income_consensus_post (2026-09-04)",
+      "value": 16478536333.333,
+      "unit": "CNY",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E105",
+      "statement": "fy1_eps_consensus_pre (2026-08-12)",
+      "value": 2.1783,
+      "unit": "CNY/share",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E106",
+      "statement": "fy1_eps_consensus_post (2026-09-04)",
+      "value": 2.2478,
+      "unit": "CNY/share",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E107",
+      "statement": "fy2_net_income_consensus_pre (2026-08-12)",
+      "value": 16978569529.412,
+      "unit": "CNY",
+      "timestamp": "2026-08-12",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E108",
+      "statement": "fy2_net_income_consensus_post (2026-09-04)",
+      "value": 17440326322.222,
+      "unit": "CNY",
+      "timestamp": "2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E109",
+      "statement": "h1_np_guidance_high (2026H1)",
+      "value": 10200000000,
+      "unit": "CNY",
+      "timestamp": "2026H1",
+      "status": "verified",
+      "source_ids": [
+        "S0006986d15"
+      ]
+    },
+    {
+      "fact_id": "E110",
+      "statement": "price_return_since_preannouncement (2026-07-13_to_2026-09-04)",
+      "value": 19.78,
+      "unit": "%",
+      "timestamp": "2026-07-13_to_2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    },
+    {
+      "fact_id": "E111",
+      "statement": "csi300_return_same_window (2026-07-13_to_2026-09-04)",
+      "value": -3.14,
+      "unit": "%",
+      "timestamp": "2026-07-13_to_2026-09-04",
+      "status": "verified",
+      "source_ids": [
+        "S4799d8efba"
+      ]
+    }
+  ],
+  "timeline": [],
+  "drivers": [],
+  "conclusions": [
+    {
+      "conclusion_id": "C1",
+      "statement": "财报质量强：量增、价差扩张与低成本优势共同推动利润和现金流；需求侧仍弱，当前盈利包含外部供给冲击红利。",
+      "type": "primary",
+      "fact_ids": [],
+      "driver_ids": [],
+      "source_ids": [],
+      "confidence": 0.72
+    },
+    {
+      "conclusion_id": "C2",
+      "statement": "正式中报相对7月预告没有明显Headline Surprise；真正的Forward Surprise是年度盈利预测在披露后继续上修，但股价相对沪深300的领先幅度更大，市场已计入较多利好。",
+      "type": "secondary",
+      "fact_ids": [],
+      "driver_ids": [],
+      "source_ids": [],
+      "confidence": 0.72
+    },
+    {
+      "conclusion_id": "C3",
+      "statement": "基本面改善，股票赔率中性偏多，置信度中等。未来判断取决于油煤价差、内蒙古成本兑现、宁东四期进度和预测修订方向。",
+      "type": "primary",
+      "fact_ids": [],
+      "driver_ids": [],
+      "source_ids": [],
+      "confidence": 0.72
+    }
+  ],
+  "risks": [
+    "2026H1/Q2 pre-earnings professional consensus snapshot unavailable from current iFinD fields",
+    "2026H1 results briefing scheduled for 2026-09-17 and therefore pending"
+  ],
+  "watchpoints": [],
+  "sources": [
+    {
+      "source_id": "S4799d8efba",
+      "title": "iFinD MCP licensed dataset; retrieved 2026-09-06",
+      "source_type": "structured_data",
+      "provider": "iFinD MCP",
+      "url": null,
+      "published_at": null,
+      "accessed_at": null,
+      "notes": "evidence_id=E001; basis=consolidated"
+    },
+    {
+      "source_id": "Sa247e9860f",
+      "title": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12490274&stockid=600989",
+      "source_type": "company_filing",
+      "provider": null,
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12490274&stockid=600989",
+      "published_at": null,
+      "accessed_at": null,
+      "notes": "evidence_id=E048; basis=consolidated"
+    },
+    {
+      "source_id": "S0006986d15",
+      "title": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12442017&stockid=600989",
+      "source_type": "company_filing",
+      "provider": null,
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12442017&stockid=600989",
+      "published_at": null,
+      "accessed_at": null,
+      "notes": "evidence_id=E100; basis=consolidated"
+    }
+  ],
+  "quality": {
+    "date_verified": true,
+    "fiscal_period_verified": true,
+    "consensus_verified": false,
+    "intraday_granularity": null,
+    "unresolved_conflicts": [],
+    "warnings": [
+      "部分报告期专业一致预期快照缺失，预期差结论保留口径限制。"
+    ]
+  },
+  "provenance": {
+    "orchestrator": "deerflow",
+    "project_owners": [
+      "earnings-analysis"
+    ],
+    "capabilities_used": [
+      "earnings_research",
+      "ifind_company_data"
+    ],
+    "skills_used": [
+      "earnings-analysis",
+      "fundamental-review",
+      "analyst-dream-team-router"
+    ],
+    "tools_used": [
+      "iFinD MCP"
+    ],
+    "knowledge_refs": [
+      "data/fact_pack.json:sha256:1266fb00cb92c1df825788d25bdec4c6d1416585d60b8303cd2edff6a146b300",
+      "data/expectation_pack.json:sha256:43e1cb11c294f3c7a97854e2ee624b7f0b4e0088c46d6b86c2a47485a5b94cf0",
+      "data/company_baseline.json:sha256:9c7a2ce465c48f6106eb4ceaebda8ad3b0d15807a25aba2f4e6716334abba84b",
+      "data/calculation_pack.json:sha256:6f69a7899f5c4c73997bb6e065efa37a10af0909b2d4fc597814ff0664fea3ad",
+      "data/research_output.json:sha256:4078312075217f7b461828436bf7b56ad4ba89cc7593aa50f3ccc4e4427c61f7",
+      "research/final_research.md:sha256:9f4a85a42e44a70e0420290599f97b17c12a1e3e99946a28018db4856d1df9bf"
+    ]
+  }
+}

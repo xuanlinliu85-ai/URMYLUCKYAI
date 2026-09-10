@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "company": "SAMPLECO",
+  "period": "Q2 FY2027",
+  "calculations": [
+    {
+      "calculation_id": "C001",
+      "op": "pct_change",
+      "result": 19.999999999999996,
+      "inputs": {
+        "id": "C001",
+        "op": "pct_change",
+        "current": {
+          "metric": "revenue",
+          "period": "Q2 FY2027"
+        },
+        "previous": {
+          "metric": "revenue",
+          "period": "Q2 FY2026"
+        }
+      }
+    },
+    {
+      "calculation_id": "C002",
+      "op": "ratio",
+      "result": 1.1,
+      "inputs": {
+        "id": "C002",
+        "op": "ratio",
+        "numerator": {
+          "metric": "cfo",
+          "period": "Q2 FY2027"
+        },
+        "denominator": {
+          "metric": "net_income",
+          "period": "Q2 FY2027"
+        }
+      }
+    }
+  ]
+}

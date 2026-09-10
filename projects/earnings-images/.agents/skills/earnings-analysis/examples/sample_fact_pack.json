@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "company": "SAMPLECO",
+  "ticker": "SAMP",
+  "market": "US",
+  "period": "Q2 FY2027",
+  "as_of": "2026-09-02",
+  "reporting_basis": "consolidated",
+  "currency": "USD",
+  "latest_reported_period": "Q2 FY2027",
+  "latest_report_publication_date": "2026-08-28",
+  "datapoints": [
+    {
+      "metric": "revenue",
+      "value": 120.0,
+      "unit": "million",
+      "currency": "USD",
+      "period": "Q2 FY2027",
+      "basis": "consolidated",
+      "source": "Sample filing",
+      "source_tier": 1,
+      "evidence_id": "E001"
+    },
+    {
+      "metric": "revenue",
+      "value": 100.0,
+      "unit": "million",
+      "currency": "USD",
+      "period": "Q2 FY2026",
+      "basis": "consolidated",
+      "source": "Sample filing prior year",
+      "source_tier": 1,
+      "evidence_id": "E002"
+    },
+    {
+      "metric": "net_income",
+      "value": 20.0,
+      "unit": "million",
+      "currency": "USD",
+      "period": "Q2 FY2027",
+      "basis": "consolidated",
+      "source": "Sample filing",
+      "source_tier": 1,
+      "evidence_id": "E003"
+    },
+    {
+      "metric": "cfo",
+      "value": 22.0,
+      "unit": "million",
+      "currency": "USD",
+      "period": "Q2 FY2027",
+      "basis": "consolidated",
+      "source": "Sample filing",
+      "source_tier": 1,
+      "evidence_id": "E004"
+    }
+  ],
+  "calculations_requested": [
+    {
+      "id": "C001",
+      "op": "pct_change",
+      "current": {
+        "metric": "revenue",
+        "period": "Q2 FY2027"
+      },
+      "previous": {
+        "metric": "revenue",
+        "period": "Q2 FY2026"
+      }
+    },
+    {
+      "id": "C002",
+      "op": "ratio",
+      "numerator": {
+        "metric": "cfo",
+        "period": "Q2 FY2027"
+      },
+      "denominator": {
+        "metric": "net_income",
+        "period": "Q2 FY2027"
+      }
+    }
+  ]
+}
