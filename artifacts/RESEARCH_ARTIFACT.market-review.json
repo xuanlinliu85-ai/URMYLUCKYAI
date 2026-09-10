@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_id": "market-review-2026-09-09",
+  "artifact_type": "market_review",
+  "title": "2026-09-09 A股收盘复盘",
+  "as_of": "2026-09-09T15:00:00+08:00",
+  "generated_at": "2026-09-09T15:58:59.894Z",
+  "subject": {
+    "kind": "market",
+    "name": "A股",
+    "identifiers": {},
+    "market": "CN",
+    "period": "full_session"
+  },
+  "request": {
+    "user_goal": "复用 Daily Review 已完成的数据采集与分类结果，生成统一研究底稿",
+    "requested_outputs": [
+      "wechat_article",
+      "infographic",
+      "ppt",
+      "website"
+    ],
+    "constraints": [
+      "下游只消费已验证事实",
+      "保持事实与推断分离"
+    ]
+  },
+  "facts": [
+    {
+      "fact_id": "F1",
+      "statement": "上证指数收盘数据",
+      "value": 0.2781337630533818,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F2",
+      "statement": "深证成指收盘数据",
+      "value": 0.1467831474206593,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F3",
+      "statement": "创业板指收盘数据",
+      "value": -0.1412768432327005,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F4",
+      "statement": "上证50收盘数据",
+      "value": 0.0550055005500518,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F5",
+      "statement": "沪深300收盘数据",
+      "value": 0.3040313770910511,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "statement": "中证500收盘数据",
+      "value": -0.0337162660393539,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F7",
+      "statement": "中证1000收盘数据",
+      "value": -0.1411299008696198,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F8",
+      "statement": "科创50收盘数据",
+      "value": -0.6876178504085515,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F9",
+      "statement": "创业板50收盘数据",
+      "value": -0.0554654587610748,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F10",
+      "statement": "中证A500收盘数据",
+      "value": 0.2595008205980716,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F11",
+      "statement": "中证800收盘数据",
+      "value": 0.2118146367437829,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F12",
+      "statement": "中证全指收盘数据",
+      "value": 0.0727937381710203,
+      "unit": null,
+      "timestamp": "2026-09-09T15:00:00+08:00",
+      "status": "verified",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "fact_id": "F13",
+      "statement": "iFinD MCP 兼容性审计通过",
+      "value": true,
+      "unit": null,
+      "timestamp": "2026-09-09T11:34:12.614Z",
+      "status": "verified",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "timeline": [],
+  "drivers": [],
+  "conclusions": [
+    {
+      "conclusion_id": "C1",
+      "statement": "成交归因已生成，主题结构以 attribution-snapshot 为准。",
+      "type": "primary",
+      "fact_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "driver_ids": [],
+      "source_ids": [
+        "S1"
+      ],
+      "confidence": 0.8
+    }
+  ],
+  "risks": [],
+  "watchpoints": [],
+  "sources": [
+    {
+      "source_id": "S1",
+      "title": "Daily Review snapshot bundle",
+      "source_type": "structured_data",
+      "provider": "Daily Review",
+      "url": null,
+      "published_at": "2026-09-09",
+      "accessed_at": "2026-09-09T15:58:59.897Z",
+      "notes": "sha256:fd9b30c0fbe5e3b1e9d7900676fbb0757aac403b784d1a816ce803adbb27b3a4"
+    },
+    {
+      "source_id": "S2",
+      "title": "iFinD MCP compatibility audit",
+      "source_type": "structured_data",
+      "provider": "iFinD MCP",
+      "url": null,
+      "published_at": "2026-09-09T11:34:12.614Z",
+      "accessed_at": "2026-09-09T15:58:59.909Z",
+      "notes": "tools=lookup_field_reference,get_stock_list,THS_HQ,THS_RQ,THS_DR,THS_DateQuery"
+    }
+  ],
+  "quality": {
+    "date_verified": true,
+    "fiscal_period_verified": null,
+    "consensus_verified": null,
+    "intraday_granularity": "daily_close",
+    "unresolved_conflicts": [],
+    "warnings": []
+  },
+  "provenance": {
+    "orchestrator": "deerflow",
+    "project_owners": [
+      "daily-review"
+    ],
+    "capabilities_used": [
+      "a_share_market_review",
+      "ifind_market_data"
+    ],
+    "skills_used": [
+      "market-daily-review"
+    ],
+    "tools_used": [
+      "lookup_field_reference",
+      "get_stock_list",
+      "THS_HQ",
+      "THS_RQ",
+      "THS_DR",
+      "THS_DateQuery"
+    ],
+    "knowledge_refs": [
+      "public/market-snapshot.json",
+      "public/dashboard-snapshot.json",
+      "public/attribution-snapshot.json",
+      "public/turnover-template.json"
+    ]
+  }
+}

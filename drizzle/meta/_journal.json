@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1785067926434,
+      "tag": "0000_fast_lady_bullseye",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1786168641938,
+      "tag": "0001_jazzy_paper_doll",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789047566755,
+      "tag": "0002_slow_viper",
+      "breakpoints": true
+    }
+  ]
+}
