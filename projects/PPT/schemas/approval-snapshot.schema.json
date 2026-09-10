@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "title": "PPT Factory Approval Snapshot", "type": "object", "additionalProperties": false,
+  "required": ["schema", "requestId", "binding", "status", "revision", "lastEventHash", "decisionHash", "snapshotHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/approval-snapshot/v1" }, "requestId": { "type": "string" }, "binding": { "$ref": "approval-request.schema.json#/$defs/binding" },
+    "status": { "enum": ["pending", "approved", "rejected"] }, "revision": { "type": "integer", "minimum": 0, "maximum": 1 },
+    "lastEventHash": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[a-f0-9]{64}$" }] },
+    "decisionHash": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[a-f0-9]{64}$" }] }, "snapshotHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

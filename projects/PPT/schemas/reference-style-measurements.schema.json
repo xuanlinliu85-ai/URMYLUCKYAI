@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Reference Style Measurements",
+  "type": "object",
+  "properties": {
+    "schema": { "const": "ppt-factory/reference-style-measurements/v1" },
+    "method": { "const": "deterministic-ooxml" },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "typography": {
+          "allOf": [{ "$ref": "#/$defs/typographyRoles" }],
+          "properties": {
+            "cjkRuns": { "type": "integer", "minimum": 0 },
+            "hierarchy": { "type": "object", "properties": { "titleToBodyRatio": { "type": "number", "minimum": 0 } }, "required": ["titleToBodyRatio"] }
+          },
+          "required": ["cjkRuns", "hierarchy"]
+        },
+        "density": {
+          "type": "object",
+          "properties": {
+            "meanInformationScore": { "$ref": "#/$defs/ratio" }, "meanVisualScore": { "$ref": "#/$defs/ratio" },
+            "sparseSlides": { "type": "integer", "minimum": 0 }, "balancedSlides": { "type": "integer", "minimum": 0 }, "denseSlides": { "type": "integer", "minimum": 0 }
+          },
+          "required": ["meanInformationScore", "meanVisualScore", "sparseSlides", "balancedSlides", "denseSlides"]
+        },
+        "whitespace": {
+          "type": "object",
+          "properties": { "meanOccupiedAreaRatio": { "$ref": "#/$defs/ratio" }, "meanWhitespaceRatio": { "$ref": "#/$defs/ratio" }, "method": { "const": "ooxml-bounded-union" } },
+          "required": ["meanOccupiedAreaRatio", "meanWhitespaceRatio", "method"]
+        },
+        "charts": {
+          "type": "object",
+          "properties": { "count": { "type": "integer", "minimum": 0 }, "slidesWithCharts": { "type": "integer", "minimum": 0 }, "defaultTreatment": { "$ref": "#/$defs/chartTreatmentSummary" } },
+          "required": ["count", "slidesWithCharts", "defaultTreatment"]
+        }
+      },
+      "required": ["typography", "density", "whitespace", "charts"]
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slide": { "type": "integer", "minimum": 1 },
+          "typography": {
+            "allOf": [{ "$ref": "#/$defs/typographyRoles" }],
+            "properties": { "cjkRuns": { "type": "integer", "minimum": 0 } },
+            "required": ["cjkRuns"]
+          },
+          "density": {
+            "type": "object",
+            "properties": {
+              "informationScore": { "$ref": "#/$defs/ratio" }, "visualScore": { "$ref": "#/$defs/ratio" }, "label": { "enum": ["sparse", "balanced", "dense"] },
+              "textCharacters": { "type": "integer", "minimum": 0 }, "objectCount": { "type": "integer", "minimum": 0 }, "imageCount": { "type": "integer", "minimum": 0 }, "chartCount": { "type": "integer", "minimum": 0 }
+            },
+            "required": ["informationScore", "visualScore", "label", "textCharacters", "objectCount", "imageCount", "chartCount"]
+          },
+          "whitespace": {
+            "type": "object",
+            "properties": { "occupiedAreaRatio": { "$ref": "#/$defs/ratio" }, "whitespaceRatio": { "$ref": "#/$defs/ratio" }, "method": { "const": "ooxml-bounded-union" } },
+            "required": ["occupiedAreaRatio", "whitespaceRatio", "method"]
+          },
+          "charts": { "type": "object", "properties": { "count": { "type": "integer", "minimum": 0 }, "treatments": { "type": "array", "items": { "$ref": "#/$defs/chartTreatment" } } }, "required": ["count", "treatments"] }
+        },
+        "required": ["slide", "typography", "density", "whitespace", "charts"]
+      }
+    }
+  },
+  "required": ["schema", "method", "summary", "slides"],
+  "$defs": {
+    "ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+    "fontStats": {
+      "type": "object",
+      "properties": { "count": { "type": "integer", "minimum": 0 }, "min": { "type": "number", "minimum": 0 }, "max": { "type": "number", "minimum": 0 }, "mean": { "type": "number", "minimum": 0 }, "median": { "type": "number", "minimum": 0 }, "p25": { "type": "number", "minimum": 0 }, "p75": { "type": "number", "minimum": 0 } },
+      "required": ["count", "min", "max", "mean", "median", "p25", "p75"]
+    },
+    "roleTypography": {
+      "type": "object",
+      "properties": { "count": { "type": "integer", "minimum": 0 }, "fontSizePt": { "$ref": "#/$defs/fontStats" }, "families": { "type": "array", "items": { "type": "object", "properties": { "family": { "type": "string" }, "count": { "type": "integer", "minimum": 1 } }, "required": ["family", "count"] } }, "cjkRuns": { "type": "integer", "minimum": 0 } },
+      "required": ["count", "fontSizePt", "families", "cjkRuns"]
+    },
+    "typographyRoles": {
+      "type": "object",
+      "properties": { "title": { "$ref": "#/$defs/roleTypography" }, "body": { "$ref": "#/$defs/roleTypography" }, "caption": { "$ref": "#/$defs/roleTypography" }, "kpi": { "$ref": "#/$defs/roleTypography" } },
+      "required": ["title", "body", "caption", "kpi"]
+    },
+    "chartTreatmentSummary": {
+      "type": "object",
+      "properties": { "type": { "type": "string" }, "dataLabels": { "type": "string" }, "legend": { "type": "string" }, "gridlines": { "enum": ["major", "none"] }, "seriesColorMode": { "enum": ["explicit", "theme"] } },
+      "required": ["type", "dataLabels", "legend", "gridlines", "seriesColorMode"]
+    },
+    "chartTreatment": {
+      "allOf": [{ "$ref": "#/$defs/chartTreatmentSummary" }],
+      "properties": { "styleId": { "type": "string" }, "explicitSeriesColors": { "type": "array", "items": { "type": "string", "pattern": "^[0-9A-F]{6}$" } } },
+      "required": ["styleId", "explicitSeriesColors"]
+    }
+  }
+}

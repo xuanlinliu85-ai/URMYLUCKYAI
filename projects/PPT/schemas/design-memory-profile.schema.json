@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ppt-factory/design-memory-profile.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "profileId", "scope", "sourceHashes", "sourceRevisions", "policy", "explicitEvidence", "learned", "withheld", "profileHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/design-memory-profile/v1" },
+    "profileId": { "type": "string", "pattern": "^design_memory_[a-f0-9]{24}$" },
+    "scope": { "$ref": "#/$defs/scope" },
+    "sourceHashes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["stylePacks", "preferenceJournal", "preferenceProfile", "semanticIndex", "preferenceSnapshot"],
+      "properties": {
+        "stylePacks": { "$ref": "#/$defs/hash" }, "goldenSlides": { "$ref": "#/$defs/hash" },
+        "preferenceJournal": { "$ref": "#/$defs/hash" }, "preferenceProfile": { "$ref": "#/$defs/hash" },
+        "learningJournal": { "$ref": "#/$defs/hash" }, "learnedProfile": { "$ref": "#/$defs/hash" },
+        "proposal": { "$ref": "#/$defs/hash" }, "decisions": { "$ref": "#/$defs/hash" }, "trustedLearningArtifacts": { "$ref": "#/$defs/hash" }, "semanticIndex": { "$ref": "#/$defs/hash" },
+        "preferenceSnapshot": { "$ref": "#/$defs/hash" }, "learningSnapshot": { "$ref": "#/$defs/hash" }, "decisionSnapshot": { "$ref": "#/$defs/hash" }
+      }
+    },
+    "sourceRevisions": {
+      "type": "object", "additionalProperties": false, "required": ["preference"],
+      "properties": { "preference": { "type": "integer", "minimum": 0 }, "learning": { "type": "integer", "minimum": 0 }, "decisions": { "type": "integer", "minimum": 0 } }
+    },
+    "policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["automaticDesignChanges", "requiresExplicitDownstreamOptIn", "ranking", "learnedAuthority"],
+      "properties": {
+        "automaticDesignChanges": { "const": false }, "requiresExplicitDownstreamOptIn": { "const": true },
+        "ranking": { "const": "deterministic-explicit-preference" },
+        "learnedAuthority": { "const": "conflict-free-exact-proposal-acceptance" }
+      }
+    },
+    "explicitEvidence": { "type": "array", "items": { "$ref": "#/$defs/explicitEvidence" } },
+    "learned": { "type": "array", "items": { "$ref": "#/$defs/learned" } },
+    "withheld": { "type": "array", "items": { "$ref": "#/$defs/withheld" } },
+    "profileHash": { "$ref": "#/$defs/hash" }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "scope": {
+      "type": "object", "additionalProperties": false, "required": ["kind", "projectId", "userKey"],
+      "properties": { "kind": { "const": "local-project-user-placeholder" }, "projectId": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" }, "userKey": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" } }
+    },
+    "explicitEvidence": {
+      "type": "object", "additionalProperties": false, "required": ["subject", "searchDocumentId", "counts", "weightedTotal", "signal", "latestSequence", "evidence"],
+      "properties": {
+        "subject": { "type": "object", "additionalProperties": false, "required": ["artifactType", "id", "version"], "properties": { "artifactType": { "enum": ["golden_slide", "style_pack"] }, "id": { "type": "string" }, "version": { "type": "string" } } },
+        "searchDocumentId": { "type": "string" }, "counts": { "type": "object", "additionalProperties": false, "required": ["favorite", "use", "reject"], "properties": { "favorite": { "type": "integer", "minimum": 0 }, "use": { "type": "integer", "minimum": 0 }, "reject": { "type": "integer", "minimum": 0 } } },
+        "weightedTotal": { "type": "number" }, "signal": { "type": "number", "minimum": -100, "maximum": 100 }, "latestSequence": { "type": "integer", "minimum": 1 }, "evidence": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "learned": {
+      "type": "object", "additionalProperties": false, "required": ["recommendationId", "dimension", "path", "kind", "confidence", "evidenceCount", "independentDeckVersions", "decayedWeight", "competingWeight", "evidence", "authorization"],
+      "properties": { "recommendationId": { "type": "string" }, "dimension": { "type": "string" }, "path": { "type": "string" }, "kind": { "enum": ["categorical-value", "numeric-direction"] }, "value": {}, "direction": { "enum": ["increase", "decrease"] }, "recommendedValue": { "type": "number" }, "confidence": { "type": "number" }, "evidenceCount": { "type": "integer" }, "independentDeckVersions": { "type": "integer" }, "decayedWeight": { "type": "number" }, "competingWeight": { "type": "number" }, "evidence": { "type": "array", "items": { "type": "string" } }, "authorization": { "enum": ["authorized", "rejected", "pending", "conflicting"] }, "decisionId": { "type": "string" } }
+    },
+    "withheld": {
+      "type": "object", "additionalProperties": false, "required": ["dimension", "path", "candidate", "confidence", "evidenceCount", "reason", "evidence"],
+      "properties": { "dimension": { "type": "string" }, "path": { "type": "string" }, "candidate": { "type": "string" }, "confidence": { "type": "number" }, "evidenceCount": { "type": "integer" }, "reason": { "enum": ["minimum-evidence", "low-confidence", "conflicting-evidence"] }, "evidence": { "type": "array", "items": { "type": "string" } } }
+    }
+  }
+}

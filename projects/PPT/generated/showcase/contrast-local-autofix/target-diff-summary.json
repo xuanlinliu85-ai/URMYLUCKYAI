@@ -1,0 +1,21 @@
+{
+  "projectId": "project_1c9074d9-259e-422d-b203-0c404bf87989",
+  "targetObjects": 29,
+  "colorsChanged": 29,
+  "geometryPreserved": true,
+  "fontSizesPreserved": true,
+  "textPreserved": true,
+  "before": {
+    "status": "REVIEW",
+    "overall": 88,
+    "contrastScore": 95.5,
+    "failingObjects": 29
+  },
+  "after": {
+    "status": "PASS",
+    "overall": 93,
+    "contrastScore": 100,
+    "failingObjects": 0
+  },
+  "rolledBack": false
+}

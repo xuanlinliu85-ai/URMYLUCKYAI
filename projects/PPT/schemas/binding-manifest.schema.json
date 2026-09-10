@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Binding Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "source", "status", "resolvedKeys", "unresolvedKeys", "targets", "resolutionHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/binding-manifest/v1" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "name", "inputHash"],
+      "properties": {
+        "format": { "enum": ["json", "csv"] },
+        "name": { "type": "string", "minLength": 1 },
+        "inputHash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "rows": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "status": { "enum": ["resolved", "error"] },
+    "resolvedKeys": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "unresolvedKeys": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "slideIndex", "objectName", "kind", "keys", "status"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "slideIndex": { "type": "integer", "minimum": 1 },
+          "objectName": { "type": "string", "minLength": 1 },
+          "kind": { "enum": ["text", "chart"] },
+          "keys": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "status": { "enum": ["resolved", "unresolved"] },
+          "unresolvedKeys": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "resolved": {}
+        }
+      }
+    },
+    "resolutionHash": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  }
+}

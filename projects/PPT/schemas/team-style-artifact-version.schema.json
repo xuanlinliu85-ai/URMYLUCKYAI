@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "team-style-artifact-version.schema.json",
+  "title": "PPT Factory Team Style Artifact Version",
+  "type": "object",
+  "required": ["schema", "tenantId", "teamId", "artifactType", "artifactId", "version", "name", "state", "contentHash", "content", "provenance"],
+  "properties": {
+    "schema": { "const": "ppt-factory/team-style-artifact-version/v1" },
+    "tenantId": { "$ref": "#/$defs/id" },
+    "teamId": { "$ref": "#/$defs/id" },
+    "artifactType": { "enum": ["style_pack", "golden_slide", "brand_policy"] },
+    "artifactId": { "$ref": "#/$defs/artifactId" },
+    "version": { "$ref": "#/$defs/version" },
+    "name": { "type": "string", "minLength": 1 },
+    "state": { "enum": ["published", "archived"] },
+    "contentHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "content": {
+      "oneOf": [
+        { "$ref": "style-pack.schema.json#/$defs/stylePackVersion" },
+        { "$ref": "#/$defs/goldenSnapshot" },
+        { "$ref": "brand-policy.schema.json" }
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["sourceArtifactId", "parentVersion", "parentContentHash", "publishedBy", "publishedAt"],
+      "properties": {
+        "sourceProjectId": { "type": "string" },
+        "sourceArtifactId": { "$ref": "#/$defs/artifactId" },
+        "sourceVersion": { "$ref": "#/$defs/version" },
+        "sourceContentHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "parentVersion": { "oneOf": [{ "$ref": "#/$defs/version" }, { "type": "null" }] },
+        "parentContentHash": { "oneOf": [{ "type": "string", "pattern": "^[a-f0-9]{64}$" }, { "type": "null" }] },
+        "publishedBy": { "$ref": "#/$defs/id" },
+        "publishedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "archivedBy": { "$ref": "#/$defs/id" },
+    "archivedAt": { "type": "string", "format": "date-time" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "state": { "const": "archived" } } },
+      "then": { "required": ["archivedBy", "archivedAt"] },
+      "else": { "not": { "anyOf": [{ "required": ["archivedBy"] }, { "required": ["archivedAt"] }] } }
+    },
+    {
+      "if": { "properties": { "artifactType": { "const": "style_pack" } } },
+      "then": { "properties": { "content": { "$ref": "style-pack.schema.json#/$defs/stylePackVersion" } } }
+    },
+    {
+      "if": { "properties": { "artifactType": { "const": "golden_slide" } } },
+      "then": { "properties": { "content": { "$ref": "#/$defs/goldenSnapshot" } } }
+    },
+    {
+      "if": { "properties": { "artifactType": { "const": "brand_policy" } } },
+      "then": { "properties": { "content": { "$ref": "brand-policy.schema.json" } } }
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": { "type": "string", "maxLength": 80, "pattern": "^[a-zA-Z0-9_-]+$" },
+    "artifactId": { "type": "string", "maxLength": 120, "pattern": "^[a-zA-Z0-9_\\-\\u3400-\\u9fff]+$" },
+    "version": { "type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$" },
+    "score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "goldenSnapshot": {
+      "type": "object",
+      "required": ["schema", "referenceStyleId", "sourceFile", "candidate"],
+      "properties": {
+        "schema": { "const": "ppt-factory/team-golden-slide-snapshot/v1" },
+        "referenceStyleId": { "type": "string", "minLength": 1 },
+        "sourceFile": { "type": "string", "minLength": 1 },
+        "candidate": {
+          "type": "object",
+          "required": ["id", "sourceSlide", "role", "layoutFamily", "density", "hasChart", "score", "candidateThreshold", "eligible", "dimensionScores", "evidence"],
+          "properties": {
+            "id": { "$ref": "#/$defs/id" },
+            "sourceSlide": { "type": "integer", "minimum": 1 },
+            "role": { "enum": ["cover", "agenda_section", "summary", "evidence_data", "comparison", "process_timeline", "closing", "other"] },
+            "layoutFamily": { "enum": ["COVER", "SECTION", "EXEC_SUMMARY", "DATA_LEFT_TEXT_RIGHT", "TEXT_LEFT_DATA_RIGHT", "FULL_CHART", "FULL_TABLE", "BIG_NUMBER", "TWO_COLUMN", "HERO_IMAGE", "COMPARISON", "PROCESS_TIMELINE", "OTHER"] },
+            "density": { "enum": ["sparse", "balanced", "dense"] },
+            "hasChart": { "type": "boolean" },
+            "score": { "$ref": "#/$defs/score" },
+            "candidateThreshold": { "$ref": "#/$defs/score" },
+            "eligible": { "const": true },
+            "dimensionScores": {
+              "type": "object",
+              "required": ["layoutQuality", "clarity", "reusability", "styleRepresentativeness", "hierarchy", "balance"],
+              "properties": {
+                "layoutQuality": { "$ref": "#/$defs/score" },
+                "clarity": { "$ref": "#/$defs/score" },
+                "reusability": { "$ref": "#/$defs/score" },
+                "styleRepresentativeness": { "$ref": "#/$defs/score" },
+                "hierarchy": { "$ref": "#/$defs/score" },
+                "balance": { "$ref": "#/$defs/score" }
+              },
+              "additionalProperties": false
+            },
+            "evidence": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

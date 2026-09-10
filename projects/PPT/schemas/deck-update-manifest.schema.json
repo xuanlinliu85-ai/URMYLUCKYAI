@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Deck Update Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "updateId", "status", "source", "output", "planHash", "lockedDimensions", "changes", "preservation"],
+  "properties": {
+    "schema": { "const": "ppt-factory/deck-update-manifest/v1" },
+    "updateId": { "type": "string", "minLength": 1 },
+    "status": { "const": "applied" },
+    "source": { "$ref": "#/$defs/version" },
+    "output": { "$ref": "#/$defs/version" },
+    "planHash": { "$ref": "#/$defs/hash" },
+    "lockedDimensions": { "type": "array", "uniqueItems": true, "items": { "enum": ["typography", "color", "layout", "chart", "density", "composition", "storytelling", "visualTone"] } },
+    "changes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["targetId", "slideIndex", "stableId", "objectId", "objectName", "kind", "match", "beforeHash", "afterHash", "status"],
+        "properties": {
+          "targetId": { "type": "string", "minLength": 1 },
+          "slideIndex": { "type": "integer", "minimum": 1 },
+          "stableId": { "type": "string", "minLength": 1 },
+          "objectId": { "type": "integer", "minimum": 1 },
+          "objectName": { "type": "string" },
+          "kind": { "enum": ["text", "chart"] },
+          "match": { "enum": ["stable-id", "exact-name"] },
+          "beforeHash": { "$ref": "#/$defs/hash" },
+          "afterHash": { "$ref": "#/$defs/hash" },
+          "status": { "const": "applied" }
+        }
+      }
+    },
+    "preservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["untouchedObjects", "untouchedObjectsStable", "unchangedZipEntries", "changedParts"],
+      "properties": {
+        "untouchedObjects": { "type": "integer", "minimum": 0 },
+        "untouchedObjectsStable": { "const": true },
+        "unchangedZipEntries": { "type": "integer", "minimum": 0 },
+        "changedParts": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      }
+    }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["versionId", "filename", "sha256", "slides"],
+      "properties": {
+        "versionId": { "type": "string", "minLength": 1 },
+        "filename": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/hash" },
+        "projectId": { "type": "string", "minLength": 1 },
+        "slides": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

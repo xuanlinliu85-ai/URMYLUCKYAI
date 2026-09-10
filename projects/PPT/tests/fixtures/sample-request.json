@@ -1,0 +1,40 @@
+{
+  "preview": false,
+  "direction": "A",
+  "controls": {
+    "referenceStrength": 70,
+    "minimalism": 65,
+    "modernity": 70,
+    "airiness": 65,
+    "visualWeight": 60,
+    "technologyTone": 25,
+    "visualImpact": 55,
+    "locks": { "typography": false, "colors": false, "layout": false }
+  },
+  "style": {
+    "styleId": "fixture-style",
+    "name": "Fixture Style",
+    "sourceType": "reference",
+    "version": "1.0.0",
+    "styleVector": { "minimalism": 0.65, "modernity": 0.7, "density": 0.4 },
+    "typography": { "primary": "Microsoft YaHei" },
+    "colors": { "primary": "A34720", "background": "FFFDF8" },
+    "grid": {}, "composition": {}, "charts": {}, "visuals": {}, "storytelling": {}, "density": {},
+    "preferredLayouts": [], "antiPatterns": []
+  },
+  "storyline": {
+    "thesis": "从可验证的业务价值切入，建立可扩展的数字化增长路径",
+    "audience": "业务决策者",
+    "purpose": "形成可执行的决策建议",
+    "sourceSummary": "本地测试材料",
+    "slides": [
+      { "slideIndex": 1, "role": "cover", "message": "从可验证的业务价值切入，建立可扩展的数字化增长路径", "supportingPoints": ["Phase 1 本地闭环测试"] },
+      { "slideIndex": 2, "role": "executive_summary", "message": "核心判断与关键依据", "supportingPoints": ["聚焦高频且可量化的场景", "建立效率、质量与风险三类基线", "通过小范围试点验证方案", "验证后再扩大覆盖范围"] },
+      { "slideIndex": 3, "role": "evidence", "message": "材料信息量支持优先级判断", "supportingPoints": ["业务价值与落地确定性", "数据资产与复用能力", "跨部门协同效率"] },
+      { "slideIndex": 4, "role": "strategy", "message": "以三阶段路径降低实施风险", "supportingPoints": ["定义场景与基线", "运行试点并复盘", "复制到相邻业务单元"] },
+      { "slideIndex": 5, "role": "conclusion", "message": "先验证，再扩张", "supportingPoints": ["本周确定试点负责人", "两周内完成基线测量", "四周后进行阶段评审"] }
+    ]
+  },
+  "outputDir": "C:\\Users\\urmylucky\\Documents\\ChatGPT\\PPT\\generated\\test-render",
+  "outputPptx": "C:\\Users\\urmylucky\\Documents\\ChatGPT\\PPT\\generated\\test-output.pptx"
+}

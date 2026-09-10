@@ -1,0 +1,18 @@
+{
+  "preview": false,
+  "direction": "B",
+  "controls": { "referenceStrength": 0, "minimalism": 65, "modernity": 70, "airiness": 65, "visualWeight": 60, "technologyTone": 25, "visualImpact": 55, "locks": { "typography": false, "colors": false, "layout": false } },
+  "style": { "styleId": "chart-fixture", "name": "Chart QA fixture", "sourceType": "system", "version": "1", "styleVector": {}, "typography": { "primary": "Microsoft YaHei" }, "colors": { "primary": "#123B5D" }, "grid": {}, "composition": {}, "charts": {}, "visuals": {}, "storytelling": {}, "density": {}, "preferredLayouts": [], "antiPatterns": [] },
+  "storyline": { "thesis": "图表标签验收", "audience": "QA", "purpose": "验证碰撞修复", "sourceSummary": "专用真实 PPTX", "slides": [] },
+  "slidePlans": [
+    { "slideIndex": 1, "role": "evidence", "message": "交付率需要清晰标注", "importance": "high", "density": "medium", "layoutSource": "system_layout", "visualPriority": "chart", "components": ["business_metric_spread"], "renderRoutes": { "business_metric_spread": "native" }, "editableLevel": "native", "content": ["标签必须保持可读"], "metrics": [
+      { "label": "基期", "value": "98%", "numericValue": 98, "unit": "%", "sourceText": "基期准时交付率 98%" },
+      { "label": "一厂", "value": "99%", "numericValue": 99, "unit": "%", "sourceText": "一厂准时交付率 99%" },
+      { "label": "二厂", "value": "97%", "numericValue": 97, "unit": "%", "sourceText": "二厂准时交付率 97%" },
+      { "label": "三厂", "value": "98%", "numericValue": 98, "unit": "%", "sourceText": "三厂准时交付率 98%" },
+      { "label": "四厂", "value": "96%", "numericValue": 96, "unit": "%", "sourceText": "四厂准时交付率 96%" },
+      { "label": "五厂", "value": "99%", "numericValue": 99, "unit": "%", "sourceText": "五厂准时交付率 99%" }
+    ] }
+  ],
+  "qaFixture": { "chartLabelCollision": true }
+}

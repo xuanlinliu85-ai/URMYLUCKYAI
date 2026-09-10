@@ -1,0 +1,399 @@
+{
+  "status": "FAIL",
+  "overall": 86,
+  "readability": 84,
+  "hierarchy": 92,
+  "alignment": 94,
+  "whitespace": 90,
+  "dataVisualization": 72,
+  "styleConsistency": 91,
+  "referenceFidelity": 0,
+  "fidelity": {
+    "mode": "unavailable",
+    "overall": 0,
+    "target": 0,
+    "passed": false,
+    "referenceSlides": 0,
+    "outputSlides": 0,
+    "dimensions": {
+      "typography": {
+        "score": 0,
+        "target": 0,
+        "weight": 20,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      },
+      "color": {
+        "score": 0,
+        "target": 0,
+        "weight": 15,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      },
+      "layout": {
+        "score": 0,
+        "target": 0,
+        "weight": 20,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      },
+      "chartStyle": {
+        "score": 0,
+        "target": 0,
+        "weight": 15,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      },
+      "density": {
+        "score": 0,
+        "target": 0,
+        "weight": 10,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      },
+      "composition": {
+        "score": 0,
+        "target": 0,
+        "weight": 10,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      },
+      "storytelling": {
+        "score": 0,
+        "target": 0,
+        "weight": 5,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      },
+      "visualTone": {
+        "score": 0,
+        "target": 0,
+        "weight": 5,
+        "passed": false,
+        "locked": false,
+        "evidence": "render evidence unavailable"
+      }
+    }
+  },
+  "technical": {
+    "contrast": {
+      "score": 100,
+      "target": 100,
+      "passed": true,
+      "checkedObjects": 6,
+      "failingObjects": 0,
+      "findings": [
+        {
+          "slide": 1,
+          "objectName": "direction-label",
+          "foregroundColor": "#616E7E",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.75,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "page-number",
+          "foregroundColor": "#616E7E",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.75,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "slide-title",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-delta-label",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#0B2239",
+          "ratio": 5.34,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-delta",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-decision-copy",
+          "foregroundColor": "#D5E0E8",
+          "backgroundColor": "#0B2239",
+          "ratio": 12.02,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        }
+      ]
+    },
+    "chartLabelCollision": {
+      "score": 0,
+      "target": 100,
+      "passed": false,
+      "checkedCharts": 1,
+      "checkedLabels": 6,
+      "failingLabels": 6,
+      "findings": [
+        {
+          "slide": 1,
+          "objectName": "metric-rate-chart",
+          "label": "准时交付率:基期",
+          "bbox": [
+            146.11,
+            205.1,
+            89.28,
+            60
+          ],
+          "chartBbox": [
+            112,
+            230,
+            260,
+            285
+          ],
+          "defects": [
+            "chart-bounds",
+            "label-collision"
+          ],
+          "collidedWith": [
+            "准时交付率:一厂",
+            "准时交付率:二厂"
+          ],
+          "passed": false,
+          "recommended": {
+            "chartLabelPosition": "outEnd",
+            "chartLabelFontSize": 14,
+            "chartLabelDisplayStrategy": "all"
+          },
+          "evidence": "layout-chart-metadata"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-rate-chart",
+          "label": "准时交付率:一厂",
+          "bbox": [
+            173.61,
+            203.05,
+            89.28,
+            60
+          ],
+          "chartBbox": [
+            112,
+            230,
+            260,
+            285
+          ],
+          "defects": [
+            "chart-bounds",
+            "label-collision"
+          ],
+          "collidedWith": [
+            "准时交付率:基期",
+            "准时交付率:二厂",
+            "准时交付率:三厂"
+          ],
+          "passed": false,
+          "recommended": {
+            "chartLabelPosition": "outEnd",
+            "chartLabelFontSize": 14,
+            "chartLabelDisplayStrategy": "all"
+          },
+          "evidence": "layout-chart-metadata"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-rate-chart",
+          "label": "准时交付率:二厂",
+          "bbox": [
+            201.11,
+            207.15,
+            89.28,
+            60
+          ],
+          "chartBbox": [
+            112,
+            230,
+            260,
+            285
+          ],
+          "defects": [
+            "chart-bounds",
+            "label-collision"
+          ],
+          "collidedWith": [
+            "准时交付率:基期",
+            "准时交付率:一厂",
+            "准时交付率:三厂",
+            "准时交付率:四厂"
+          ],
+          "passed": false,
+          "recommended": {
+            "chartLabelPosition": "outEnd",
+            "chartLabelFontSize": 14,
+            "chartLabelDisplayStrategy": "all"
+          },
+          "evidence": "layout-chart-metadata"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-rate-chart",
+          "label": "准时交付率:三厂",
+          "bbox": [
+            228.61,
+            205.1,
+            89.28,
+            60
+          ],
+          "chartBbox": [
+            112,
+            230,
+            260,
+            285
+          ],
+          "defects": [
+            "chart-bounds",
+            "label-collision"
+          ],
+          "collidedWith": [
+            "准时交付率:一厂",
+            "准时交付率:二厂",
+            "准时交付率:四厂",
+            "准时交付率:五厂"
+          ],
+          "passed": false,
+          "recommended": {
+            "chartLabelPosition": "outEnd",
+            "chartLabelFontSize": 14,
+            "chartLabelDisplayStrategy": "all"
+          },
+          "evidence": "layout-chart-metadata"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-rate-chart",
+          "label": "准时交付率:四厂",
+          "bbox": [
+            256.11,
+            209.2,
+            89.28,
+            60
+          ],
+          "chartBbox": [
+            112,
+            230,
+            260,
+            285
+          ],
+          "defects": [
+            "chart-bounds",
+            "label-collision"
+          ],
+          "collidedWith": [
+            "准时交付率:二厂",
+            "准时交付率:三厂",
+            "准时交付率:五厂"
+          ],
+          "passed": false,
+          "recommended": {
+            "chartLabelPosition": "outEnd",
+            "chartLabelFontSize": 14,
+            "chartLabelDisplayStrategy": "all"
+          },
+          "evidence": "layout-chart-metadata"
+        },
+        {
+          "slide": 1,
+          "objectName": "metric-rate-chart",
+          "label": "准时交付率:五厂",
+          "bbox": [
+            283.61,
+            203.05,
+            89.28,
+            60
+          ],
+          "chartBbox": [
+            112,
+            230,
+            260,
+            285
+          ],
+          "defects": [
+            "chart-bounds",
+            "label-collision"
+          ],
+          "collidedWith": [
+            "准时交付率:三厂",
+            "准时交付率:四厂"
+          ],
+          "passed": false,
+          "recommended": {
+            "chartLabelPosition": "outEnd",
+            "chartLabelFontSize": 14,
+            "chartLabelDisplayStrategy": "all"
+          },
+          "evidence": "layout-chart-metadata"
+        }
+      ]
+    }
+  },
+  "aiLookScore": 16,
+  "issues": [
+    {
+      "id": "repeated-layout",
+      "severity": "warning",
+      "category": "ai-look",
+      "message": "1 of 1 slides share the same structural signature",
+      "autoFixable": true
+    },
+    {
+      "id": "chart-label-collision-1-metric-rate-chart",
+      "severity": "critical",
+      "category": "chart-label-collision",
+      "slide": 1,
+      "message": "metric-rate-chart has 6 chart labels with chart-bounds / label-collision defects",
+      "autoFixable": true,
+      "dimension": "chartLabelCollision",
+      "objectNames": [
+        "metric-rate-chart"
+      ],
+      "adjustments": {
+        "chartLabelPosition": "outEnd",
+        "chartLabelFontSize": 14,
+        "chartLabelDisplayStrategy": "all"
+      }
+    },
+    {
+      "id": "fidelity-unavailable",
+      "severity": "warning",
+      "category": "fidelity",
+      "message": "Reference fidelity could not be measured: ENOENT: no such file or directory, scandir 'C:\\Users\\urmylucky\\Documents\\ChatGPT\\PPT\\.worktrees\\chart-label-collision-repair\\generated\\projects\\project_9a0d3269-3455-4cc2-a00e-97d8a32bf664\\render\\reference'",
+      "autoFixable": false
+    }
+  ],
+  "repairPass": 0
+}

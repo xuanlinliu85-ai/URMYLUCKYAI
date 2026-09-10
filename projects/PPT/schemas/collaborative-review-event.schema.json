@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Collaborative Review Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "sessionId", "sequence", "eventId", "idempotencyKey", "type", "actorId", "actorRole", "occurredAt", "previousEventHash", "eventHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/collaborative-review-event/v1" }, "sessionId": { "type": "string" }, "sequence": { "type": "integer", "minimum": 1 },
+    "eventId": { "type": "string" }, "idempotencyKey": { "type": "string" }, "type": { "enum": ["comment_added", "comment_superseded", "comment_resolved", "review_closed", "review_reopened"] },
+    "actorId": { "type": "string" }, "actorRole": { "enum": ["owner", "editor", "viewer"] }, "occurredAt": { "type": "string", "format": "date-time" },
+    "target": { "type": "object", "additionalProperties": false, "required": ["slide"], "properties": { "slide": { "type": "integer", "minimum": 1 }, "objectId": { "type": "string" } } },
+    "commentId": { "type": "string" }, "supersedesCommentId": { "type": "string" }, "text": { "type": "string" },
+    "previousEventHash": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[a-f0-9]{64}$" }] }, "eventHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  },
+  "allOf": [
+    { "if": { "properties": { "type": { "const": "comment_added" } } }, "then": { "required": ["target", "commentId", "text"], "not": { "required": ["supersedesCommentId"] } } },
+    { "if": { "properties": { "type": { "const": "comment_superseded" } } }, "then": { "required": ["target", "commentId", "supersedesCommentId", "text"] } },
+    { "if": { "properties": { "type": { "const": "comment_resolved" } } }, "then": { "required": ["commentId"], "not": { "anyOf": [{ "required": ["target"] }, { "required": ["text"] }, { "required": ["supersedesCommentId"] }] } } },
+    { "if": { "properties": { "type": { "enum": ["review_closed", "review_reopened"] } } }, "then": { "not": { "anyOf": [{ "required": ["target"] }, { "required": ["commentId"] }, { "required": ["text"] }, { "required": ["supersedesCommentId"] }] } } }
+  ]
+}

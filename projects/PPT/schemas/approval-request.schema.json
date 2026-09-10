@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "title": "PPT Factory Approval Request", "type": "object", "additionalProperties": false,
+  "required": ["schema", "requestId", "binding", "requestedBy", "requestedAt", "requestHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/approval-request/v1" }, "requestId": { "type": "string" }, "binding": { "$ref": "#/$defs/binding" },
+    "requestedBy": { "type": "string" }, "requestedAt": { "type": "string", "format": "date-time" }, "requestHash": { "$ref": "#/$defs/hash" }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "binding": { "type": "object", "additionalProperties": false,
+      "required": ["tenantId", "teamId", "projectId", "deckVersionId", "deckSha256", "deckManifestHash", "evidenceManifestHash", "brandDecisionHash", "reviewSessionId", "reviewSessionHash", "reviewSnapshotHash", "reviewRevision"],
+      "properties": {
+        "tenantId": { "type": "string" }, "teamId": { "type": "string" }, "projectId": { "type": "string" }, "deckVersionId": { "type": "string" },
+        "deckSha256": { "$ref": "#/$defs/hash" }, "deckManifestHash": { "$ref": "#/$defs/hash" }, "evidenceManifestHash": { "$ref": "#/$defs/hash" }, "brandDecisionHash": { "$ref": "#/$defs/hash" },
+        "reviewSessionId": { "type": "string" }, "reviewSessionHash": { "$ref": "#/$defs/hash" }, "reviewSnapshotHash": { "$ref": "#/$defs/hash" }, "reviewRevision": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

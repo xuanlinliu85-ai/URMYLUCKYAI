@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Phase 1 Style Controls",
+  "type": "object",
+  "properties": {
+    "referenceStrength": { "type": "integer", "minimum": 0, "maximum": 100, "default": 70 },
+    "minimalism": { "type": "integer", "minimum": 0, "maximum": 100, "default": 65 },
+    "modernity": { "type": "integer", "minimum": 0, "maximum": 100, "default": 70 },
+    "airiness": { "type": "integer", "minimum": 0, "maximum": 100, "default": 65 },
+    "visualWeight": { "type": "integer", "minimum": 0, "maximum": 100, "default": 60 },
+    "technologyTone": { "type": "integer", "minimum": 0, "maximum": 100, "default": 25 },
+    "visualImpact": { "type": "integer", "minimum": 0, "maximum": 100, "default": 55 },
+    "locks": {
+      "type": "object",
+      "properties": {
+        "typography": { "type": "boolean", "default": false },
+        "colors": { "type": "boolean", "default": false },
+        "layout": { "type": "boolean", "default": false },
+        "chart": { "type": "boolean", "default": false },
+        "density": { "type": "boolean", "default": false },
+        "composition": { "type": "boolean", "default": false },
+        "storytelling": { "type": "boolean", "default": false },
+        "visualTone": { "type": "boolean", "default": false }
+      },
+      "required": ["typography", "colors", "layout"]
+    },
+    "advancedMixer": {
+      "type": "object",
+      "properties": {
+        "weights": { "$ref": "#/$defs/dimensionWeights" },
+        "locks": { "$ref": "#/$defs/dimensionLocks" }
+      },
+      "required": ["weights", "locks"]
+    }
+  },
+  "required": ["referenceStrength", "minimalism", "modernity", "airiness", "visualWeight", "technologyTone", "visualImpact", "locks"],
+  "$defs": {
+    "sourceWeights": {
+      "type": "object",
+      "properties": {
+        "reference": { "type": "number", "minimum": 0, "maximum": 100 },
+        "system": { "type": "number", "minimum": 0, "maximum": 100 },
+        "prompt": { "type": "number", "minimum": 0, "maximum": 100 }
+      },
+      "required": ["reference", "system", "prompt"]
+    },
+    "dimensionWeights": {
+      "type": "object",
+      "properties": {
+        "typography": { "$ref": "#/$defs/sourceWeights" }, "color": { "$ref": "#/$defs/sourceWeights" },
+        "layout": { "$ref": "#/$defs/sourceWeights" }, "chart": { "$ref": "#/$defs/sourceWeights" },
+        "density": { "$ref": "#/$defs/sourceWeights" }, "composition": { "$ref": "#/$defs/sourceWeights" },
+        "storytelling": { "$ref": "#/$defs/sourceWeights" }, "visualTone": { "$ref": "#/$defs/sourceWeights" }
+      },
+      "required": ["typography", "color", "layout", "chart", "density", "composition", "storytelling", "visualTone"]
+    },
+    "dimensionLocks": {
+      "type": "object",
+      "properties": {
+        "typography": { "type": "boolean" }, "color": { "type": "boolean" }, "layout": { "type": "boolean" },
+        "chart": { "type": "boolean" }, "density": { "type": "boolean" }, "composition": { "type": "boolean" },
+        "storytelling": { "type": "boolean" }, "visualTone": { "type": "boolean" }
+      },
+      "required": ["typography", "color", "layout", "chart", "density", "composition", "storytelling", "visualTone"]
+    }
+  }
+}

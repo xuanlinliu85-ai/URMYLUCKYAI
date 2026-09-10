@@ -1,0 +1,1 @@
+Phase 1 worker boundary. Long-running reference rendering, preview generation, deck export, QA, and repair jobs are invoked through API routes today and can move behind a queue without changing the ppt-factory orchestrator contract.

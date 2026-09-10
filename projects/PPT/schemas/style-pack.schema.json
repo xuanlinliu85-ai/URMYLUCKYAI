@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Style Pack",
+  "type": "object",
+  "$defs": {
+    "previewSet": {
+      "type": "object",
+      "required": ["cover", "executiveSummary", "dataSlide"],
+      "properties": {
+        "cover": { "type": "string" },
+        "executiveSummary": { "type": "string" },
+        "dataSlide": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "stylePackVersion": {
+      "type": "object",
+      "required": ["schema", "id", "version", "name", "styleId", "contentHash", "tags", "roles", "layoutFamilies", "densities", "hasCharts", "chartTypes", "audienceTags", "active", "previews", "preferredLayouts", "chartRules", "typography", "imageDirection", "antiPatterns", "examplePrompts", "provenance", "styleMix", "style"],
+      "properties": {
+        "schema": { "const": "ppt-factory/style-pack/v1" },
+        "id": { "type": "string" },
+        "version": { "type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$" },
+        "name": { "type": "string", "minLength": 1 },
+        "styleId": { "type": "string" },
+        "contentHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "roles": { "type": "array", "items": { "type": "string" } },
+        "layoutFamilies": { "type": "array", "items": { "type": "string" } },
+        "densities": { "type": "array", "items": { "enum": ["sparse", "balanced", "dense"] } },
+        "hasCharts": { "type": "boolean" },
+        "chartTypes": { "type": "array", "items": { "type": "string" } },
+        "audienceTags": { "type": "array", "items": { "type": "string" } },
+        "active": { "type": "boolean" },
+        "previews": { "$ref": "#/$defs/previewSet" },
+        "preferredLayouts": { "type": "array", "items": { "type": "string" } },
+        "chartRules": { "type": "object" },
+        "typography": { "type": "object" },
+        "imageDirection": { "type": "object" },
+        "antiPatterns": { "type": "array", "items": { "type": "string" } },
+        "examplePrompts": { "type": "array", "items": { "type": "string" } },
+        "provenance": {
+          "type": "object",
+          "required": ["previewSet", "sources", "weights", "locks", "resolvedOwnership"],
+          "properties": {
+            "previewSet": { "type": "string" },
+            "sources": { "type": "object" },
+            "weights": { "$ref": "style-controls.schema.json#/$defs/dimensionWeights" },
+            "locks": { "$ref": "style-controls.schema.json#/$defs/dimensionLocks" },
+            "resolvedOwnership": { "type": "object" },
+            "promptInterpretation": { "type": "object" }
+          }
+        },
+        "styleMix": { "$ref": "style-mix.schema.json" },
+        "style": { "$ref": "style-dna.schema.json" }
+      }
+    },
+    "application": {
+      "type": "object",
+      "required": ["schema", "pack", "styleMix", "finalStyle"],
+      "properties": {
+        "schema": { "const": "ppt-factory/style-pack-application/v1" },
+        "pack": {
+          "type": "object",
+          "required": ["id", "version", "contentHash"],
+          "properties": { "id": { "type": "string" }, "version": { "type": "string" }, "contentHash": { "type": "string" } }
+        },
+        "styleMix": { "$ref": "style-mix.schema.json" },
+        "finalStyle": { "$ref": "style-dna.schema.json" }
+      }
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/$defs/stylePackVersion" },
+    { "$ref": "#/$defs/application" }
+  ]
+}

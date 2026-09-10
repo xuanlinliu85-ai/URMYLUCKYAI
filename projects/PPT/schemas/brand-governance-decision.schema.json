@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Brand Governance Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "tenantId", "teamId", "decision", "reasonCodes", "binding", "decidedAt", "decisionHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/brand-governance-decision/v1" },
+    "tenantId": { "type": "string" }, "teamId": { "type": "string" },
+    "decision": { "enum": ["ALLOW", "ALLOW_WITH_WARNINGS", "BLOCKED"] },
+    "reasonCodes": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "binding": {
+      "allOf": [
+        { "$ref": "brand-governance-report.schema.json#/$defs/binding" },
+        { "type": "object", "required": ["reportHash"], "properties": { "reportHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" } } }
+      ]
+    },
+    "decidedAt": { "type": "string", "format": "date-time" },
+    "decisionHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

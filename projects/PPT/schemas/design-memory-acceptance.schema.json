@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ppt-factory/design-memory-acceptance.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "status", "source", "memory", "checks"],
+  "properties": {
+    "schema": { "const": "ppt-factory/design-memory-acceptance/v1" },
+    "status": { "const": "PASS" },
+    "source": { "type": "object", "required": ["projectId", "pptx", "sha256Before", "sha256After", "slides", "editableRatio"] },
+    "memory": { "type": "object", "required": ["projectId", "profileId", "profileHash", "recommendationId", "recommendationHash", "profileFile", "recommendationFile"] },
+    "checks": { "type": "object", "additionalProperties": { "const": true } }
+  }
+}

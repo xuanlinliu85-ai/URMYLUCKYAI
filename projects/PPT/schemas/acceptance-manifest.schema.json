@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory V1 Acceptance Manifest",
+  "type": "object",
+  "required": ["projectId", "status", "artifacts", "checks", "generatedAt"],
+  "properties": {
+    "projectId": { "type": "string" },
+    "status": { "type": "string", "enum": ["PASS", "PARTIAL", "FAIL"] },
+    "artifacts": { "type": "object" },
+    "checks": { "type": "object" },
+    "generatedAt": { "type": "string" }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Collaborative Review Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "sessionId", "binding", "status", "revision", "comments", "lastEventHash", "snapshotHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/collaborative-review-snapshot/v1" }, "sessionId": { "type": "string" },
+    "binding": { "$ref": "collaborative-review-session.schema.json#/$defs/binding" }, "status": { "enum": ["open", "closed"] }, "revision": { "type": "integer", "minimum": 0 },
+    "comments": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["commentId", "target", "text", "authorId", "createdAt", "supersededBy", "resolved"], "properties": {
+      "commentId": { "type": "string" }, "target": { "type": "object", "additionalProperties": false, "required": ["slide"], "properties": { "slide": { "type": "integer", "minimum": 1 }, "objectId": { "type": "string" } } }, "text": { "type": "string" }, "authorId": { "type": "string" }, "createdAt": { "type": "string", "format": "date-time" },
+      "supersededBy": { "oneOf": [{ "type": "null" }, { "type": "string" }] }, "resolved": { "type": "boolean" }, "resolvedBy": { "type": "string" }, "resolvedAt": { "type": "string", "format": "date-time" }
+    } } },
+    "lastEventHash": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[a-f0-9]{64}$" }] }, "snapshotHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

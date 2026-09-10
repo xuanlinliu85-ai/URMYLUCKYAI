@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Brand Governance Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "tenantId", "teamId", "status", "binding", "integrity", "observed", "findings", "summary", "evaluatedAt", "reportHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/brand-governance-report/v1" },
+    "tenantId": { "type": "string" },
+    "teamId": { "type": "string" },
+    "status": { "enum": ["COMPLIANT", "COMPLIANT_WITH_WARNINGS", "VIOLATING", "INTEGRITY_FAILURE"] },
+    "binding": { "$ref": "#/$defs/binding" },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "checks"],
+      "properties": {
+        "passed": { "type": "boolean" },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "passed", "message"],
+            "properties": {
+              "id": { "type": "string" }, "passed": { "type": "boolean" },
+              "expected": { "$ref": "#/$defs/hash" }, "actual": { "$ref": "#/$defs/hash" }, "message": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "observed": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fonts", "colors", "logoAssetIds", "assetIds", "chartPackIds", "locks"],
+      "properties": {
+        "fonts": { "$ref": "#/$defs/strings" }, "colors": { "$ref": "#/$defs/strings" },
+        "logoAssetIds": { "$ref": "#/$defs/strings" }, "assetIds": { "$ref": "#/$defs/strings" },
+        "chartPackIds": { "$ref": "#/$defs/strings" },
+        "locks": {
+          "type": "object", "additionalProperties": false,
+          "required": ["typography", "layout", "visualTone"],
+          "properties": {
+            "typography": { "type": ["boolean", "null"] }, "layout": { "type": ["boolean", "null"] }, "visualTone": { "type": ["boolean", "null"] }
+          }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["findingId", "ruleId", "kind", "effect", "severity", "status", "values", "evidence"],
+        "properties": {
+          "findingId": { "type": "string" }, "ruleId": { "type": "string" },
+          "kind": { "enum": ["font", "color", "logo_asset_id", "asset_id", "chart_pack_id", "lock", "qa"] },
+          "effect": { "enum": ["allowed", "required"] }, "severity": { "enum": ["warning", "blocking"] },
+          "status": { "enum": ["active", "exempted"] }, "values": { "$ref": "#/$defs/strings" }, "evidence": { "$ref": "#/$defs/strings" },
+          "exemption": {
+            "type": "object", "additionalProperties": false,
+            "required": ["exemptionId", "auditReason", "authorizedBy", "authorizedAt"],
+            "properties": {
+              "exemptionId": { "type": "string" }, "auditReason": { "type": "string" }, "authorizedBy": { "type": "string" },
+              "authorizedAt": { "type": "string", "format": "date-time" }, "expiresAt": { "type": "string", "format": "date-time" }
+            }
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["activeBlocking", "activeWarnings", "exempted", "evaluatedRules"],
+      "properties": {
+        "activeBlocking": { "type": "integer", "minimum": 0 }, "activeWarnings": { "type": "integer", "minimum": 0 },
+        "exempted": { "type": "integer", "minimum": 0 }, "evaluatedRules": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "evaluatedAt": { "type": "string", "format": "date-time" },
+    "reportHash": { "$ref": "#/$defs/hash" }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "strings": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["policy", "deck", "style", "evidence", "artifactSetHash"],
+      "properties": {
+        "policy": {
+          "type": "object", "additionalProperties": false,
+          "required": ["policyId", "version", "teamArtifactHash", "contentHash"],
+          "properties": { "policyId": { "type": "string" }, "version": { "type": "string" }, "teamArtifactHash": { "$ref": "#/$defs/hash" }, "contentHash": { "$ref": "#/$defs/hash" } }
+        },
+        "deck": {
+          "type": "object", "additionalProperties": false,
+          "required": ["versionId", "expectedSha256", "actualSha256", "projectId", "manifestType", "manifestName", "manifestHash", "pptxName", "slides", "evidenceManifestName", "evidenceManifestHash"],
+          "properties": {
+            "versionId": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "expectedSha256": { "$ref": "#/$defs/hash" }, "actualSha256": { "$ref": "#/$defs/hash" },
+            "projectId": { "type": "string", "minLength": 1, "maxLength": 120 },
+            "manifestType": { "enum": ["generation", "update"] }, "manifestName": { "type": "string", "minLength": 1 },
+            "manifestHash": { "$ref": "#/$defs/hash" }, "pptxName": { "type": "string", "minLength": 1 },
+            "slides": { "type": "integer", "minimum": 1, "maximum": 500 },
+            "evidenceManifestName": { "type": "string", "minLength": 1 },
+            "evidenceManifestHash": { "$ref": "#/$defs/hash" }
+          }
+        },
+        "style": {
+          "type": "object", "additionalProperties": false,
+          "properties": { "styleDnaExpectedHash": { "$ref": "#/$defs/hash" }, "styleDnaActualHash": { "$ref": "#/$defs/hash" }, "styleMixExpectedHash": { "$ref": "#/$defs/hash" }, "styleMixActualHash": { "$ref": "#/$defs/hash" } }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["name"],
+            "properties": {
+              "name": { "enum": ["styleDna", "styleMix", "slidePlans", "inspect", "layouts", "fontEvidence", "imageEvidence", "chartPackManifest", "qaReport"] },
+              "expectedHash": { "$ref": "#/$defs/hash" }, "actualHash": { "$ref": "#/$defs/hash" }
+            }
+          }
+        },
+        "artifactSetHash": { "$ref": "#/$defs/hash" },
+        "reportHash": { "$ref": "#/$defs/hash" }
+      }
+    }
+  }
+}

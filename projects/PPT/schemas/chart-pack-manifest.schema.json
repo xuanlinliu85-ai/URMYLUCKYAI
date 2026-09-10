@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Chart Pack Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "libraryVersion", "charts"],
+  "properties": {
+    "schema": { "const": "ppt-factory/chart-pack-manifest/v1" },
+    "libraryVersion": { "type": "string" },
+    "charts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slide", "objectName", "requestedId", "resolvedId", "packVersion", "source", "nativeType", "status", "reason"],
+        "properties": {
+          "slide": { "type": "integer", "minimum": 1 },
+          "objectName": { "type": "string", "minLength": 1 },
+          "requestedId": { "type": "string" },
+          "resolvedId": { "type": "string" },
+          "packVersion": { "type": "string" },
+          "source": { "enum": ["slide-plan", "style-dna", "style-dna-legacy-map", "default"] },
+          "nativeType": { "type": "string" },
+          "status": { "enum": ["selected", "fallback"] },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

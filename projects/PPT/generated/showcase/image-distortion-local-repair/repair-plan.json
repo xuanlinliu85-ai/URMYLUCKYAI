@@ -1,0 +1,32 @@
+{
+  "pass": 1,
+  "status": "applied",
+  "targets": [
+    {
+      "issueId": "image-distortion-1-1",
+      "slide": 1,
+      "category": "image-distortion",
+      "dimension": "imageDistortion",
+      "objectNames": [
+        "qa-fixture-image"
+      ],
+      "adjustments": {
+        "imageFit": "contain",
+        "imageCrop": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "imagePosition": {
+          "left": 1000,
+          "top": 375.31,
+          "width": 230,
+          "height": 129.38
+        }
+      },
+      "action": "Adjust only the named native image fit, crop and frame to preserve its source aspect ratio and slide bounds."
+    }
+  ],
+  "createdAt": "2026-08-22T13:49:10.282Z"
+}

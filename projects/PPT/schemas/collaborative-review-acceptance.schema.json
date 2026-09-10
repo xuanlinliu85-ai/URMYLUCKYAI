@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Collaborative Review Acceptance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "status", "source", "session", "checks", "artifacts"],
+  "properties": {
+    "schema": { "const": "ppt-factory/collaborative-review-acceptance/v1" }, "status": { "enum": ["PASS", "FAIL"] },
+    "source": { "type": "object", "additionalProperties": false, "required": ["projectId", "pptx", "sha256Before", "sha256After", "slides", "editableRatio"], "properties": {
+      "projectId": { "type": "string" }, "pptx": { "type": "string" }, "sha256Before": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "sha256After": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+      "slides": { "type": "integer", "minimum": 1, "maximum": 8 }, "editableRatio": { "type": "number", "minimum": 0, "maximum": 1 }
+    } },
+    "session": { "type": "object", "additionalProperties": false, "required": ["sessionId", "deckVersionId", "revision", "status", "deckManifestHash", "evidenceManifestHash", "brandDecisionHash"], "properties": {
+      "sessionId": { "type": "string" }, "deckVersionId": { "type": "string" }, "revision": { "type": "integer", "minimum": 0 }, "status": { "enum": ["open", "closed"] },
+      "deckManifestHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "evidenceManifestHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "brandDecisionHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+    } },
+    "checks": { "type": "object", "additionalProperties": false, "required": ["boundedExistingDeck", "sourceHashUnchanged", "persistedInspectAndLayouts", "callerRoleIgnored", "authoritativeBindings", "unknownNativeTargetRejected", "storedIdentityAndTimeAuthoritative", "idempotentAppend", "closeAndRead", "appendOnlyArtifacts"], "properties": {
+      "boundedExistingDeck": { "type": "boolean" }, "sourceHashUnchanged": { "type": "boolean" }, "persistedInspectAndLayouts": { "type": "boolean" }, "callerRoleIgnored": { "type": "boolean" }, "authoritativeBindings": { "type": "boolean" },
+      "unknownNativeTargetRejected": { "type": "boolean" }, "storedIdentityAndTimeAuthoritative": { "type": "boolean" }, "idempotentAppend": { "type": "boolean" }, "closeAndRead": { "type": "boolean" }, "appendOnlyArtifacts": { "type": "boolean" }
+    } },
+    "artifacts": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+  }
+}

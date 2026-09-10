@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Style Controls",
+  "type": "object",
+  "properties": {
+    "reference_strength": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 70
+    },
+    "minimalism": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 65
+    },
+    "modernity": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 70
+    },
+    "boldness": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 45
+    },
+    "analytical": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 75
+    },
+    "whitespace": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 65
+    },
+    "editorial": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 55
+    },
+    "asymmetry": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 50
+    },
+    "visual_weight": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 60
+    },
+    "external_pitch": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 35
+    },
+    "opinion_driven": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 55
+    },
+    "marketing_tone": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 20
+    },
+    "visual_impact": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 55
+    },
+    "financial_tone": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 75
+    },
+    "technology_tone": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 25
+    },
+    "premium_tone": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 45
+    },
+    "reference_mix": {
+      "type": "object",
+      "properties": {
+        "typography": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 80
+        },
+        "colors": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 70
+        },
+        "layout": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 80
+        },
+        "charts": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 80
+        },
+        "images": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 40
+        },
+        "cover": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 70
+        },
+        "storytelling": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 50
+        },
+        "density": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 70
+        }
+      },
+      "required": [
+        "typography",
+        "colors",
+        "layout",
+        "charts",
+        "images",
+        "cover",
+        "storytelling",
+        "density"
+      ]
+    },
+    "locks": {
+      "type": "object",
+      "properties": {
+        "typography": {
+          "type": "boolean",
+          "default": false
+        },
+        "colors": {
+          "type": "boolean",
+          "default": false
+        },
+        "layout": {
+          "type": "boolean",
+          "default": false
+        },
+        "charts": {
+          "type": "boolean",
+          "default": false
+        },
+        "images": {
+          "type": "boolean",
+          "default": false
+        },
+        "cover": {
+          "type": "boolean",
+          "default": false
+        },
+        "storytelling": {
+          "type": "boolean",
+          "default": false
+        },
+        "density": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  },
+  "required": [
+    "reference_strength",
+    "reference_mix",
+    "locks"
+  ]
+}

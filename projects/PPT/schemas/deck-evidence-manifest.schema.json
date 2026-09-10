@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Immutable Deck Evidence Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "status", "tenantId", "teamId", "projectId", "deckVersionId", "deckManifestHash", "deckSha256", "evidenceHashes", "publishedBy", "publishedAt"],
+  "properties": {
+    "schema": { "const": "ppt-factory/deck-evidence-manifest/v1" },
+    "status": { "const": "published" },
+    "tenantId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,120}$" },
+    "teamId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,120}$" },
+    "projectId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,120}$" },
+    "deckVersionId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,120}$" },
+    "deckManifestHash": { "$ref": "#/$defs/hash" },
+    "deckSha256": { "$ref": "#/$defs/hash" },
+    "evidenceHashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["styleDna", "styleMix", "slidePlans", "inspect", "layouts", "fontEvidence", "imageEvidence", "chartPackManifest", "qaReport"],
+      "properties": {
+        "styleDna": { "$ref": "#/$defs/hash" }, "styleMix": { "$ref": "#/$defs/hash" },
+        "slidePlans": { "$ref": "#/$defs/hash" }, "inspect": { "$ref": "#/$defs/hash" },
+        "layouts": { "$ref": "#/$defs/hash" }, "fontEvidence": { "$ref": "#/$defs/hash" },
+        "imageEvidence": { "$ref": "#/$defs/hash" }, "chartPackManifest": { "$ref": "#/$defs/hash" },
+        "qaReport": { "$ref": "#/$defs/hash" }
+      }
+    },
+    "publishedBy": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,120}$" },
+    "publishedAt": { "type": "string", "format": "date-time" }
+  },
+  "$defs": { "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" } }
+}

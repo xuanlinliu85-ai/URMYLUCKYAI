@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Style Mix",
+  "type": "object",
+  "required": ["previewSet", "sources", "controls", "weights", "locks", "resolvedOwnership", "finalStyleId", "finalStyle", "generatedAt"],
+  "properties": {
+    "previewSet": { "type": "string" },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "referenceStyleId": { "type": "string" }, "systemStyleId": { "type": "string" },
+        "promptStyleId": { "type": "string" }, "promptText": { "type": "string" }
+      },
+      "required": ["referenceStyleId", "systemStyleId"]
+    },
+    "controls": { "type": "object" },
+    "weights": { "$ref": "style-controls.schema.json#/$defs/dimensionWeights" },
+    "locks": { "$ref": "style-controls.schema.json#/$defs/dimensionLocks" },
+    "resolvedOwnership": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "owner": { "enum": ["reference", "system", "prompt"] },
+          "weights": { "$ref": "style-controls.schema.json#/$defs/sourceWeights" },
+          "locked": { "type": "boolean" }
+        },
+        "required": ["owner", "weights", "locked"]
+      }
+    },
+    "finalStyleId": { "type": "string" },
+    "finalStyle": { "$ref": "style-dna.schema.json" },
+    "promptInterpretation": { "type": "object" },
+    "generatedAt": { "type": "string" }
+  }
+}

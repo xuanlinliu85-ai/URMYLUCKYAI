@@ -1,0 +1,13 @@
+{
+  "rolledBack": false,
+  "beforeOverall": 91,
+  "afterOverall": 91,
+  "targetScores": [
+    {
+      "dimension": "imageDistortion",
+      "before": 0,
+      "after": 100
+    }
+  ],
+  "appliedAt": "2026-08-22T13:49:25.924Z"
+}

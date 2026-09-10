@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory deterministic semantic search artifacts",
+  "type": "object",
+  "$defs": {
+    "artifactType": { "enum": ["golden_slide", "style_pack"] },
+    "density": { "enum": ["sparse", "balanced", "dense"] },
+    "score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "document": {
+      "type": "object",
+      "required": ["id", "artifactType", "title", "tags", "roles", "layoutFamilies", "densities", "hasChart", "chartTypes", "styleIds", "audienceTags", "qualityScore", "source"],
+      "properties": {
+        "id": { "type": "string" }, "artifactType": { "$ref": "#/$defs/artifactType" }, "title": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }, "roles": { "type": "array", "items": { "type": "string" } },
+        "layoutFamilies": { "type": "array", "items": { "type": "string" } }, "densities": { "type": "array", "items": { "$ref": "#/$defs/density" } },
+        "hasChart": { "type": "boolean" }, "chartTypes": { "type": "array", "items": { "type": "string" } },
+        "styleIds": { "type": "array", "items": { "type": "string" } }, "audienceTags": { "type": "array", "items": { "type": "string" } },
+        "qualityScore": { "$ref": "#/$defs/score" }, "source": { "type": "object" }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "schema": { "const": "ppt-factory/semantic-search-index/v1" }, "projectId": { "type": "string" },
+        "method": { "const": "deterministic-structured-metadata" }, "sources": { "type": "object" },
+        "documents": { "type": "array", "items": { "$ref": "#/$defs/document" } }
+      },
+      "required": ["schema", "projectId", "method", "sources", "documents"]
+    },
+    {
+      "properties": {
+        "schema": { "const": "ppt-factory/semantic-search-result/v1" }, "query": { "type": "object" },
+        "status": { "enum": ["matched", "fallback"] }, "fallback": { "enum": ["none", "no_candidate_above_threshold"] },
+        "totalDocuments": { "type": "integer", "minimum": 0 }, "matches": { "type": "array" }
+      },
+      "required": ["schema", "query", "status", "fallback", "totalDocuments", "matches"]
+    }
+  ]
+}

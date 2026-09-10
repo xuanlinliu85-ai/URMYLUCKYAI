@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Immutable Generated Deck Version",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "status", "projectId", "versionId", "output", "direction"],
+  "properties": {
+    "schema": { "const": "ppt-factory/deck-generation-manifest/v1" },
+    "status": { "const": "published" },
+    "projectId": { "$ref": "#/$defs/id" },
+    "versionId": { "$ref": "#/$defs/id" },
+    "direction": { "type": "string", "minLength": 1 },
+    "output": {
+      "type": "object", "additionalProperties": false,
+      "required": ["versionId", "filename", "sha256", "slides"],
+      "properties": {
+        "versionId": { "$ref": "#/$defs/id" },
+        "filename": { "type": "string", "minLength": 1, "pattern": "\\.pptx$" },
+        "sha256": { "$ref": "#/$defs/hash" },
+        "slides": { "type": "integer", "minimum": 1, "maximum": 500 }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "minLength": 1, "maxLength": 120, "pattern": "^[a-zA-Z0-9_-]+$" },
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

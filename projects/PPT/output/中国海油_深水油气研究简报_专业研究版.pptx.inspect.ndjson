@@ -1,0 +1,245 @@
+{"kind":"deck","id":"pr/zpa3ac","name":"Deck"}
+{"kind":"layout","layoutId":"591b67cc-39d8-4e3d-8c6e-4c1f0002c587","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"2bd99a8b-146b-4602-8352-1e6e2c489691","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/tife1x","slide":1,"title":"CNOOC · PROFESSIONAL RESEARCH BRIEF","textShapes":4}
+{"kind":"shape","id":"sh/cn2d4zq9","slide":1,"name":"cover-left","bbox":[0,0,690,720]}
+{"kind":"shape","id":"sh/dobux47u","slide":1,"name":"cover-copper","bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/2h0vyp87","slide":1,"name":"cover-eyebrow","text":"CNOOC · PROFESSIONAL RESEARCH BRIEF","textPreview":"CNOOC · PROFESSIONAL RESEARCH BRIEF","textChars":35,"textLines":1,"bbox":[72,72,500,28]}
+{"kind":"textbox","id":"sh/3i9crupc","slide":1,"name":"cover-title","text":"深水油气\n正在成为新增供给主线","textPreview":"深水油气 | 正在成为新增供给主线","textChars":15,"textLines":2,"bbox":[72,154,520,180]}
+{"kind":"textbox","id":"sh/4jid0fqx","slide":1,"name":"cover-subtitle","text":"中国海油（600938.SH）资源、技术与估值逻辑","textPreview":"中国海油（600938.SH）资源、技术与估值逻辑","textChars":25,"textLines":1,"bbox":[72,376,500,68]}
+{"kind":"shape","id":"sh/pkrutk7i","slide":1,"bbox":[72,498,430,3]}
+{"kind":"textbox","id":"sh/utgvu58v","slide":1,"name":"cover-date","text":"基于国信证券 2024-04-03 报告整理\n数据截止：2024-04-02","textPreview":"基于国信证券 2024-04-03 报告整理 | 数据截止：2024-04-02","textChars":38,"textLines":2,"bbox":[72,530,420,70]}
+{"kind":"image","id":"im/69ovi9of","slide":1,"name":"","alt":"深水海上钻井平台","bbox":[610,0,670,720]}
+{"kind":"notes","id":"nt/tife1x","slide":1,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第1页。\n- 封面主视觉由AI生成，无外部摄影素材。\n- 本简报基于历史资料整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/0qbf9a","slide":2,"title":"核心结论","textShapes":19}
+{"kind":"textbox","id":"sh/honu5svm","slide":2,"name":"section-2","text":"核心结论","textPreview":"核心结论","textChars":4,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/u1wbaxwb","slide":2,"name":"title-2","text":"四个环节构成完整投资逻辑","textPreview":"四个环节构成完整投资逻辑","textChars":12,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/v25c3idw","slide":2,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/8zet8ne5","slide":2,"name":"page-2","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"textbox","id":"sh/t0nu1svq","slide":2,"name":"summary-no-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,176,64,42]}
+{"kind":"textbox","id":"sh/6xcb6dwz","slide":2,"name":"summary-head-0","text":"资源空间","textPreview":"资源空间","textChars":4,"textLines":1,"bbox":[144,176,220,34]}
+{"kind":"textbox","id":"sh/7ylszidk","slide":2,"name":"summary-body-0","text":"深水与超深水探明率低，新增发现向海洋深部迁移。","textPreview":"深水与超深水探明率低，新增发现向海洋深部迁移。","textChars":23,"textLines":1,"bbox":[144,214,470,52]}
+{"kind":"shape","id":"sh/cvytk7u9","slide":2,"bbox":[66,270,548,1]}
+{"kind":"textbox","id":"sh/dw7udcvu","slide":2,"name":"summary-no-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[66,284,64,42]}
+{"kind":"textbox","id":"sh/x8v214fq","slide":2,"name":"summary-head-1","text":"经济性改善","textPreview":"经济性改善","textChars":5,"textLines":1,"bbox":[144,284,220,34]}
+{"kind":"textbox","id":"sh/w72l8jy5","slide":2,"name":"summary-body-1","text":"钻完井效率提升、投产周期缩短、平衡油价下降。","textPreview":"钻完井效率提升、投产周期缩短、平衡油价下降。","textChars":22,"textLines":1,"bbox":[144,322,470,52]}
+{"kind":"shape","id":"sh/v6tkzexk","slide":2,"bbox":[66,378,548,1]}
+{"kind":"textbox","id":"sh/a5k369gz","slide":2,"name":"summary-no-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,392,64,42]}
+{"kind":"textbox","id":"sh/94b2x4fe","slide":2,"name":"summary-head-2","text":"公司兑现","textPreview":"公司兑现","textChars":4,"textLines":1,"bbox":[144,392,220,34]}
+{"kind":"textbox","id":"sh/832l4zy9","slide":2,"name":"summary-body-2","text":"2023年储量与产量均增长8.7%，储量替代率180%。","textPreview":"2023年储量与产量均增长8.7%，储量替代率180%。","textChars":28,"textLines":1,"bbox":[144,430,470,52]}
+{"kind":"shape","id":"sh/n2tkvuxo","slide":2,"bbox":[66,486,548,1]}
+{"kind":"textbox","id":"sh/m1kj2pg3","slide":2,"name":"summary-no-3","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[66,500,64,42]}
+{"kind":"textbox","id":"sh/t0fm98fy","slide":2,"name":"summary-head-3","text":"估值支撑","textPreview":"估值支撑","textChars":4,"textLines":1,"bbox":[144,500,220,34]}
+{"kind":"textbox","id":"sh/sz6lg3yd","slide":2,"name":"summary-body-3","text":"原报告预测2024-2026年A股PE由9.7倍降至8.7倍。","textPreview":"原报告预测2024-2026年A股PE由9.7倍降至8.7倍。","textChars":31,"textLines":1,"bbox":[144,538,470,52]}
+{"kind":"shape","id":"sh/s3e5c7mp","slide":2,"name":"summary-thesis","bbox":[680,176,540,416]}
+{"kind":"textbox","id":"sh/d4nm5cnu","slide":2,"name":"summary-thesis-label","text":"核心判断","textPreview":"核心判断","textChars":4,"textLines":1,"bbox":[722,214,180,28]}
+{"kind":"textbox","id":"sh/q1cnax4j","slide":2,"name":"summary-thesis-main","text":"资源禀赋决定上限，\n技术降本决定兑现速度。","textPreview":"资源禀赋决定上限， | 技术降本决定兑现速度。","textChars":21,"textLines":2,"bbox":[722,270,440,120]}
+{"kind":"textbox","id":"sh/r2l43254","slide":2,"name":"summary-thesis-sub","text":"中国海油同时具备国内增储上产政策位置、深水工程能力和持续资本投入，形成相对完整的中长期成长闭环。","textPreview":"中国海油同时具备国内增储上产政策位置、深水工程能力和持续资本投入，形成相对完整的中长期成长闭环。","textChars":48,"textLines":1,"bbox":[722,430,430,105]}
+{"kind":"textbox","id":"sh/4fu58nmd","slide":2,"name":"source-1-4、17-18","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第1-4、17-18页","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第1-4、17-18页","textChars":48,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"notes","id":"nt/0qbf9a","slide":2,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第1-4、17-18页。\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/lpimja","slide":3,"title":"行业空间","textShapes":8}
+{"kind":"textbox","id":"sh/bit8fm5k","slide":3,"name":"section-3","text":"行业空间","textPreview":"行业空间","textChars":4,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/cj2po7m5","slide":3,"name":"title-3","text":"水深越大，资源探明率越低","textPreview":"水深越大，资源探明率越低","textChars":12,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/xkvqhcnq","slide":3,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/yl47qh4v","slide":3,"name":"page-3","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"shape","id":"sh/knm9srm1","slide":3,"name":"explore-callout","bbox":[862,166,360,430]}
+{"kind":"textbox","id":"sh/l8vqlwnm","slide":3,"name":"explore-callout-kpi","text":"≈ 7.6%","textPreview":"≈ 7.6%","textChars":6,"textLines":1,"bbox":[900,208,280,62]}
+{"kind":"textbox","id":"sh/m94ru147","slide":3,"name":"explore-callout-head","text":"超深水油气探明率","textPreview":"超深水油气探明率","textChars":8,"textLines":1,"bbox":[900,282,280,36]}
+{"kind":"textbox","id":"sh/7ad8n65s","slide":3,"name":"explore-callout-body","text":"超深水石油与天然气探明率均不足8%，显著低于浅水区。低探明率意味着资源基数尚未充分转化为可开发储量。","textPreview":"超深水石油与天然气探明率均不足8%，显著低于浅水区。低探明率意味着资源基数尚未充分转化为可开发储量。","textChars":50,"textLines":1,"bbox":[900,344,275,150]}
+{"kind":"textbox","id":"sh/3u50vmxk","slide":3,"name":"explore-callout-foot","text":"含义：新增发现的边际重心继续向深水迁移。","textPreview":"含义：新增发现的边际重心继续向深水迁移。","textChars":20,"textLines":1,"bbox":[900,520,275,50]}
+{"kind":"textbox","id":"sh/29cj2hwz","slide":3,"name":"source-2","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第2页","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第2页","textChars":40,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"chart","id":"ch/zipw7ip8","slide":3,"name":"","chartType":"bar","bbox":[56,166,760,430]}
+{"kind":"notes","id":"nt/lpimja","slide":3,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第2页。\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/6gfjhu","slide":4,"title":"经济性","textShapes":15}
+{"kind":"textbox","id":"sh/qto3a1g7","slide":4,"name":"section-4","text":"经济性","textPreview":"经济性","textChars":3,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/dgf2lgfy","slide":4,"name":"title-4","text":"技术进步正在重塑深水项目成本曲线","textPreview":"技术进步正在重塑深水项目成本曲线","textChars":16,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/cf6lcbyd","slide":4,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/3qdkfmxg","slide":4,"name":"page-4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"shape","id":"sh/2p4j6hgb","slide":4,"name":"kpi-钻完井时间","bbox":[56,174,350,196]}
+{"kind":"shape","id":"sh/psv2hwfm","slide":4,"name":"kpi-accent-钻完井时间","bbox":[56,174,7,196]}
+{"kind":"textbox","id":"sh/orm18ry1","slide":4,"name":"kpi-value-钻完井时间","text":"240 → 46天","textPreview":"240 → 46天","textChars":9,"textLines":1,"bbox":[84,194,302,54]}
+{"kind":"textbox","id":"sh/fmdkbmxk","slide":4,"name":"kpi-label-钻完井时间","text":"钻完井时间","textPreview":"钻完井时间","textChars":5,"textLines":1,"bbox":[84,254,302,34]}
+{"kind":"textbox","id":"sh/ul4j2hgz","slide":4,"name":"kpi-note-钻完井时间","text":"巴西盐下项目，2010-2017，降幅超过80%","textPreview":"巴西盐下项目，2010-2017，降幅超过80%","textChars":24,"textLines":1,"bbox":[84,292,302,64]}
+{"kind":"shape","id":"sh/ovih07yp","slide":4,"name":"kpi-平衡油价/桶","bbox":[465,174,350,196]}
+{"kind":"shape","id":"sh/pwritsfa","slide":4,"name":"kpi-accent-平衡油价/桶","bbox":[465,174,7,196]}
+{"kind":"textbox","id":"sh/2tgzyxgj","slide":4,"name":"kpi-value-平衡油价/桶","text":"$78 → $49","textPreview":"$78 → $49","textChars":9,"textLines":1,"bbox":[493,194,302,54]}
+{"kind":"textbox","id":"sh/3u9gr2x4","slide":4,"name":"kpi-label-平衡油价/桶","text":"平衡油价/桶","textPreview":"平衡油价/桶","textChars":6,"textLines":1,"bbox":[493,254,302,34]}
+{"kind":"textbox","id":"sh/gryhwnyt","slide":4,"name":"kpi-note-平衡油价/桶","text":"全球深水项目，2014-2021，降幅37%","textPreview":"全球深水项目，2014-2021，降幅37%","textChars":22,"textLines":1,"bbox":[493,292,302,64]}
+{"kind":"shape","id":"sh/1s7ypsfy","slide":4,"name":"kpi-发现至投产","bbox":[874,174,350,196]}
+{"kind":"shape","id":"sh/epgzudgn","slide":4,"name":"kpi-accent-发现至投产","bbox":[874,174,7,196]}
+{"kind":"textbox","id":"sh/fqpgnix8","slide":4,"name":"kpi-value-发现至投产","text":"7.0 → 3.6年","textPreview":"7.0 → 3.6年","textChars":10,"textLines":1,"bbox":[902,194,302,54]}
+{"kind":"textbox","id":"sh/0n2h8ryx","slide":4,"name":"kpi-label-发现至投产","text":"发现至投产","textPreview":"发现至投产","textChars":5,"textLines":1,"bbox":[902,254,302,34]}
+{"kind":"textbox","id":"sh/lobi1wfi","slide":4,"name":"kpi-note-发现至投产","text":"2011年以来深水平均周期；超深水缩短至2.9年","textPreview":"2011年以来深水平均周期；超深水缩短至2.9年","textChars":24,"textLines":1,"bbox":[902,292,302,64]}
+{"kind":"shape","id":"sh/947ylc7m","slide":4,"name":"econ-bottom","bbox":[56,420,1168,176]}
+{"kind":"textbox","id":"sh/83yhs7q1","slide":4,"name":"econ-bottom-head","text":"成本下降带来的不是单点改善，而是可开发资源边界整体外移","textPreview":"成本下降带来的不是单点改善，而是可开发资源边界整体外移","textChars":27,"textLines":1,"bbox":[96,458,1050,44]}
+{"kind":"textbox","id":"sh/7ipgjmpg","slide":4,"name":"econ-bottom-body","text":"更短的钻完井周期降低资本占用，更短的投产周期提高现金流确定性，更低的平衡油价扩大了在中低油价环境下仍具回报的项目集合。","textPreview":"更短的钻完井周期降低资本占用，更短的投产周期提高现金流确定性，更低的平衡油价扩大了在中低油价环境下仍具回报的项目集合。","textChars":59,"textLines":1,"bbox":[96,520,1030,54]}
+{"kind":"textbox","id":"sh/mhgzqh8v","slide":4,"name":"source-3","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第3页","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第3页","textChars":40,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"notes","id":"nt/6gfjhu","slide":4,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第3页。\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/6sgdvy","slide":5,"title":"行业验证","textShapes":15}
+{"kind":"textbox","id":"sh/to7i5kjy","slide":5,"name":"section-5","text":"行业验证","textPreview":"行业验证","textChars":4,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/61wzu507","slide":5,"name":"title-5","text":"资本与产量预测共同指向深水供给增长","textPreview":"资本与产量预测共同指向深水供给增长","textChars":17,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/72503a1s","slide":5,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/kzehsvih","slide":5,"name":"page-5","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"textbox","id":"sh/ixwzq50b","slide":5,"name":"industry-oil-unit","text":"深水原油｜百万桶/日","textPreview":"深水原油｜百万桶/日","textChars":10,"textLines":1,"bbox":[56,160,286,28]}
+{"kind":"textbox","id":"sh/wvuhovi5","slide":5,"name":"industry-gas-unit","text":"深水天然气｜十亿立方米/年","textPreview":"深水天然气｜十亿立方米/年","textChars":13,"textLines":1,"bbox":[380,160,286,28]}
+{"kind":"shape","id":"sh/xwnix0jq","slide":5,"name":"kpi-海上绿地项目投资","bbox":[720,176,500,120]}
+{"kind":"shape","id":"sh/lwfy5w72","slide":5,"name":"kpi-accent-海上绿地项目投资","bbox":[720,176,7,120]}
+{"kind":"textbox","id":"sh/0v6xcr6h","slide":5,"name":"kpi-value-海上绿地项目投资","text":">$100bn","textPreview":">$100bn","textChars":7,"textLines":1,"bbox":[748,186,452,38]}
+{"kind":"textbox","id":"sh/zuxg36pw","slide":5,"name":"kpi-label-海上绿地项目投资","text":"海上绿地项目投资","textPreview":"海上绿地项目投资","textChars":8,"textLines":1,"bbox":[748,226,452,26]}
+{"kind":"textbox","id":"sh/ytofa1or","slide":5,"name":"kpi-note-海上绿地项目投资","text":"2022年突破，报告预计后续保持高位","textPreview":"2022年突破，报告预计后续保持高位","textChars":18,"textLines":1,"bbox":[748,254,452,34]}
+{"kind":"shape","id":"sh/dsfy1w76","slide":5,"name":"kpi-深水发现占比","bbox":[720,320,500,120]}
+{"kind":"shape","id":"sh/cr6x8r6l","slide":5,"name":"kpi-accent-深水发现占比","bbox":[720,320,7,120]}
+{"kind":"textbox","id":"sh/bqxgzmp0","slide":5,"name":"kpi-value-深水发现占比","text":"51%","textPreview":"51%","textChars":3,"textLines":1,"bbox":[748,330,452,38]}
+{"kind":"textbox","id":"sh/qpof6hof","slide":5,"name":"kpi-label-深水发现占比","text":"深水发现占比","textPreview":"深水发现占比","textChars":6,"textLines":1,"bbox":[748,370,452,26]}
+{"kind":"textbox","id":"sh/povyxc7u","slide":5,"name":"kpi-note-深水发现占比","text":"2011-2023年；2000-2010年为30%","textPreview":"2011-2023年；2000-2010年为30%","textChars":25,"textLines":1,"bbox":[748,398,452,34]}
+{"kind":"shape","id":"sh/o3mx4769","slide":5,"name":"kpi-全球年均油气发现","bbox":[720,464,500,120]}
+{"kind":"shape","id":"sh/g7qxkry5","slide":5,"name":"kpi-accent-全球年均油气发现","bbox":[720,464,7,120]}
+{"kind":"textbox","id":"sh/h8zydcfq","slide":5,"name":"kpi-value-全球年均油气发现","text":"18bn boe/年","textPreview":"18bn boe/年","textChars":10,"textLines":1,"bbox":[748,474,452,38]}
+{"kind":"textbox","id":"sh/u58fihgf","slide":5,"name":"kpi-label-全球年均油气发现","text":"全球年均油气发现","textPreview":"全球年均油气发现","textChars":8,"textLines":1,"bbox":[748,514,452,26]}
+{"kind":"textbox","id":"sh/f6hgbmxk","slide":5,"name":"kpi-note-全球年均油气发现","text":"2011-2023年，深水占比持续提升","textPreview":"2011-2023年，深水占比持续提升","textChars":19,"textLines":1,"bbox":[748,542,452,34]}
+{"kind":"textbox","id":"sh/s3qxg7y9","slide":5,"name":"source-3","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第3页；天然气单位已由亿立方米换算为十亿立方米","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第3页；天然气单位已由亿立方米换算为十亿立方米","textChars":60,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"chart","id":"ch/9wzmhsfi","slide":5,"name":"","chartType":"bar","bbox":[56,186,286,360]}
+{"kind":"chart","id":"ch/nuh4fixc","slide":5,"name":"","chartType":"bar","bbox":[380,186,286,360]}
+{"kind":"notes","id":"nt/6sgdvy","slide":5,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第3页。；天然气单位已由亿立方米换算为十亿立方米\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/r0sjh8","slide":6,"title":"中国结构机会","textShapes":16}
+{"kind":"textbox","id":"sh/ze5kryxc","slide":6,"name":"section-6","text":"中国结构机会","textPreview":"中国结构机会","textChars":6,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/0felk3yx","slide":6,"name":"title-6","text":"海洋油气已成为国内增储上产核心增量","textPreview":"海洋油气已成为国内增储上产核心增量","textChars":17,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/1gn2tof2","slide":6,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/q9c3e9gf","slide":6,"name":"page-6","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"shape","id":"sh/ralknex0","slide":6,"name":"kpi-2023年海洋原油产量","bbox":[56,176,350,210]}
+{"kind":"shape","id":"sh/cbelgjyl","slide":6,"name":"kpi-accent-2023年海洋原油产量","bbox":[56,176,7,210]}
+{"kind":"textbox","id":"sh/dcn2pof6","slide":6,"name":"kpi-value-2023年海洋原油产量","text":"6,220万吨","textPreview":"6,220万吨","textChars":7,"textLines":1,"bbox":[84,196,302,54]}
+{"kind":"textbox","id":"sh/2lc3a9gj","slide":6,"name":"kpi-label-2023年海洋原油产量","text":"2023年海洋原油产量","textPreview":"2023年海洋原油产量","textChars":11,"textLines":1,"bbox":[84,256,302,34]}
+{"kind":"textbox","id":"sh/36lkjex4","slide":6,"name":"kpi-note-2023年海洋原油产量","text":"同比新增约360万吨","textPreview":"同比新增约360万吨","textChars":10,"textLines":1,"bbox":[84,294,302,78]}
+{"kind":"shape","id":"sh/futkfy14","slide":6,"name":"kpi-占全国原油产量增量","bbox":[465,176,350,210]}
+{"kind":"shape","id":"sh/etk36t0j","slide":6,"name":"kpi-accent-占全国原油产量增量","bbox":[465,176,7,210]}
+{"kind":"textbox","id":"sh/1gb2h8ja","slide":6,"name":"kpi-value-占全国原油产量增量","text":">60%","textPreview":">60%","textChars":4,"textLines":1,"bbox":[493,196,302,54]}
+{"kind":"textbox","id":"sh/0f2l83ip","slide":6,"name":"kpi-label-占全国原油产量增量","text":"占全国原油产量增量","textPreview":"占全国原油产量增量","textChars":9,"textLines":1,"bbox":[493,256,302,34]}
+{"kind":"textbox","id":"sh/nit4jihg","slide":6,"name":"kpi-note-占全国原油产量增量","text":"海上石油贡献全国大部分新增产量","textPreview":"海上石油贡献全国大部分新增产量","textChars":15,"textLines":1,"bbox":[493,294,302,78]}
+{"kind":"shape","id":"sh/2hk3ad0v","slide":6,"name":"kpi-海洋油气资源占比","bbox":[874,176,350,210]}
+{"kind":"shape","id":"sh/pkbml8z6","slide":6,"name":"kpi-accent-海洋油气资源占比","bbox":[874,176,7,210]}
+{"kind":"textbox","id":"sh/oj2lcni1","slide":6,"name":"kpi-value-海洋油气资源占比","text":"约1/3","textPreview":"约1/3","textChars":4,"textLines":1,"bbox":[902,196,302,54]}
+{"kind":"textbox","id":"sh/3m9k7e1w","slide":6,"name":"kpi-label-海洋油气资源占比","text":"海洋油气资源占比","textPreview":"海洋油气资源占比","textChars":8,"textLines":1,"bbox":[902,256,302,34]}
+{"kind":"textbox","id":"sh/ilg3y90b","slide":6,"name":"kpi-note-海洋油气资源占比","text":"占国内油气总资源量","textPreview":"占国内油气总资源量","textChars":9,"textLines":1,"bbox":[902,294,302,78]}
+{"kind":"shape","id":"sh/6t8f2lob","slide":6,"name":"china-implication","bbox":[56,438,1168,150]}
+{"kind":"textbox","id":"sh/7uhwvq5w","slide":6,"name":"china-implication-head","text":"重点方向","textPreview":"重点方向","textChars":4,"textLines":1,"bbox":[92,472,150,32]}
+{"kind":"textbox","id":"sh/svqx4v6h","slide":6,"name":"china-implication-body","text":"近海深层/超深层 + 深水海域 + 海上稠油与低渗透资源","textPreview":"近海深层/超深层 + 深水海域 + 海上稠油与低渗透资源","textChars":28,"textLines":1,"bbox":[250,466,900,44]}
+{"kind":"textbox","id":"sh/tgzexgn2","slide":6,"name":"china-implication-note","text":"资源禀赋、能源安全目标和工程能力共同推动海洋油气成为持续性政策与资本投入方向。","textPreview":"资源禀赋、能源安全目标和工程能力共同推动海洋油气成为持续性政策与资本投入方向。","textChars":39,"textLines":1,"bbox":[250,526,880,40]}
+{"kind":"textbox","id":"sh/ipofy1of","slide":6,"name":"source-4","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第4页","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第4页","textChars":40,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"notes","id":"nt/r0sjh8","slide":6,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第4页。\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/djtjwb","slide":7,"title":"公司兑现","textShapes":13}
+{"kind":"textbox","id":"sh/ls7qd8na","slide":7,"name":"section-7","text":"公司兑现","textPreview":"公司兑现","textChars":4,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/ypgr2doj","slide":7,"name":"title-7","text":"储量与产量同步增长，增长质量由替代率验证","textPreview":"储量与产量同步增长，增长质量由替代率验证","textChars":20,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/jqp8bi54","slide":7,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/8vy98n61","slide":7,"name":"page-7","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"shape","id":"sh/6tgr6dov","slide":7,"name":"kpi-2023年储量替代率","bbox":[760,176,464,126]}
+{"kind":"shape","id":"sh/7up8fi5g","slide":7,"name":"kpi-accent-2023年储量替代率","bbox":[760,176,7,126]}
+{"kind":"textbox","id":"sh/gji9cn6x","slide":7,"name":"kpi-value-2023年储量替代率","text":"180%","textPreview":"180%","textChars":4,"textLines":1,"bbox":[788,186,416,38]}
+{"kind":"textbox","id":"sh/hkralsni","slide":7,"name":"kpi-label-2023年储量替代率","text":"2023年储量替代率","textPreview":"2023年储量替代率","textChars":10,"textLines":1,"bbox":[788,226,416,26]}
+{"kind":"textbox","id":"sh/90z2tk7a","slide":7,"name":"kpi-note-2023年储量替代率","text":"连续7年储量寿命维持10年以上","textPreview":"连续7年储量寿命维持10年以上","textChars":15,"textLines":1,"bbox":[788,254,416,40]}
+{"kind":"shape","id":"sh/ozq10f6p","slide":7,"name":"kpi-净证实储量同比","bbox":[760,326,464,126]}
+{"kind":"shape","id":"sh/nyhkrap4","slide":7,"name":"kpi-accent-净证实储量同比","bbox":[760,326,7,126]}
+{"kind":"textbox","id":"sh/mx8jypoj","slide":7,"name":"kpi-value-净证实储量同比","text":"+8.7%","textPreview":"+8.7%","textChars":5,"textLines":1,"bbox":[788,336,416,38]}
+{"kind":"textbox","id":"sh/xoj2x476","slide":7,"name":"kpi-label-净证实储量同比","text":"净证实储量同比","textPreview":"净证实储量同比","textChars":7,"textLines":1,"bbox":[788,376,416,26]}
+{"kind":"textbox","id":"sh/wnal4z6l","slide":7,"name":"kpi-note-净证实储量同比","text":"国内储量同比增长12.6%","textPreview":"国内储量同比增长12.6%","textChars":13,"textLines":1,"bbox":[788,404,416,40]}
+{"kind":"shape","id":"sh/b21kvupg","slide":7,"name":"kpi-净产量同比","bbox":[760,476,464,126]}
+{"kind":"shape","id":"sh/a1832pov","slide":7,"name":"kpi-accent-净产量同比","bbox":[760,476,7,126]}
+{"kind":"textbox","id":"sh/dsf2l072","slide":7,"name":"kpi-value-净产量同比","text":"+8.7%","textPreview":"+8.7%","textChars":5,"textLines":1,"bbox":[788,486,416,38]}
+{"kind":"textbox","id":"sh/cr61sv6h","slide":7,"name":"kpi-label-净产量同比","text":"净产量同比","textPreview":"净产量同比","textChars":5,"textLines":1,"bbox":[788,526,416,26]}
+{"kind":"textbox","id":"sh/4bal8ved","slide":7,"name":"kpi-note-净产量同比","text":"2023年达到678百万桶油当量","textPreview":"2023年达到678百万桶油当量","textChars":16,"textLines":1,"bbox":[788,554,416,40]}
+{"kind":"textbox","id":"sh/5cj210fy","slide":7,"name":"source-4-6","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第4-6页；2022储量由2023值及8.7%增速反推，仅用于趋势对比","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第4-6页；2022储量由2023值及8.7%增速反推，仅用于趋势对比","textChars":72,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"chart","id":"ch/hkn2tsvq","slide":7,"name":"","chartType":"bar","bbox":[56,176,650,400]}
+{"kind":"notes","id":"nt/djtjwb","slide":7,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第4-6页。；2022储量由2023值及8.7%增速反推，仅用于趋势对比\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/jwe905","slide":8,"title":"资产组合","textShapes":5}
+{"kind":"textbox","id":"sh/on2xgrih","slide":8,"name":"section-8","text":"资产组合","textPreview":"资产组合","textChars":4,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/nm9wnm1w","slide":8,"name":"title-8","text":"渤海与南海东部构成国内储量和产量双支柱","textPreview":"渤海与南海东部构成国内储量和产量双支柱","textChars":19,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/ml0feh0b","slide":8,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/10relcjq","slide":8,"name":"page-8","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"shape","id":"sh/zy9wj21k","slide":8,"name":"portfolio-callout","bbox":[56,548,1168,70]}
+{"kind":"textbox","id":"sh/ex0fax0f","slide":8,"name":"portfolio-callout-text","text":"渤海提供最大体量，南海东部提供更快储量增速；东海与陆上虽基数较小，但产量增长更快。","textPreview":"渤海提供最大体量，南海东部提供更快储量增速；东海与陆上虽基数较小，但产量增长更快。","textChars":41,"textLines":1,"bbox":[84,568,1090,34]}
+{"kind":"textbox","id":"sh/dwrehsju","slide":8,"name":"source-7、10、13","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第7、10、13页","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第7、10、13页","textChars":46,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"table","id":"tb/l4zm1ove","slide":8,"name":"","rows":6,"cols":5,"preview":"区域 | 2023储量 百万桶油当量 | 储量同比 | 2023产量 桶油当量/日 | 产量同比","bbox":[56,184,1168,340]}
+{"kind":"notes","id":"nt/jwe905","slide":8,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第7、10、13页。\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/z7pm07","slide":9,"title":"技术壁垒","textShapes":14}
+{"kind":"textbox","id":"sh/d4rylkny","slide":9,"name":"section-9","text":"技术壁垒","textPreview":"技术壁垒","textChars":4,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/q1gza5o7","slide":9,"name":"title-9","text":"理论、工程与项目经验形成深水开发闭环","textPreview":"理论、工程与项目经验形成深水开发闭环","textChars":18,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/b2pgja5s","slide":9,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/ofyh8v6h","slide":9,"name":"page-9","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"shape","id":"sh/pg7yh0nm","slide":9,"name":"tech-0","bbox":[56,182,350,348]}
+{"kind":"textbox","id":"sh/2dgz65ob","slide":9,"name":"tech-no-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[84,210,80,46]}
+{"kind":"textbox","id":"sh/3epgfa5w","slide":9,"name":"tech-head-0","text":"勘探理论","textPreview":"勘探理论","textChars":4,"textLines":1,"bbox":[84,274,280,40]}
+{"kind":"textbox","id":"sh/gbex4v65","slide":9,"name":"tech-body-0","text":"深水成藏、高温高压、深埋潜山等理论创新，提高复杂区资源识别率。","textPreview":"深水成藏、高温高压、深埋潜山等理论创新，提高复杂区资源识别率。","textChars":31,"textLines":1,"bbox":[84,338,286,150]}
+{"kind":"shape","id":"sh/1cnyd0nq","slide":9,"name":"tech-1","bbox":[448,182,350,348]}
+{"kind":"textbox","id":"sh/tgfe9472","slide":9,"name":"tech-no-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[476,210,80,46]}
+{"kind":"textbox","id":"sh/sfmxgz6h","slide":9,"name":"tech-head-1","text":"钻完井技术","textPreview":"钻完井技术","textChars":5,"textLines":1,"bbox":[476,274,280,40]}
+{"kind":"textbox","id":"sh/7udw7upw","slide":9,"name":"tech-body-1","text":"深水表层导管、无隔水管钻井、井壁强化和优快钻井形成自主能力。","textPreview":"深水表层导管、无隔水管钻井、井壁强化和优快钻井形成自主能力。","textChars":30,"textLines":1,"bbox":[476,338,286,150]}
+{"kind":"shape","id":"sh/6t4fepob","slide":9,"name":"tech-2","bbox":[840,182,350,348]}
+{"kind":"textbox","id":"sh/5svelk76","slide":9,"name":"tech-no-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[868,210,80,46]}
+{"kind":"textbox","id":"sh/krmxcf6l","slide":9,"name":"tech-head-2","text":"工程装备","textPreview":"工程装备","textChars":4,"textLines":1,"bbox":[868,274,280,40]}
+{"kind":"textbox","id":"sh/jqdwjap0","slide":9,"name":"tech-body-2","text":"“海洋石油981”“深海一号”“海基二号”等装备覆盖勘探、生产与集输。","textPreview":"“海洋石油981”“深海一号”“海基二号”等装备覆盖勘探、生产与集输。","textChars":35,"textLines":1,"bbox":[868,338,286,150]}
+{"kind":"textbox","id":"sh/ip4fa5of","slide":9,"name":"tech-proof","text":"工程效率证明：渤海平均钻井周期由57天降至10天以内，效率提升6-7倍。","textPreview":"工程效率证明：渤海平均钻井周期由57天降至10天以内，效率提升6-7倍。","textChars":36,"textLines":1,"bbox":[56,562,1168,48]}
+{"kind":"textbox","id":"sh/xobehk7u","slide":9,"name":"source-14-16","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第14-16页","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第14-16页","textChars":44,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"notes","id":"nt/z7pm07","slide":9,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第14-16页。\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/68x0wa","slide":10,"title":"财务与估值","textShapes":5}
+{"kind":"textbox","id":"sh/sv21s36h","slide":10,"name":"section-10","text":"财务与估值","textPreview":"财务与估值","textChars":5,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/rat0zy5w","slide":10,"name":"title-10","text":"盈利增长消化估值，现金流维持较强","textPreview":"盈利增长消化估值，现金流维持较强","textChars":16,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/69kjqtob","slide":10,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/10vi58ne","slide":10,"name":"page-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"shape","id":"sh/ex4juton","slide":10,"name":"financial-callout","bbox":[56,554,1168,64]}
+{"kind":"textbox","id":"sh/x4rit47u","slide":10,"name":"financial-callout-text","text":"原报告维持“买入”评级；预测期净利润增长与PE下行同时出现。","textPreview":"原报告维持“买入”评级；预测期净利润增长与PE下行同时出现。","textChars":30,"textLines":1,"bbox":[84,571,1100,32]}
+{"kind":"textbox","id":"sh/w3ih0j69","slide":10,"name":"source-17-18","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第17-18页；金额由百万元换算为亿元","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第17-18页；金额由百万元换算为亿元","textChars":56,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"chart","id":"ch/nmh8jal4","slide":10,"name":"","chartType":"line","bbox":[830,184,394,340]}
+{"kind":"table","id":"tb/5ozatgv2","slide":10,"name":"","rows":6,"cols":5,"preview":"指标 | 2023A | 2024E | 2025E | 2026E","bbox":[56,184,730,340]}
+{"kind":"notes","id":"nt/68x0wa","slide":10,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第17-18页。；金额由百万元换算为亿元\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/zheqy1","slide":11,"title":"催化与风险","textShapes":22}
+{"kind":"textbox","id":"sh/8rq183qd","slide":11,"name":"section-11","text":"催化与风险","textPreview":"催化与风险","textChars":5,"textLines":1,"bbox":[56,28,350,24]}
+{"kind":"textbox","id":"sh/7qh0fy9s","slide":11,"name":"title-11","text":"上行来自资源兑现，下行集中于油价与执行","textPreview":"上行来自资源兑现，下行集中于油价与执行","textChars":19,"textLines":1,"bbox":[56,58,1168,72]}
+{"kind":"shape","id":"sh/65oj6t87","slide":11,"bbox":[56,140,1168,1]}
+{"kind":"textbox","id":"sh/l4fidorm","slide":11,"name":"page-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1170,676,54,18]}
+{"kind":"textbox","id":"sh/k3614jq1","slide":11,"name":"catalyst-head","text":"潜在催化","textPreview":"潜在催化","textChars":4,"textLines":1,"bbox":[56,184,520,38]}
+{"kind":"textbox","id":"sh/j2x0be9g","slide":11,"name":"risk-head","text":"核心风险","textPreview":"核心风险","textChars":4,"textLines":1,"bbox":[680,184,520,38]}
+{"kind":"shape","id":"sh/y1oj2t8v","slide":11,"name":"cat-no-0","bbox":[56,248,44,44]}
+{"kind":"textbox","id":"sh/x0fi9orq","slide":11,"name":"cat-n-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[56,254,44,28]}
+{"kind":"textbox","id":"sh/wz610jq5","slide":11,"name":"cat-t-0","text":"新增亿吨级发现转化为可采储量","textPreview":"新增亿吨级发现转化为可采储量","textChars":14,"textLines":1,"bbox":[120,252,480,48]}
+{"kind":"shape","id":"sh/y5wb6xcn","slide":11,"name":"cat-no-1","bbox":[56,330,44,44]}
+{"kind":"textbox","id":"sh/z65sz2d8","slide":11,"name":"cat-n-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[56,336,44,28]}
+{"kind":"textbox","id":"sh/0ret87ut","slide":11,"name":"cat-t-1","text":"深水/超深水新项目按期投产","textPreview":"深水/超深水新项目按期投产","textChars":13,"textLines":1,"bbox":[120,334,480,48]}
+{"kind":"shape","id":"sh/lsna1cve","slide":11,"name":"cat-no-2","bbox":[56,412,44,44]}
+{"kind":"textbox","id":"sh/q1cr2xwr","slide":11,"name":"cat-n-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[56,418,44,28]}
+{"kind":"textbox","id":"sh/b2lsv2dc","slide":11,"name":"cat-t-2","text":"钻完井效率继续提升、桶油成本下降","textPreview":"钻完井效率继续提升、桶油成本下降","textChars":16,"textLines":1,"bbox":[120,416,480,48]}
+{"kind":"shape","id":"sh/c3ut47ex","slide":11,"name":"cat-no-3","bbox":[56,494,44,44]}
+{"kind":"textbox","id":"sh/d4naxcv2","slide":11,"name":"cat-n-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[56,500,44,28]}
+{"kind":"textbox","id":"sh/2xcrydwf","slide":11,"name":"cat-t-3","text":"油价中枢与分红能力维持稳定","textPreview":"油价中枢与分红能力维持稳定","textChars":13,"textLines":1,"bbox":[120,498,480,48]}
+{"kind":"shape","id":"sh/3ylsrid0","slide":11,"name":"risk-no-0","bbox":[680,248,44,44]}
+{"kind":"textbox","id":"sh/7qxgjupg","slide":11,"name":"risk-n-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[680,254,44,28]}
+{"kind":"textbox","id":"sh/65ozap8b","slide":11,"name":"risk-t-0","text":"原油价格大幅波动","textPreview":"原油价格大幅波动","textChars":8,"textLines":1,"bbox":[744,252,480,48]}
+{"kind":"shape","id":"sh/tszyl47m","slide":11,"name":"risk-no-1","bbox":[680,330,44,44]}
+{"kind":"textbox","id":"sh/8r6hczq1","slide":11,"name":"risk-n-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[680,336,44,28]}
+{"kind":"textbox","id":"sh/fuhgnups","slide":11,"name":"risk-t-1","text":"新项目投产与产量爬坡不及预期","textPreview":"新项目投产与产量爬坡不及预期","textChars":14,"textLines":1,"bbox":[744,334,480,48]}
+{"kind":"shape","id":"sh/ut8zepo7","slide":11,"name":"risk-no-2","bbox":[680,412,44,44]}
+{"kind":"textbox","id":"sh/hwzyp47y","slide":11,"name":"risk-n-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[680,418,44,28]}
+{"kind":"textbox","id":"sh/gvqhgz6d","slide":11,"name":"risk-t-2","text":"台风、设备与海上作业安全事件","textPreview":"台风、设备与海上作业安全事件","textChars":14,"textLines":1,"bbox":[744,416,480,48]}
+{"kind":"shape","id":"sh/bydgbapo","slide":11,"name":"risk-no-3","bbox":[680,494,44,44]}
+{"kind":"textbox","id":"sh/ax4f2583","slide":11,"name":"risk-n-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[680,500,44,28]}
+{"kind":"textbox","id":"sh/032dcb6l","slide":11,"name":"risk-t-3","text":"海外项目地缘政治与政策变化","textPreview":"海外项目地缘政治与政策变化","textChars":13,"textLines":1,"bbox":[744,498,480,48]}
+{"kind":"textbox","id":"sh/14be5gn6","slide":11,"name":"source-1、6、17","text":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第1、6、17页","textPreview":"资料来源：国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第1、6、17页","textChars":45,"textLines":1,"bbox":[56,674,1020,20]}
+{"kind":"notes","id":"nt/zheqy1","slide":11,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，第1、6、17页。\n- 本页为历史资料结构化整理，不构成当前投资建议。"}
+{"kind":"slide","id":"sl/f3ovae","slide":12,"title":"RESEARCH CONCLUSION","textShapes":12}
+{"kind":"textbox","id":"sh/id87yt0j","slide":12,"name":"close-eyebrow","text":"RESEARCH CONCLUSION","textPreview":"RESEARCH CONCLUSION","textChars":19,"textLines":1,"bbox":[56,42,360,28]}
+{"kind":"textbox","id":"sh/50zq98zu","slide":12,"name":"close-title","text":"用四个变量持续验证深水成长逻辑","textPreview":"用四个变量持续验证深水成长逻辑","textChars":15,"textLines":1,"bbox":[56,88,1120,74]}
+{"kind":"shape","id":"sh/4zqp03i9","slide":12,"name":"close-0","bbox":[56,220,260,220]}
+{"kind":"textbox","id":"sh/r218bih0","slide":12,"name":"close-head-0","text":"资源","textPreview":"资源","textChars":2,"textLines":1,"bbox":[80,248,210,50]}
+{"kind":"textbox","id":"sh/q1872d0f","slide":12,"name":"close-body-0","text":"新增发现、储量替代率、储量寿命","textPreview":"新增发现、储量替代率、储量寿命","textChars":15,"textLines":1,"bbox":[80,326,210,84]}
+{"kind":"shape","id":"sh/d4jqdsz6","slide":12,"name":"close-1","bbox":[348,220,260,220]}
+{"kind":"textbox","id":"sh/s3ap4nil","slide":12,"name":"close-head-1","text":"产量","textPreview":"产量","textChars":2,"textLines":1,"bbox":[372,248,210,50]}
+{"kind":"textbox","id":"sh/76xoze1w","slide":12,"name":"close-body-1","text":"新项目投产、产量指引、区域结构","textPreview":"新项目投产、产量指引、区域结构","textChars":15,"textLines":1,"bbox":[372,326,210,84]}
+{"kind":"shape","id":"sh/65o7q90b","slide":12,"name":"close-2","bbox":[640,220,260,220]}
+{"kind":"textbox","id":"sh/kv69wnip","slide":12,"name":"close-head-2","text":"成本","textPreview":"成本","textChars":2,"textLines":1,"bbox":[664,248,210,50]}
+{"kind":"textbox","id":"sh/lwfqpsza","slide":12,"name":"close-body-2","text":"桶油成本、钻完井周期、资本开支","textPreview":"桶油成本、钻完井周期、资本开支","textChars":15,"textLines":1,"bbox":[664,326,210,84]}
+{"kind":"shape","id":"sh/ytorud0z","slide":12,"name":"close-3","bbox":[932,220,260,220]}
+{"kind":"textbox","id":"sh/jux8nih4","slide":12,"name":"close-head-3","text":"价格","textPreview":"价格","textChars":2,"textLines":1,"bbox":[956,248,210,50]}
+{"kind":"textbox","id":"sh/8jq907i1","slide":12,"name":"close-body-3","text":"油价中枢、现金流、分红与估值","textPreview":"油价中枢、现金流、分红与估值","textChars":14,"textLines":1,"bbox":[956,326,210,84]}
+{"kind":"shape","id":"sh/tkzatszm","slide":12,"bbox":[56,500,1168,2]}
+{"kind":"textbox","id":"sh/6h8ryx0v","slide":12,"name":"close-thesis","text":"核心逻辑仍是：低探明率提供空间，技术降本打开经济性，持续资本投入完成资源到现金流的转化。","textPreview":"核心逻辑仍是：低探明率提供空间，技术降本打开经济性，持续资本投入完成资源到现金流的转化。","textChars":44,"textLines":1,"bbox":[56,536,1120,62]}
+{"kind":"textbox","id":"sh/7ih8r2hg","slide":12,"name":"close-disclaimer","text":"资料基于2024年报告，仅用于研究框架复盘；使用前请补充最新油价、公司公告与盈利预测。","textPreview":"资料基于2024年报告，仅用于研究框架复盘；使用前请补充最新油价、公司公告与盈利预测。","textChars":43,"textLines":1,"bbox":[56,642,1120,28]}
+{"kind":"notes","id":"nt/f3ovae","slide":12,"text":"[Sources]\n- 国信证券《深水、超深水油气资源前景广阔》，2024-04-03，全文。\n- 本页为历史资料总结，不构成当前投资建议。"}

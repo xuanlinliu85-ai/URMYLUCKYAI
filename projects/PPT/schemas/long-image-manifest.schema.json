@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Long Image Manifest",
+  "type": "object",
+  "properties": {
+    "schema": { "const": "ppt-factory/long-image-manifest/v1" },
+    "sourceDir": { "type": "string" },
+    "slideOrder": { "type": "array", "minItems": 1, "maxItems": 8, "uniqueItems": true, "items": { "type": "integer", "minimum": 1 } },
+    "sourceFiles": { "type": "array" },
+    "variants": {
+      "type": "object",
+      "properties": {
+        "vertical9x16": { "$ref": "#/$defs/variant" },
+        "highResolution2160w": { "$ref": "#/$defs/variant" }
+      },
+      "required": ["vertical9x16", "highResolution2160w"]
+    },
+    "createdAt": { "type": "string" }
+  },
+  "required": ["schema", "sourceDir", "slideOrder", "sourceFiles", "variants", "createdAt"],
+  "$defs": {
+    "variant": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "margin": { "type": "integer", "minimum": 0 },
+        "gap": { "type": "integer", "minimum": 0 },
+        "background": { "type": "string", "pattern": "^#[0-9A-F]{6}$" },
+        "placements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slide": { "type": "integer", "minimum": 1 },
+              "sourceWidth": { "type": "integer", "minimum": 1 },
+              "sourceHeight": { "type": "integer", "minimum": 1 },
+              "left": { "type": "integer", "minimum": 0 },
+              "top": { "type": "integer", "minimum": 0 },
+              "width": { "type": "integer", "minimum": 1 },
+              "height": { "type": "integer", "minimum": 1 },
+              "cropped": { "const": false }
+            },
+            "required": ["slide", "sourceWidth", "sourceHeight", "left", "top", "width", "height", "cropped"]
+          }
+        }
+      },
+      "required": ["path", "width", "height", "margin", "gap", "background", "placements"]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "title": "PPT Factory Approval Event", "type": "object", "additionalProperties": false,
+  "required": ["schema", "requestId", "sequence", "eventId", "idempotencyKey", "type", "actorId", "actorRole", "occurredAt", "previousEventHash", "eventHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/approval-event/v1" }, "requestId": { "type": "string" }, "sequence": { "const": 1 }, "eventId": { "type": "string" },
+    "idempotencyKey": { "type": "string" }, "type": { "enum": ["approved", "rejected"] }, "actorId": { "type": "string" }, "actorRole": { "const": "owner" },
+    "occurredAt": { "type": "string", "format": "date-time" }, "reason": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "previousEventHash": { "type": "null" }, "eventHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  },
+  "allOf": [{ "if": { "properties": { "type": { "const": "rejected" } } }, "then": { "required": ["reason"] } }]
+}

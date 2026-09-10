@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Brand Governance Acceptance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "status", "source", "policy", "evidence", "cases", "checks", "artifacts"],
+  "properties": {
+    "schema": { "const": "ppt-factory/brand-governance-acceptance/v1" },
+    "status": { "enum": ["PASS", "FAIL"] },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["projectId", "pptx", "sha256Before", "sha256After", "slides", "editableRatio", "qaStatus"],
+      "properties": {
+        "projectId": { "type": "string" }, "pptx": { "type": "string" },
+        "sha256Before": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "sha256After": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "slides": { "type": "integer", "minimum": 1, "maximum": 8 },
+        "editableRatio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "qaStatus": { "enum": ["PASS", "REVIEW", "FAIL"] }
+      }
+    },
+    "policy": {
+      "type": "object", "additionalProperties": false, "required": ["artifactId", "version", "teamArtifactHash"],
+      "properties": { "artifactId": { "type": "string" }, "version": { "type": "string" }, "teamArtifactHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" } }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manifestName", "manifestHash", "persisted", "derived", "chartClassification"],
+      "properties": {
+        "manifestName": { "type": "string" },
+        "manifestHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "persisted": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "derived": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "chartClassification": { "const": "unclassified-native" }
+      }
+    },
+    "cases": {
+      "type": "array", "minItems": 2, "maxItems": 2,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["id", "reportStatus", "decision", "reportHash"],
+        "properties": {
+          "id": { "enum": ["compliant", "violating"] },
+          "reportStatus": { "enum": ["COMPLIANT", "COMPLIANT_WITH_WARNINGS", "VIOLATING", "INTEGRITY_FAILURE"] },
+          "decision": { "enum": ["ALLOW", "ALLOW_WITH_WARNINGS", "BLOCKED"] },
+          "reportHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "checks": { "type": "object", "additionalProperties": { "type": "boolean" } },
+    "artifacts": { "type": "array", "minItems": 4, "items": { "type": "string" } }
+  }
+}

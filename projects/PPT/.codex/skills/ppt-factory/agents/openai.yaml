@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT Factory"
+  short_description: "Build editable, style-aware PowerPoint workflows"
+  default_prompt: "Use $ppt-factory to build or run the V1 editable PowerPoint workflow."

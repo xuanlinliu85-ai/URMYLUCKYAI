@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Brand Policy Publication Draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["policyId", "version", "name", "rules"],
+  "properties": {
+    "policyId": { "$ref": "brand-policy.schema.json#/$defs/artifactId" },
+    "version": { "$ref": "brand-policy.schema.json#/$defs/version" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "sourceProjectId": { "$ref": "brand-policy.schema.json#/$defs/scopeId" },
+    "rules": { "$ref": "brand-policy.schema.json#/properties/rules" },
+    "exemptions": {
+      "type": "array", "maxItems": 200,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["exemptionId", "ruleIds", "deckVersionIds", "auditReason"],
+        "properties": {
+          "exemptionId": { "$ref": "brand-policy.schema.json#/$defs/artifactId" },
+          "ruleIds": { "type": "array", "minItems": 1, "maxItems": 200, "uniqueItems": true, "items": { "$ref": "brand-policy.schema.json#/$defs/artifactId" } },
+          "deckVersionIds": { "type": "array", "minItems": 1, "maxItems": 200, "uniqueItems": true, "items": { "$ref": "brand-policy.schema.json#/$defs/artifactId" } },
+          "auditReason": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "expiresAt": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

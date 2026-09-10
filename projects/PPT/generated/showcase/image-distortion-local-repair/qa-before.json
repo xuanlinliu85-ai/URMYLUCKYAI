@@ -1,0 +1,1043 @@
+{
+  "status": "FAIL",
+  "overall": 91,
+  "readability": 90,
+  "hierarchy": 92,
+  "alignment": 94,
+  "whitespace": 90,
+  "dataVisualization": 88,
+  "styleConsistency": 91,
+  "referenceFidelity": 91,
+  "fidelity": {
+    "mode": "measured",
+    "overall": 91,
+    "target": 70,
+    "passed": true,
+    "referenceSlides": 8,
+    "outputSlides": 8,
+    "dimensions": {
+      "typography": {
+        "score": 98.3,
+        "target": 70,
+        "weight": 20,
+        "passed": true,
+        "locked": false,
+        "evidence": "font-size hierarchy and emphasis distribution",
+        "repairHint": {
+          "fontScale": 0.97
+        }
+      },
+      "color": {
+        "score": 95.7,
+        "target": 70,
+        "weight": 15,
+        "passed": true,
+        "locked": false,
+        "evidence": "rendered RGB distribution"
+      },
+      "layout": {
+        "score": 96.3,
+        "target": 70,
+        "weight": 20,
+        "passed": true,
+        "locked": false,
+        "evidence": "object-center grid distribution"
+      },
+      "chartStyle": {
+        "score": 55,
+        "target": 70,
+        "weight": 15,
+        "passed": false,
+        "locked": false,
+        "evidence": "native chart frequency and emphasis"
+      },
+      "density": {
+        "score": 99,
+        "target": 70,
+        "weight": 10,
+        "passed": true,
+        "locked": false,
+        "evidence": "foreground coverage and edge density"
+      },
+      "composition": {
+        "score": 98.9,
+        "target": 70,
+        "weight": 10,
+        "passed": true,
+        "locked": false,
+        "evidence": "page visual-weight distribution"
+      },
+      "storytelling": {
+        "score": 99.2,
+        "target": 70,
+        "weight": 5,
+        "passed": true,
+        "locked": false,
+        "evidence": "slide-count and page-rhythm profile"
+      },
+      "visualTone": {
+        "score": 96.4,
+        "target": 70,
+        "weight": 5,
+        "passed": true,
+        "locked": false,
+        "evidence": "brightness, contrast, saturation and edge tone"
+      }
+    }
+  },
+  "technical": {
+    "contrast": {
+      "score": 98.7,
+      "target": 100,
+      "passed": false,
+      "checkedObjects": 81,
+      "failingObjects": 3,
+      "findings": [
+        {
+          "slide": 1,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "cover-title",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "cover-subtitle",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "slide-title",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-index-1",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.95,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-1",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-index-2",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.95,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-2",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-index-3",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.95,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-3",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-index-4",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.95,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-4",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "slide-title",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-kicker",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 2.87,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#4F9E95",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-claim",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 14.31,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-caption",
+          "foregroundColor": "#D5E0E8",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 10.67,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-number-1",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.51,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-proof-1",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-number-2",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.51,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-proof-2",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "slide-title",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-editorial-kicker",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#FFFDF8",
+          "ratio": 5.38,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-editorial-value",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#FFFDF8",
+          "ratio": 5.38,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-editorial-copy",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#FFFDF8",
+          "ratio": 16.03,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-side-value-1",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-side-copy-1",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-side-value-2",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-side-copy-2",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-side-value-3",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-side-copy-3",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "slide-title",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-editorial-kicker",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#FFFDF8",
+          "ratio": 5.38,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-editorial-value",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#FFFDF8",
+          "ratio": 5.38,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-editorial-copy",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#FFFDF8",
+          "ratio": 16.03,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-side-value-1",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-side-copy-1",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-side-value-2",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-side-copy-2",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-side-value-3",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-side-copy-3",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "slide-title",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-step-1",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#9A574B",
+          "ratio": 5.47,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-label-1",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-copy-1",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-step-2",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#147D72",
+          "ratio": 4.99,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-label-2",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-copy-2",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-decision",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.95,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "slide-title",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-1",
+          "foregroundColor": "#9A574B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.95,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-1",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-2",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-2",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-3",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-3",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "gate-label",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 2.87,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#4F9E95",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "gate-copy",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 14.31,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "direction-label",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "page-number",
+          "foregroundColor": "#626C75",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.84,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-label",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 2.87,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#4F9E95",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-title",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 14.31,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-subtitle",
+          "foregroundColor": "#D5E0E8",
+          "backgroundColor": "#1B2C3A",
+          "ratio": 10.67,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-index-1",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.51,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-1",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-index-2",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.51,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-2",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-index-3",
+          "foregroundColor": "#147D72",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 4.51,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-3",
+          "foregroundColor": "#17212B",
+          "backgroundColor": "#F8F3E9",
+          "ratio": 14.73,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        }
+      ]
+    },
+    "imageDistortion": {
+      "score": 0,
+      "target": 100,
+      "passed": false,
+      "checkedObjects": 1,
+      "failingObjects": 1,
+      "findings": [
+        {
+          "slide": 1,
+          "objectName": "qa-fixture-image",
+          "evidence": [
+            "native-image-metadata",
+            "inspect",
+            "layout"
+          ],
+          "reason": "stretched_aspect_ratio",
+          "severity": "critical",
+          "sourceAspectRatio": 1.7778,
+          "displayAspectRatio": 0.7188,
+          "ratioDelta": 0.9056,
+          "fit": "stretch",
+          "passed": false,
+          "recommendedFit": "contain",
+          "recommendedCrop": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "recommendedPosition": {
+            "left": 1000,
+            "top": 375.31,
+            "width": 230,
+            "height": 129.38
+          }
+        }
+      ]
+    }
+  },
+  "aiLookScore": 4,
+  "issues": [
+    {
+      "id": "contrast-3-1",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 3,
+      "message": "editorial-kicker contrast 2.87:1 is below 4.5:1 against rendered background #1B2C3A",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "editorial-kicker"
+      ],
+      "adjustments": {
+        "foregroundColor": "#4F9E95",
+        "backgroundColor": "#1B2C3A",
+        "contrastRatio": 2.87,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-7-2",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 7,
+      "message": "gate-label contrast 2.87:1 is below 4.5:1 against rendered background #1B2C3A",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "gate-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#4F9E95",
+        "backgroundColor": "#1B2C3A",
+        "contrastRatio": 2.87,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-8-3",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 8,
+      "message": "conclusion-label contrast 2.87:1 is below 4.5:1 against rendered background #1B2C3A",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "conclusion-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#4F9E95",
+        "backgroundColor": "#1B2C3A",
+        "contrastRatio": 2.87,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "image-distortion-1-1",
+      "severity": "critical",
+      "category": "image-distortion",
+      "slide": 1,
+      "message": "qa-fixture-image failed image QA: stretched_aspect_ratio (source 1.7778, display 0.7188)",
+      "autoFixable": true,
+      "dimension": "imageDistortion",
+      "objectNames": [
+        "qa-fixture-image"
+      ],
+      "adjustments": {
+        "imageFit": "contain",
+        "imageCrop": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "imagePosition": {
+          "left": 1000,
+          "top": 375.31,
+          "width": 230,
+          "height": 129.38
+        }
+      }
+    },
+    {
+      "id": "fidelity-chartStyle",
+      "severity": "warning",
+      "category": "fidelity",
+      "message": "chartStyle fidelity 55 is below target 70 (native chart frequency and emphasis)",
+      "autoFixable": true,
+      "dimension": "chartStyle"
+    }
+  ],
+  "repairPass": 0
+}

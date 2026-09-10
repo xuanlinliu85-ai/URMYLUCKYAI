@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Team Style Library",
+  "type": "object",
+  "required": ["schema", "tenantId", "teamId", "name", "revision", "createdAt", "updatedAt", "members", "artifacts"],
+  "properties": {
+    "schema": { "const": "ppt-factory/team-style-library/v1" },
+    "tenantId": { "$ref": "#/$defs/id" },
+    "teamId": { "$ref": "#/$defs/id" },
+    "name": { "type": "string", "minLength": 1 },
+    "revision": { "type": "integer", "minimum": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "members": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["userId", "role", "addedBy", "addedAt", "updatedBy", "updatedAt"],
+        "properties": {
+          "userId": { "$ref": "#/$defs/id" },
+          "role": { "enum": ["owner", "editor", "viewer"] },
+          "addedBy": { "$ref": "#/$defs/id" },
+          "addedAt": { "type": "string", "format": "date-time" },
+          "updatedBy": { "$ref": "#/$defs/id" },
+          "updatedAt": { "type": "string", "format": "date-time" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": { "$ref": "team-style-artifact-version.schema.json" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "id": { "type": "string", "maxLength": 80, "pattern": "^[a-zA-Z0-9_-]+$" }
+  }
+}

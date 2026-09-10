@@ -1,0 +1,755 @@
+{
+  "targets": 44,
+  "onlyTypefaceChanged": 44,
+  "allTargetsPreservedNonTypefaceProperties": true,
+  "changes": [
+    {
+      "slide": 1,
+      "objectName": "cover-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 1,
+      "objectName": "cover-subtitle",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 2,
+      "objectName": "direction-label",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 2,
+      "objectName": "slide-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 2,
+      "objectName": "summary-answer",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 2,
+      "objectName": "summary-point-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 2,
+      "objectName": "summary-point-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 3,
+      "objectName": "direction-label",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 3,
+      "objectName": "slide-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 3,
+      "objectName": "editorial-claim",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 3,
+      "objectName": "editorial-caption",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 3,
+      "objectName": "editorial-proof-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 3,
+      "objectName": "editorial-proof-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 4,
+      "objectName": "direction-label",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 4,
+      "objectName": "slide-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 4,
+      "objectName": "metric-decision-copy",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 5,
+      "objectName": "direction-label",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 5,
+      "objectName": "slide-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 5,
+      "objectName": "metric-value-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 5,
+      "objectName": "metric-context-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 5,
+      "objectName": "metric-context-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 5,
+      "objectName": "metric-value-3",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 5,
+      "objectName": "metric-context-3",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 6,
+      "objectName": "direction-label",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 6,
+      "objectName": "slide-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 6,
+      "objectName": "timeline-label-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 6,
+      "objectName": "timeline-copy-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 6,
+      "objectName": "timeline-label-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 6,
+      "objectName": "timeline-copy-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 6,
+      "objectName": "timeline-decision",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "direction-label",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "slide-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "target-context-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "target-value-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "target-context-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "target-value-3",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "target-context-3",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 7,
+      "objectName": "gate-copy",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 8,
+      "objectName": "direction-label",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 8,
+      "objectName": "conclusion-title",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 8,
+      "objectName": "conclusion-subtitle",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 8,
+      "objectName": "conclusion-point-1",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 8,
+      "objectName": "conclusion-point-2",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    },
+    {
+      "slide": 8,
+      "objectName": "conclusion-point-3",
+      "beforeTypefaces": [
+        "Noto Sans CJK Missing"
+      ],
+      "afterTypefaces": [
+        "Microsoft YaHei"
+      ],
+      "preserved": {
+        "text": true,
+        "geometry": true,
+        "fontSize": true,
+        "color": true
+      },
+      "onlyTypefaceChanged": true
+    }
+  ]
+}

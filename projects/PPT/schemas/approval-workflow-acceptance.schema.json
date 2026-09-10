@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "title": "PPT Factory Approval Workflow Acceptance", "type": "object", "additionalProperties": false,
+  "required": ["schema", "status", "source", "approval", "checks", "artifacts"],
+  "properties": {
+    "schema": { "const": "ppt-factory/approval-workflow-acceptance/v1" }, "status": { "enum": ["PASS", "FAIL"] },
+    "source": { "type": "object", "additionalProperties": false, "required": ["projectId", "pptx", "sha256Before", "sha256After", "slides", "editableRatio"], "properties": {
+      "projectId": { "type": "string" }, "pptx": { "type": "string" }, "sha256Before": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "sha256After": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+      "slides": { "type": "integer", "minimum": 1, "maximum": 8 }, "editableRatio": { "type": "number", "minimum": 0, "maximum": 1 }
+    } },
+    "approval": { "type": "object", "additionalProperties": false, "required": ["requestId", "reviewSessionId", "reviewRevision", "deckVersionId", "status", "decisionHash"], "properties": {
+      "requestId": { "type": "string" }, "reviewSessionId": { "type": "string" }, "reviewRevision": { "type": "integer", "minimum": 1 }, "deckVersionId": { "type": "string" },
+      "status": { "const": "approved" }, "decisionHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+    } },
+    "checks": { "type": "object", "additionalProperties": false,
+      "required": ["boundedExistingDeck", "sourceHashUnchanged", "persistedInspectAndLayouts", "openReviewRejected", "unresolvedCommentsRejected", "staleRequestRejected", "callerRoleIgnored", "blockedGovernanceRejected", "authoritativeBinding", "serverDecisionProvenance", "terminalIdempotency", "terminalDecisionReadable", "artifactFiles"],
+      "properties": {
+        "boundedExistingDeck": { "type": "boolean" }, "sourceHashUnchanged": { "type": "boolean" }, "persistedInspectAndLayouts": { "type": "boolean" }, "openReviewRejected": { "type": "boolean" },
+        "unresolvedCommentsRejected": { "type": "boolean" }, "staleRequestRejected": { "type": "boolean" }, "callerRoleIgnored": { "type": "boolean" }, "blockedGovernanceRejected": { "type": "boolean" }, "authoritativeBinding": { "type": "boolean" },
+        "serverDecisionProvenance": { "type": "boolean" }, "terminalIdempotency": { "type": "boolean" }, "terminalDecisionReadable": { "type": "boolean" }, "artifactFiles": { "type": "boolean" }
+      }
+    },
+    "artifacts": { "type": "array", "items": { "enum": ["APPROVAL_REQUEST.json", "APPROVAL_EVENTS.ndjson", "APPROVAL_SNAPSHOT.json", "APPROVAL_DECISION.json"] }, "minItems": 4, "maxItems": 4, "uniqueItems": true }
+  }
+}

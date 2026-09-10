@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory explicit preference event artifacts",
+  "type": "object",
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "projectId", "userKey"],
+      "properties": {
+        "kind": { "const": "local-project-user-placeholder" },
+        "projectId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "userKey": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifactType", "id", "version"],
+      "properties": {
+        "artifactType": { "enum": ["golden_slide", "style_pack"] },
+        "id": { "type": "string" },
+        "version": { "type": "string" }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["favorite", "use", "reject"],
+      "properties": {
+        "favorite": { "type": "integer", "minimum": 0 },
+        "use": { "type": "integer", "minimum": 0 },
+        "reject": { "type": "integer", "minimum": 0 }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "scope", "events"],
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-event-journal/v1" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["schema", "eventId", "sequence", "idempotencyKey", "action", "subject"],
+            "properties": {
+              "schema": { "const": "ppt-factory/preference-event/v1" },
+              "eventId": { "type": "string", "pattern": "^pref_[a-f0-9]{20}$" },
+              "sequence": { "type": "integer", "minimum": 1 },
+              "idempotencyKey": { "type": "string", "minLength": 1, "maxLength": 128 },
+              "action": { "enum": ["favorite", "use", "reject"] },
+              "subject": { "$ref": "#/$defs/subject" }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "scope", "totalEvents", "policy", "subjects"],
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-profile/v1" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "totalEvents": { "type": "integer", "minimum": 0 },
+        "policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["automaticDesignChanges", "semanticSearchRanking", "weights"],
+          "properties": {
+            "automaticDesignChanges": { "const": false },
+            "semanticSearchRanking": { "const": "explicit-opt-in-only" },
+            "weights": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["favorite", "use", "reject"],
+              "properties": {
+                "favorite": { "const": 3 }, "use": { "const": 1 }, "reject": { "const": -4 }
+              }
+            }
+          }
+        },
+        "subjects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["subject", "searchDocumentId", "counts", "weightedTotal", "signal", "latestSequence", "evidence"],
+            "properties": {
+              "subject": { "$ref": "#/$defs/subject" },
+              "searchDocumentId": { "type": "string" },
+              "counts": { "$ref": "#/$defs/counts" },
+              "weightedTotal": { "type": "number" },
+              "signal": { "type": "number", "minimum": -100, "maximum": 100 },
+              "latestSequence": { "type": "integer", "minimum": 1 },
+              "evidence": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "revision", "scope", "journal", "profile", "snapshotHash"],
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-event-snapshot/v1" },
+        "revision": { "type": "integer", "minimum": 1 },
+        "scope": { "$ref": "#/$defs/scope" },
+        "journal": { "$ref": "#/oneOf/0" },
+        "profile": { "$ref": "#/oneOf/1" },
+        "snapshotHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    }
+  ]
+}

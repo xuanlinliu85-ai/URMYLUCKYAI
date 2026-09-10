@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "brand-policy.schema.json",
+  "title": "PPT Factory Brand Policy Version",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "tenantId", "teamId", "policyId", "version", "name", "contentHash", "rules", "exemptions", "provenance"],
+  "properties": {
+    "schema": { "const": "ppt-factory/brand-policy/v1" },
+    "tenantId": { "$ref": "#/$defs/scopeId" },
+    "teamId": { "$ref": "#/$defs/scopeId" },
+    "policyId": { "$ref": "#/$defs/artifactId" },
+    "version": { "$ref": "#/$defs/version" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "contentHash": { "$ref": "#/$defs/hash" },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "effect", "severity", "values"],
+        "properties": {
+          "id": { "$ref": "#/$defs/artifactId" },
+          "kind": { "enum": ["font", "color", "logo_asset_id", "asset_id", "chart_pack_id", "lock"] },
+          "effect": { "enum": ["allowed", "required"] },
+          "severity": { "enum": ["warning", "blocking"] },
+          "values": { "type": "array", "minItems": 1, "maxItems": 200, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 200 } },
+          "description": { "type": "string", "minLength": 1, "maxLength": 500 }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "kind": { "const": "lock" } }, "required": ["kind"] },
+            "then": {
+              "properties": {
+                "effect": { "const": "required" },
+                "values": { "items": { "enum": ["typography", "layout", "visualTone"] } }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "kind": { "const": "color" } }, "required": ["kind"] },
+            "then": { "properties": { "values": { "items": { "type": "string", "pattern": "^#[0-9A-F]{6}$" } } } }
+          }
+        ]
+      }
+    },
+    "exemptions": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["exemptionId", "ruleIds", "deckVersionIds", "auditReason", "authorizedBy", "authorizedAt"],
+        "properties": {
+          "exemptionId": { "$ref": "#/$defs/artifactId" },
+          "ruleIds": { "type": "array", "minItems": 1, "maxItems": 200, "uniqueItems": true, "items": { "$ref": "#/$defs/artifactId" } },
+          "deckVersionIds": { "type": "array", "minItems": 1, "maxItems": 200, "uniqueItems": true, "items": { "$ref": "#/$defs/artifactId" } },
+          "auditReason": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "authorizedBy": { "$ref": "#/$defs/scopeId" },
+          "authorizedAt": { "type": "string", "format": "date-time" },
+          "expiresAt": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["createdBy", "createdAt", "parentVersion", "parentContentHash"],
+      "properties": {
+        "createdBy": { "$ref": "#/$defs/scopeId" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "sourceProjectId": { "$ref": "#/$defs/scopeId" },
+        "parentVersion": { "oneOf": [{ "$ref": "#/$defs/version" }, { "type": "null" }] },
+        "parentContentHash": { "oneOf": [{ "$ref": "#/$defs/hash" }, { "type": "null" }] }
+      }
+    }
+  },
+  "$defs": {
+    "scopeId": { "type": "string", "minLength": 1, "maxLength": 80, "pattern": "^[a-zA-Z0-9_-]+$" },
+    "artifactId": { "type": "string", "maxLength": 120, "pattern": "^[a-zA-Z0-9_\\-\\u3400-\\u9fff]+$" },
+    "version": { "type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$" },
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

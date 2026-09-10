@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory QA Report",
+  "type": "object",
+  "properties": {
+    "status": { "enum": ["PASS", "REVIEW", "FAIL"] },
+    "overall": { "type": "number", "minimum": 0, "maximum": 100 },
+    "readability": { "type": "number", "minimum": 0, "maximum": 100 },
+    "hierarchy": { "type": "number", "minimum": 0, "maximum": 100 },
+    "alignment": { "type": "number", "minimum": 0, "maximum": 100 },
+    "whitespace": { "type": "number", "minimum": 0, "maximum": 100 },
+    "dataVisualization": { "type": "number", "minimum": 0, "maximum": 100 },
+    "styleConsistency": { "type": "number", "minimum": 0, "maximum": 100 },
+    "referenceFidelity": { "type": "number", "minimum": 0, "maximum": 100 },
+    "fidelity": {
+      "type": "object",
+      "properties": {
+        "mode": { "enum": ["measured", "unavailable"] },
+        "overall": { "type": "number", "minimum": 0, "maximum": 100 },
+        "target": { "type": "number", "minimum": 0, "maximum": 100 },
+        "passed": { "type": "boolean" },
+        "referenceSlides": { "type": "integer", "minimum": 0 },
+        "outputSlides": { "type": "integer", "minimum": 0 },
+        "dimensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "score": { "type": "number", "minimum": 0, "maximum": 100 },
+              "target": { "type": "number", "minimum": 0, "maximum": 100 },
+              "weight": { "type": "number", "minimum": 0, "maximum": 100 },
+              "passed": { "type": "boolean" },
+              "locked": { "type": "boolean" },
+              "evidence": { "type": "string" },
+              "repairHint": {
+                "type": "object",
+                "properties": { "fontScale": { "type": "number", "minimum": 0.9, "maximum": 1.15 } }
+              }
+            },
+            "required": ["score", "target", "weight", "passed", "locked", "evidence"]
+          }
+        }
+      },
+      "required": ["mode", "overall", "target", "passed", "referenceSlides", "outputSlides", "dimensions"]
+    },
+    "technical": {
+      "type": "object",
+      "properties": {
+        "contrast": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "number", "minimum": 0, "maximum": 100 },
+            "target": { "type": "number", "minimum": 0, "maximum": 100 },
+            "passed": { "type": "boolean" },
+            "checkedObjects": { "type": "integer", "minimum": 0 },
+            "failingObjects": { "type": "integer", "minimum": 0 },
+            "findings": { "type": "array", "items": { "type": "object" } }
+          },
+          "required": ["score", "target", "passed", "checkedObjects", "failingObjects", "findings"]
+        },
+        "fontFallback": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "number", "minimum": 0, "maximum": 100 },
+            "target": { "type": "number", "minimum": 0, "maximum": 100 },
+            "passed": { "type": "boolean" },
+            "checkedObjects": { "type": "integer", "minimum": 0 },
+            "failingObjects": { "type": "integer", "minimum": 0 },
+            "findings": { "type": "array", "items": { "type": "object" } }
+          },
+          "required": ["score", "target", "passed", "checkedObjects", "failingObjects", "findings"]
+        },
+        "imageDistortion": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "number", "minimum": 0, "maximum": 100 },
+            "target": { "type": "number", "minimum": 0, "maximum": 100 },
+            "passed": { "type": "boolean" },
+            "checkedObjects": { "type": "integer", "minimum": 0 },
+            "failingObjects": { "type": "integer", "minimum": 0 },
+            "findings": { "type": "array", "items": { "type": "object" } }
+          },
+          "required": ["score", "target", "passed", "checkedObjects", "failingObjects", "findings"]
+        },
+        "chartLabelCollision": {
+          "type": "object",
+          "properties": {
+            "score": { "type": "number", "minimum": 0, "maximum": 100 },
+            "target": { "type": "number", "minimum": 0, "maximum": 100 },
+            "passed": { "type": "boolean" },
+            "checkedCharts": { "type": "integer", "minimum": 0 },
+            "checkedLabels": { "type": "integer", "minimum": 0 },
+            "failingLabels": { "type": "integer", "minimum": 0 },
+            "findings": { "type": "array", "items": { "type": "object" } }
+          },
+          "required": ["score", "target", "passed", "checkedCharts", "checkedLabels", "failingLabels", "findings"]
+        }
+      },
+      "required": ["contrast", "fontFallback", "imageDistortion", "chartLabelCollision"]
+    },
+    "aiLookScore": { "type": "number", "minimum": 0 },
+    "issues": { "type": "array", "items": { "type": "object" } },
+    "repairPass": { "type": "integer", "minimum": 0, "maximum": 3 }
+  },
+  "required": ["status", "overall", "readability", "referenceFidelity", "fidelity", "technical", "aiLookScore", "issues", "repairPass"]
+}

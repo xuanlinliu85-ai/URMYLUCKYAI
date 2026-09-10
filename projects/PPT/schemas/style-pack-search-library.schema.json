@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Style Pack search library",
+  "type": "object",
+  "properties": {
+    "schema": { "const": "ppt-factory/style-pack-search-library/v1" },
+    "packs": {
+      "type": "array",
+      "items": { "$ref": "style-pack.schema.json#/$defs/stylePackVersion" }
+    }
+  },
+  "required": ["schema", "packs"]
+}

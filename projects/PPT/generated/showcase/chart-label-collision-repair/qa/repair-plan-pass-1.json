@@ -1,0 +1,22 @@
+{
+  "pass": 1,
+  "status": "applied",
+  "targets": [
+    {
+      "issueId": "chart-label-collision-1-metric-rate-chart",
+      "slide": 1,
+      "category": "chart-label-collision",
+      "dimension": "chartLabelCollision",
+      "objectNames": [
+        "metric-rate-chart"
+      ],
+      "adjustments": {
+        "chartLabelPosition": "outEnd",
+        "chartLabelFontSize": 14,
+        "chartLabelDisplayStrategy": "all"
+      },
+      "action": "Adjust only the named native chart's data-label position, font size or display strategy; preserve its data, chart type and geometry."
+    }
+  ],
+  "createdAt": "2026-08-22T13:44:35.695Z"
+}

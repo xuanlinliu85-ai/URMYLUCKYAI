@@ -1,0 +1,667 @@
+{
+  "pass": 1,
+  "status": "applied",
+  "targets": [
+    {
+      "issueId": "font-fallback-1-1",
+      "slide": 1,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "cover-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-1-2",
+      "slide": 1,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "cover-subtitle"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-2-3",
+      "slide": 2,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-2-4",
+      "slide": 2,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-2-5",
+      "slide": 2,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "summary-answer"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-2-6",
+      "slide": 2,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "summary-point-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-2-7",
+      "slide": 2,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "summary-point-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-3-8",
+      "slide": 3,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-3-9",
+      "slide": 3,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-3-10",
+      "slide": 3,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-claim"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-3-11",
+      "slide": 3,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-caption"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-3-12",
+      "slide": 3,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-proof-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-3-13",
+      "slide": 3,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-proof-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-4-14",
+      "slide": 4,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-4-15",
+      "slide": 4,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-4-16",
+      "slide": 4,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-decision-copy"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-5-17",
+      "slide": 5,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-5-18",
+      "slide": 5,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-5-19",
+      "slide": 5,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-value-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-5-20",
+      "slide": 5,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-context-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-5-21",
+      "slide": 5,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-context-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-5-22",
+      "slide": 5,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-value-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-5-23",
+      "slide": 5,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-context-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-6-24",
+      "slide": 6,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-6-25",
+      "slide": 6,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-6-26",
+      "slide": 6,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-label-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-6-27",
+      "slide": 6,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-copy-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-6-28",
+      "slide": 6,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-label-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-6-29",
+      "slide": 6,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-copy-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-6-30",
+      "slide": 6,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-decision"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-31",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-32",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-33",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-context-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-34",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-value-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-35",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-context-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-36",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-value-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-37",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-context-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-7-38",
+      "slide": 7,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "gate-copy"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-8-39",
+      "slide": 8,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-8-40",
+      "slide": 8,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-8-41",
+      "slide": 8,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-subtitle"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-8-42",
+      "slide": 8,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-point-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-8-43",
+      "slide": 8,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-point-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    },
+    {
+      "issueId": "font-fallback-8-44",
+      "slide": 8,
+      "category": "font-fallback",
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-point-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      },
+      "action": "Replace only the named native text object's typeface with the recommended CJK-safe font; preserve text, size, color and geometry."
+    }
+  ],
+  "createdAt": "2026-08-22T13:39:02.703Z"
+}

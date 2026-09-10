@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Team Style Library Acceptance",
+  "type": "object",
+  "required": ["schema", "status", "scope", "checks", "artifacts"],
+  "properties": {
+    "schema": { "const": "ppt-factory/team-style-library-acceptance/v1" },
+    "status": { "enum": ["PASS", "FAIL"] },
+    "scope": {
+      "type": "object",
+      "required": ["tenantId", "teamId"],
+      "properties": { "tenantId": { "type": "string" }, "teamId": { "type": "string" } }
+    },
+    "checks": { "type": "object", "additionalProperties": { "type": "boolean" } },
+    "artifacts": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Content Analysis",
+  "type": "object",
+  "required": ["thesis", "conclusions", "evidence", "dataPoints", "risks", "recommendations", "sources"],
+  "properties": {
+    "thesis": { "type": "string" },
+    "conclusions": { "type": "array", "items": { "type": "string" } },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "dataPoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "value", "numericValue", "unit", "sourceText"],
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": "string" },
+          "numericValue": { "type": "number" },
+          "unit": { "type": "string" },
+          "sourceText": { "type": "string" }
+        }
+      }
+    },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "recommendations": { "type": "array", "items": { "type": "string" } },
+    "sources": { "type": "array", "items": { "type": "object" } },
+    "bindingSources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["format", "name", "inputHash"],
+        "properties": {
+          "format": { "enum": ["json", "csv"] },
+          "name": { "type": "string" },
+          "inputHash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "rows": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

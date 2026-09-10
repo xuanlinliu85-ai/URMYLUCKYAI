@@ -1,0 +1,2835 @@
+{
+  "status": "REVIEW",
+  "overall": 88,
+  "readability": 70,
+  "hierarchy": 92,
+  "alignment": 94,
+  "whitespace": 90,
+  "dataVisualization": 88,
+  "styleConsistency": 91,
+  "referenceFidelity": 96,
+  "fidelity": {
+    "mode": "measured",
+    "overall": 96,
+    "target": 70,
+    "passed": true,
+    "referenceSlides": 10,
+    "outputSlides": 8,
+    "dimensions": {
+      "typography": {
+        "score": 96.1,
+        "target": 70,
+        "weight": 20,
+        "passed": true,
+        "locked": false,
+        "evidence": "font-size hierarchy and emphasis distribution",
+        "repairHint": {
+          "fontScale": 0.93
+        }
+      },
+      "color": {
+        "score": 95.5,
+        "target": 70,
+        "weight": 15,
+        "passed": true,
+        "locked": false,
+        "evidence": "rendered RGB distribution"
+      },
+      "layout": {
+        "score": 93.2,
+        "target": 70,
+        "weight": 20,
+        "passed": true,
+        "locked": false,
+        "evidence": "object-center grid distribution"
+      },
+      "chartStyle": {
+        "score": 95.9,
+        "target": 70,
+        "weight": 15,
+        "passed": true,
+        "locked": false,
+        "evidence": "native chart frequency and emphasis"
+      },
+      "density": {
+        "score": 98.8,
+        "target": 70,
+        "weight": 10,
+        "passed": true,
+        "locked": false,
+        "evidence": "foreground coverage and edge density"
+      },
+      "composition": {
+        "score": 98.3,
+        "target": 70,
+        "weight": 10,
+        "passed": true,
+        "locked": false,
+        "evidence": "page visual-weight distribution"
+      },
+      "storytelling": {
+        "score": 89.4,
+        "target": 70,
+        "weight": 5,
+        "passed": true,
+        "locked": false,
+        "evidence": "slide-count and page-rhythm profile"
+      },
+      "visualTone": {
+        "score": 97.1,
+        "target": 70,
+        "weight": 5,
+        "passed": true,
+        "locked": false,
+        "evidence": "brightness, contrast, saturation and edge tone"
+      }
+    }
+  },
+  "technical": {
+    "contrast": {
+      "score": 95.5,
+      "target": 100,
+      "passed": false,
+      "checkedObjects": 72,
+      "failingObjects": 29,
+      "findings": [
+        {
+          "slide": 1,
+          "objectName": "cover-kicker",
+          "foregroundColor": "#AFC0CE",
+          "backgroundColor": "#0B2239",
+          "ratio": 8.64,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "cover-title",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "cover-subtitle",
+          "foregroundColor": "#C7D3DD",
+          "backgroundColor": "#0B2239",
+          "ratio": 10.59,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "cover-edition",
+          "foregroundColor": "#0B2239",
+          "backgroundColor": "#E5ECF1",
+          "ratio": 13.52,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "cover-date",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#E5ECF1",
+          "ratio": 4,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#5C6878",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 1,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#E5ECF1",
+          "ratio": 4,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#5C6878",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "direction-label",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "slide-title",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-answer-label",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#0B2239",
+          "ratio": 5.34,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-answer",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-index-1",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 2.76,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#916826",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-1",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-index-2",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 2.76,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#916826",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-2",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "direction-label",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "slide-title",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-kicker",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#0B2239",
+          "ratio": 5.34,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-claim",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-caption",
+          "foregroundColor": "#D5E0E8",
+          "backgroundColor": "#0B2239",
+          "ratio": 12.02,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-number-1",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 2.76,
+          "target": 3,
+          "passed": false,
+          "recommendedForeground": "#B78330",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-proof-1",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-number-2",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 2.76,
+          "target": 3,
+          "passed": false,
+          "recommendedForeground": "#B78330",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-proof-2",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "direction-label",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "slide-title",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-delta-label",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#0B2239",
+          "ratio": 5.34,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-delta",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-decision-copy",
+          "foregroundColor": "#D5E0E8",
+          "backgroundColor": "#0B2239",
+          "ratio": 12.02,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "direction-label",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "slide-title",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-value-1",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-context-1",
+          "foregroundColor": "#D5E0E8",
+          "backgroundColor": "#0B2239",
+          "ratio": 12.02,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-value-2",
+          "foregroundColor": "#113558",
+          "backgroundColor": "#FFFFFF",
+          "ratio": 12.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-context-2",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#FFFFFF",
+          "ratio": 15.91,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-value-3",
+          "foregroundColor": "#113558",
+          "backgroundColor": "#FFFFFF",
+          "ratio": 12.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-context-3",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#FFFFFF",
+          "ratio": 15.91,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "direction-label",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "slide-title",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-step-1",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#113558",
+          "ratio": 12.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-label-1",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-copy-1",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-step-2",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#C18A32",
+          "ratio": 3.02,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#262626",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-label-2",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-copy-2",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-decision",
+          "foregroundColor": "#113558",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 11.46,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "direction-label",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "slide-title",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-1",
+          "foregroundColor": "#113558",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 11.46,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-1",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-2",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-2",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-3",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-3",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "gate-label",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#0B2239",
+          "ratio": 5.34,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 7,
+          "objectName": "gate-copy",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "direction-label",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "page-number",
+          "foregroundColor": "#667485",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 4.36,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#616E7E",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-label",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#0B2239",
+          "ratio": 5.34,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-title",
+          "foregroundColor": "#FFFFFF",
+          "backgroundColor": "#0B2239",
+          "ratio": 16.13,
+          "target": 3,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-subtitle",
+          "foregroundColor": "#D5E0E8",
+          "backgroundColor": "#0B2239",
+          "ratio": 12.02,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-index-1",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 2.76,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#916826",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-1",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-index-2",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 2.76,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#916826",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-2",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-index-3",
+          "foregroundColor": "#C18A32",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 2.76,
+          "target": 4.5,
+          "passed": false,
+          "recommendedForeground": "#916826",
+          "evidence": "rendered-pixel-sample"
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-3",
+          "foregroundColor": "#132335",
+          "backgroundColor": "#F2F5F7",
+          "ratio": 14.54,
+          "target": 4.5,
+          "passed": true,
+          "evidence": "rendered-pixel-sample"
+        }
+      ]
+    },
+    "fontFallback": {
+      "score": 0,
+      "target": 100,
+      "passed": false,
+      "checkedObjects": 44,
+      "failingObjects": 44,
+      "findings": [
+        {
+          "slide": 1,
+          "objectName": "cover-title",
+          "textPreview": "制造服务运营与数字质量改进简报",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 1,
+          "objectName": "cover-subtitle",
+          "textPreview": "形成可执行的运营改进决策",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 2,
+          "objectName": "direction-label",
+          "textPreview": "B · 经营分析",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 2,
+          "objectName": "slide-title",
+          "textPreview": "核心判断与关键依据",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-answer",
+          "textPreview": "未来两个季度不应继续铺开零散系统，而应把交付准时率、一次检验通过率和设备停机时间作为同一条运营链路治理。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-1",
+          "textPreview": "试点应先覆盖华东两座工厂，再根据可复制性决定扩围。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 2,
+          "objectName": "summary-point-2",
+          "textPreview": "过去 12 个月订单量增长 18%，但准时交付率由 94% 降至 88%。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 3,
+          "objectName": "direction-label",
+          "textPreview": "B · 经营分析",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 3,
+          "objectName": "slide-title",
+          "textPreview": "运营问题必须按一条链路治理",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-claim",
+          "textPreview": "未来两个季度不应继续铺开零散系统",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-caption",
+          "textPreview": "从单点系统建设转向跨环节经营闭环",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-proof-1",
+          "textPreview": "而应把交付准时率、一次检验通过率和设备停机时间作为同一条运营链路治理",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 3,
+          "objectName": "editorial-proof-2",
+          "textPreview": "试点应先覆盖华东两座工厂，再根据可复制性决定扩围。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 4,
+          "objectName": "direction-label",
+          "textPreview": "B · 经营分析",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 4,
+          "objectName": "slide-title",
+          "textPreview": "过去 12 个月订单量增长 18%，但准时交付率由 94% 降至 88%。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 4,
+          "objectName": "metric-decision-copy",
+          "textPreview": "返工成本占制造成本的 4.6%，其中 57% 来自三类重复质量缺陷。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 5,
+          "objectName": "direction-label",
+          "textPreview": "B · 经营分析",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 5,
+          "objectName": "slide-title",
+          "textPreview": "关键设备非计划停机为每月 126 小时，维护团队估计其中 35% 可通过预测性维护避免。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-value-1",
+          "textPreview": "126小时",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-context-1",
+          "textPreview": "关键设备非计划停机为每月 126 小时，维护团队估计其中 35% 可通过预测性维护避免。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-context-2",
+          "textPreview": "关键设备非计划停机为每月 126 小时，维护团队估计其中 35% 可通过预测性维护避免。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-value-3",
+          "textPreview": "11.4天",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 5,
+          "objectName": "metric-context-3",
+          "textPreview": "当前质量异常从发现到关闭平均需要 11.4 天，跨部门等待占其中 6.2 天。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 6,
+          "objectName": "direction-label",
+          "textPreview": "B · 经营分析",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 6,
+          "objectName": "slide-title",
+          "textPreview": "第一阶段用 8 周建立统一事件编码和日级看板；第二阶段将质量异常、设备状态和交付承诺打通。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-label-1",
+          "textPreview": "建立基线 · 8周",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-copy-1",
+          "textPreview": "第一阶段用 8 周建立统一事件编码和日级看板；第二阶段将质量异常、设备状态和交付承诺打通。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-label-2",
+          "textPreview": "打通运营链路",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-copy-2",
+          "textPreview": "预算优先投向数据治理、现场流程和责任机制，不以采购更多大屏作为成果。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 6,
+          "objectName": "timeline-decision",
+          "textPreview": "先统一事件与责任口径，再扩展算法和系统覆盖。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "direction-label",
+          "textPreview": "B · 经营分析",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "slide-title",
+          "textPreview": "目标明确，但扩围必须经过两道门槛",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-1",
+          "textPreview": "试点目标是把准时交付率恢复至 93%，一次检验通过率提高 3 个百分点，并将异常关闭周期压缩至 7 天以内。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-2",
+          "textPreview": "3个百分点",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-2",
+          "textPreview": "试点目标是把准时交付率恢复至 93%，一次检验通过率提高 3 个百分点，并将异常关闭周期压缩至 7 天以内。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "target-value-3",
+          "textPreview": "7天",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "target-context-3",
+          "textPreview": "试点目标是把准时交付率恢复至 93%，一次检验通过率提高 3 个百分点，并将异常关闭周期压缩至 7 天以内。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 7,
+          "objectName": "gate-copy",
+          "textPreview": "如果基础事件编码在第 4 周仍未达到 95% 完整率，应暂停算法扩展；如果一线录入额外耗时超过每班 10 分钟，应先重做流程。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 8,
+          "objectName": "direction-label",
+          "textPreview": "B · 经营分析",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-title",
+          "textPreview": "先做两厂试点，\n用结果决定扩围",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-subtitle",
+          "textPreview": "数据治理、现场流程和责任机制优先于新增大屏。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-1",
+          "textPreview": "试点目标是把准时交付率恢复至 93%，一次检验通过率提高 3 个百分点，并将异常关闭周期压缩至 7 天以内。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-2",
+          "textPreview": "如果基础事件编码在第 4 周仍未达到 95% 完整率，应暂停算法扩展；如果一线录入额外耗时超过每班 10 分钟，应先重做流程。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        },
+        {
+          "slide": 8,
+          "objectName": "conclusion-point-3",
+          "textPreview": "所有指标需保留工厂、产线和产品层级口径，避免用总体平均掩盖局部问题。",
+          "requestedTypeface": "Noto Sans CJK Missing",
+          "appliedTypeface": "Noto Sans CJK Missing",
+          "resolvedTypeface": "Noto Sans CJK Missing",
+          "risk": "unsafe-cjk-typeface",
+          "passed": false,
+          "recommendedTypeface": "Microsoft YaHei",
+          "evidence": [
+            "renderer-request",
+            "layout-resolved",
+            "inspect-object"
+          ]
+        }
+      ]
+    }
+  },
+  "aiLookScore": 4,
+  "issues": [
+    {
+      "id": "contrast-1-1",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 1,
+      "message": "cover-date contrast 4:1 is below 4.5:1 against rendered background #E5ECF1",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "cover-date"
+      ],
+      "adjustments": {
+        "foregroundColor": "#5C6878",
+        "backgroundColor": "#E5ECF1",
+        "contrastRatio": 4,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-1-2",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 1,
+      "message": "page-number contrast 4:1 is below 4.5:1 against rendered background #E5ECF1",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#5C6878",
+        "backgroundColor": "#E5ECF1",
+        "contrastRatio": 4,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-2-3",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 2,
+      "message": "direction-label contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-2-4",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 2,
+      "message": "page-number contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-2-5",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 2,
+      "message": "summary-index-1 contrast 2.76:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "summary-index-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-2-6",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 2,
+      "message": "summary-index-2 contrast 2.76:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "summary-index-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-3-7",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 3,
+      "message": "direction-label contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-3-8",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 3,
+      "message": "page-number contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-3-9",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 3,
+      "message": "editorial-number-1 contrast 2.76:1 is below 3:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "editorial-number-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#B78330",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 3
+      }
+    },
+    {
+      "id": "contrast-3-10",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 3,
+      "message": "editorial-number-2 contrast 2.76:1 is below 3:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "editorial-number-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#B78330",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 3
+      }
+    },
+    {
+      "id": "contrast-4-11",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 4,
+      "message": "direction-label contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-4-12",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 4,
+      "message": "page-number contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-5-13",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 5,
+      "message": "direction-label contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-5-14",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 5,
+      "message": "page-number contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-6-15",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 6,
+      "message": "direction-label contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-6-16",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 6,
+      "message": "page-number contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-6-17",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 6,
+      "message": "timeline-copy-1 contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "timeline-copy-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-6-18",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 6,
+      "message": "timeline-step-2 contrast 3.02:1 is below 4.5:1 against rendered background #C18A32",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "timeline-step-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#262626",
+        "backgroundColor": "#C18A32",
+        "contrastRatio": 3.02,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-6-19",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 6,
+      "message": "timeline-copy-2 contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "timeline-copy-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-7-20",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 7,
+      "message": "direction-label contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-7-21",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 7,
+      "message": "page-number contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-7-22",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 7,
+      "message": "target-context-1 contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "target-context-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-7-23",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 7,
+      "message": "target-context-2 contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "target-context-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-7-24",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 7,
+      "message": "target-context-3 contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "target-context-3"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-8-25",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 8,
+      "message": "direction-label contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-8-26",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 8,
+      "message": "page-number contrast 4.36:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-8-27",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 8,
+      "message": "conclusion-index-1 contrast 2.76:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "conclusion-index-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-8-28",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 8,
+      "message": "conclusion-index-2 contrast 2.76:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "conclusion-index-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "contrast-8-29",
+      "severity": "warning",
+      "category": "contrast",
+      "slide": 8,
+      "message": "conclusion-index-3 contrast 2.76:1 is below 4.5:1 against rendered background #F2F5F7",
+      "autoFixable": true,
+      "dimension": "contrast",
+      "objectNames": [
+        "conclusion-index-3"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      }
+    },
+    {
+      "id": "font-fallback-1-1",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 1,
+      "message": "cover-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "cover-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-1-2",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 1,
+      "message": "cover-subtitle requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "cover-subtitle"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-2-3",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 2,
+      "message": "direction-label requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-2-4",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 2,
+      "message": "slide-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-2-5",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 2,
+      "message": "summary-answer requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "summary-answer"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-2-6",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 2,
+      "message": "summary-point-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "summary-point-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-2-7",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 2,
+      "message": "summary-point-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "summary-point-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-3-8",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 3,
+      "message": "direction-label requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-3-9",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 3,
+      "message": "slide-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-3-10",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 3,
+      "message": "editorial-claim requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-claim"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-3-11",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 3,
+      "message": "editorial-caption requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-caption"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-3-12",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 3,
+      "message": "editorial-proof-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-proof-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-3-13",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 3,
+      "message": "editorial-proof-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "editorial-proof-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-4-14",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 4,
+      "message": "direction-label requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-4-15",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 4,
+      "message": "slide-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-4-16",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 4,
+      "message": "metric-decision-copy requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-decision-copy"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-5-17",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 5,
+      "message": "direction-label requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-5-18",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 5,
+      "message": "slide-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-5-19",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 5,
+      "message": "metric-value-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-value-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-5-20",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 5,
+      "message": "metric-context-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-context-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-5-21",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 5,
+      "message": "metric-context-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-context-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-5-22",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 5,
+      "message": "metric-value-3 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-value-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-5-23",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 5,
+      "message": "metric-context-3 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "metric-context-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-6-24",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 6,
+      "message": "direction-label requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-6-25",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 6,
+      "message": "slide-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-6-26",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 6,
+      "message": "timeline-label-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-label-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-6-27",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 6,
+      "message": "timeline-copy-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-copy-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-6-28",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 6,
+      "message": "timeline-label-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-label-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-6-29",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 6,
+      "message": "timeline-copy-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-copy-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-6-30",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 6,
+      "message": "timeline-decision requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "timeline-decision"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-31",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "direction-label requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-32",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "slide-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "slide-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-33",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "target-context-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-context-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-34",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "target-value-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-value-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-35",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "target-context-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-context-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-36",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "target-value-3 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-value-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-37",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "target-context-3 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "target-context-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-7-38",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 7,
+      "message": "gate-copy requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "gate-copy"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-8-39",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 8,
+      "message": "direction-label requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-8-40",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 8,
+      "message": "conclusion-title requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-title"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-8-41",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 8,
+      "message": "conclusion-subtitle requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-subtitle"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-8-42",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 8,
+      "message": "conclusion-point-1 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-point-1"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-8-43",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 8,
+      "message": "conclusion-point-2 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-point-2"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    },
+    {
+      "id": "font-fallback-8-44",
+      "severity": "warning",
+      "category": "font-fallback",
+      "slide": 8,
+      "message": "conclusion-point-3 requested Noto Sans CJK Missing, resolved Noto Sans CJK Missing; unsafe-cjk-typeface",
+      "autoFixable": true,
+      "dimension": "fontFallback",
+      "objectNames": [
+        "conclusion-point-3"
+      ],
+      "adjustments": {
+        "requestedTypeface": "Noto Sans CJK Missing",
+        "resolvedTypeface": "Noto Sans CJK Missing",
+        "replacementTypeface": "Microsoft YaHei"
+      }
+    }
+  ],
+  "repairPass": 0
+}

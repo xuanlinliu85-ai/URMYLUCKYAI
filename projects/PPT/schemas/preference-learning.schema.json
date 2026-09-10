@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Preference Learning Artifacts",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/$defs/editJournal" },
+    { "$ref": "#/$defs/learnedProfile" },
+    { "$ref": "#/$defs/proposal" },
+    { "$ref": "#/$defs/decisionJournal" },
+    { "$ref": "#/$defs/learningSnapshot" },
+    { "$ref": "#/$defs/decisionSnapshot" }
+  ],
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "const": "local-project-user-placeholder" },
+        "projectId": { "type": "string", "pattern": "^[a-zA-Z0-9._:-]+$" },
+        "userKey": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" }
+      },
+      "required": ["kind", "projectId", "userKey"]
+    },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "versionId": { "type": "string", "pattern": "^[a-zA-Z0-9._:@\\-\\u3400-\\u9fff]+$" },
+        "contentHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "parentVersionId": { "type": "string", "pattern": "^[a-zA-Z0-9._:@\\-\\u3400-\\u9fff]+$" }
+      },
+      "required": ["versionId", "contentHash"]
+    },
+    "dimension": {
+      "enum": ["typography", "color", "layout", "chart", "density", "composition", "storytelling", "visualTone"]
+    },
+    "primitive": { "type": ["string", "number", "boolean"] },
+    "delta": {
+      "type": "object",
+      "properties": {
+        "dimension": { "$ref": "#/$defs/dimension" },
+        "path": { "type": "string" },
+        "before": { "$ref": "#/$defs/primitive" },
+        "after": { "$ref": "#/$defs/primitive" }
+      },
+      "required": ["dimension", "path", "before", "after"]
+    },
+    "objectDelta": {
+      "allOf": [
+        { "$ref": "#/$defs/delta" },
+        {
+          "type": "object",
+          "properties": {
+            "objectId": { "type": "string" },
+            "slideIndex": { "type": "integer", "minimum": 1 },
+            "objectType": { "enum": ["text", "shape", "chart", "image"] }
+          },
+          "required": ["objectId", "slideIndex", "objectType"]
+        }
+      ]
+    },
+    "editEvent": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/style-edit-event/v1" },
+        "eventId": { "type": "string" },
+        "sequence": { "type": "integer", "minimum": 1 },
+        "idempotencyKey": { "type": "string" },
+        "before": {
+          "type": "object",
+          "properties": { "deck": { "$ref": "#/$defs/version" }, "style": { "$ref": "#/$defs/version" } },
+          "required": ["deck", "style"]
+        },
+        "after": {
+          "type": "object",
+          "properties": { "deck": { "$ref": "#/$defs/version" }, "style": { "$ref": "#/$defs/version" } },
+          "required": ["deck", "style"]
+        },
+        "objectDeltas": { "type": "array", "items": { "$ref": "#/$defs/objectDelta" } },
+        "styleDeltas": { "type": "array", "items": { "$ref": "#/$defs/delta" } },
+        "evidence": {
+          "type": "object",
+          "properties": {
+            "outcome": { "enum": ["accepted", "reverted"] },
+            "explicit": { "const": true },
+            "auditRef": { "type": "string" },
+            "preferenceEventId": { "type": "string" }
+          },
+          "required": ["outcome", "explicit", "auditRef"]
+        }
+      },
+      "required": ["schema", "eventId", "sequence", "idempotencyKey", "before", "after", "evidence"],
+      "anyOf": [{ "required": ["objectDeltas"] }, { "required": ["styleDeltas"] }]
+    },
+    "editJournal": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/style-edit-journal/v1" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "events": { "type": "array", "minItems": 1, "maxItems": 200, "items": { "$ref": "#/$defs/editEvent" } }
+      },
+      "required": ["schema", "scope", "events"]
+    },
+    "recommendation": {
+      "type": "object",
+      "properties": {
+        "recommendationId": { "type": "string" },
+        "dimension": { "$ref": "#/$defs/dimension" },
+        "path": { "type": "string" },
+        "kind": { "enum": ["categorical-value", "numeric-direction"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidenceCount": { "type": "integer", "minimum": 2 },
+        "independentDeckVersions": { "type": "integer", "minimum": 2 },
+        "decayedWeight": { "type": "number", "minimum": 0 },
+        "competingWeight": { "type": "number", "minimum": 0 },
+        "evidence": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["recommendationId", "dimension", "path", "kind", "confidence", "evidenceCount", "independentDeckVersions", "decayedWeight", "competingWeight", "evidence"]
+    },
+    "learnedProfile": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/learned-preference-profile/v1" },
+        "profileId": { "type": "string" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "sourceJournalHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "policy": {
+          "type": "object",
+          "properties": {
+            "minimumEvidence": { "const": 2 },
+            "minimumConfidence": { "const": 0.65 },
+            "decayHalfLifeEvents": { "const": 6 },
+            "automaticMutation": { "const": false },
+            "applyMode": { "const": "explicit-proposal-decision-only" }
+          },
+          "required": ["minimumEvidence", "minimumConfidence", "decayHalfLifeEvents", "automaticMutation", "applyMode"]
+        },
+        "evidenceSummary": { "type": "object" },
+        "recommendations": { "type": "array", "items": { "$ref": "#/$defs/recommendation" } },
+        "withheld": { "type": "array", "items": { "type": "object" } }
+      },
+      "required": ["schema", "profileId", "scope", "sourceJournalHash", "policy", "evidenceSummary", "recommendations", "withheld"]
+    },
+    "proposal": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-recommendation-proposal/v1" },
+        "proposalId": { "type": "string" },
+        "profileId": { "type": "string" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "mode": { "const": "dry-run" },
+        "automaticMutation": { "const": false },
+        "requiresExplicitOptIn": { "const": true },
+        "targets": { "const": ["style-mix", "slide-plan", "pptx"] },
+        "recommendations": { "type": "array", "items": { "$ref": "#/$defs/recommendation" } },
+        "withheldCount": { "type": "integer", "minimum": 0 }
+      },
+      "required": ["schema", "proposalId", "profileId", "scope", "mode", "automaticMutation", "requiresExplicitOptIn", "targets", "recommendations", "withheldCount"]
+    },
+    "decision": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-recommendation-decision/v1" },
+        "decisionId": { "type": "string" },
+        "sequence": { "type": "integer", "minimum": 1 },
+        "proposalId": { "type": "string" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "decision": { "enum": ["accept", "reject"] },
+        "decisionKey": { "type": "string" },
+        "explicitOptIn": { "const": true },
+        "authorizedForDownstreamApply": { "type": "boolean" },
+        "downstreamMutationPerformed": { "const": false }
+      },
+      "required": ["schema", "decisionId", "sequence", "proposalId", "scope", "decision", "decisionKey", "explicitOptIn", "authorizedForDownstreamApply", "downstreamMutationPerformed"]
+    },
+    "decisionJournal": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-recommendation-decision-journal/v1" },
+        "scope": { "$ref": "#/$defs/scope" },
+        "decisions": { "type": "array", "items": { "$ref": "#/$defs/decision" } }
+      },
+      "required": ["schema", "scope", "decisions"]
+    },
+    "learningSnapshot": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-learning-snapshot/v1" },
+        "revision": { "type": "integer", "minimum": 1 },
+        "scope": { "$ref": "#/$defs/scope" },
+        "journal": { "$ref": "#/$defs/editJournal" },
+        "profile": { "$ref": "#/$defs/learnedProfile" },
+        "proposal": { "$ref": "#/$defs/proposal" },
+        "snapshotHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "required": ["schema", "revision", "scope", "journal", "profile", "proposal", "snapshotHash"]
+    },
+    "decisionSnapshot": {
+      "type": "object",
+      "properties": {
+        "schema": { "const": "ppt-factory/preference-decision-snapshot/v1" },
+        "revision": { "type": "integer", "minimum": 1 },
+        "scope": { "$ref": "#/$defs/scope" },
+        "journal": { "$ref": "#/$defs/decisionJournal" },
+        "snapshotHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "required": ["schema", "revision", "scope", "journal", "snapshotHash"]
+    }
+  }
+}

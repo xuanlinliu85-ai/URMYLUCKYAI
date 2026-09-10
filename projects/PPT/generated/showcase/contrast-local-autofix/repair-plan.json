@@ -1,0 +1,471 @@
+{
+  "pass": 1,
+  "status": "applied",
+  "targets": [
+    {
+      "issueId": "contrast-1-1",
+      "slide": 1,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "cover-date"
+      ],
+      "adjustments": {
+        "foregroundColor": "#5C6878",
+        "backgroundColor": "#E5ECF1",
+        "contrastRatio": 4,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-1-2",
+      "slide": 1,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#5C6878",
+        "backgroundColor": "#E5ECF1",
+        "contrastRatio": 4,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-2-3",
+      "slide": 2,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-2-4",
+      "slide": 2,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-2-5",
+      "slide": 2,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "summary-index-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-2-6",
+      "slide": 2,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "summary-index-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-3-7",
+      "slide": 3,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-3-8",
+      "slide": 3,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-3-9",
+      "slide": 3,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "editorial-number-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#B78330",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 3
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-3-10",
+      "slide": 3,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "editorial-number-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#B78330",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 3
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-4-11",
+      "slide": 4,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-4-12",
+      "slide": 4,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-5-13",
+      "slide": 5,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-5-14",
+      "slide": 5,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-6-15",
+      "slide": 6,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-6-16",
+      "slide": 6,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-6-17",
+      "slide": 6,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "timeline-copy-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-6-18",
+      "slide": 6,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "timeline-step-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#262626",
+        "backgroundColor": "#C18A32",
+        "contrastRatio": 3.02,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-6-19",
+      "slide": 6,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "timeline-copy-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-7-20",
+      "slide": 7,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-7-21",
+      "slide": 7,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-7-22",
+      "slide": 7,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "target-context-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-7-23",
+      "slide": 7,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "target-context-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-7-24",
+      "slide": 7,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "target-context-3"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-8-25",
+      "slide": 8,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "direction-label"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-8-26",
+      "slide": 8,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "page-number"
+      ],
+      "adjustments": {
+        "foregroundColor": "#616E7E",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 4.36,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-8-27",
+      "slide": 8,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "conclusion-index-1"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-8-28",
+      "slide": 8,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "conclusion-index-2"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    },
+    {
+      "issueId": "contrast-8-29",
+      "slide": 8,
+      "category": "contrast",
+      "dimension": "contrast",
+      "objectNames": [
+        "conclusion-index-3"
+      ],
+      "adjustments": {
+        "foregroundColor": "#916826",
+        "backgroundColor": "#F2F5F7",
+        "contrastRatio": 2.76,
+        "contrastTarget": 4.5
+      },
+      "action": "Adjust only the named native text foreground color to meet the measured rendered-background contrast target."
+    }
+  ],
+  "createdAt": "2026-08-22T13:10:09.441Z"
+}

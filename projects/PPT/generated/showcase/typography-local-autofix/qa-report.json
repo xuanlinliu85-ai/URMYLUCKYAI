@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "overall": 93,
+  "readability": 96,
+  "hierarchy": 92,
+  "alignment": 94,
+  "whitespace": 90,
+  "dataVisualization": 88,
+  "styleConsistency": 91,
+  "referenceFidelity": 96,
+  "fidelity": {
+    "mode": "measured",
+    "overall": 96,
+    "target": 70,
+    "passed": true,
+    "referenceSlides": 10,
+    "outputSlides": 8,
+    "dimensions": {
+      "typography": {
+        "score": 96.1,
+        "target": 70,
+        "weight": 20,
+        "passed": true,
+        "locked": false,
+        "evidence": "font-size hierarchy and emphasis distribution",
+        "repairHint": {
+          "fontScale": 0.93
+        }
+      },
+      "color": {
+        "score": 95.5,
+        "target": 70,
+        "weight": 15,
+        "passed": true,
+        "locked": false,
+        "evidence": "rendered RGB distribution"
+      },
+      "layout": {
+        "score": 93.2,
+        "target": 70,
+        "weight": 20,
+        "passed": true,
+        "locked": false,
+        "evidence": "object-center grid distribution"
+      },
+      "chartStyle": {
+        "score": 95.9,
+        "target": 70,
+        "weight": 15,
+        "passed": true,
+        "locked": false,
+        "evidence": "native chart frequency and emphasis"
+      },
+      "density": {
+        "score": 98.8,
+        "target": 70,
+        "weight": 10,
+        "passed": true,
+        "locked": false,
+        "evidence": "foreground coverage and edge density"
+      },
+      "composition": {
+        "score": 98.3,
+        "target": 70,
+        "weight": 10,
+        "passed": true,
+        "locked": false,
+        "evidence": "page visual-weight distribution"
+      },
+      "storytelling": {
+        "score": 89.4,
+        "target": 70,
+        "weight": 5,
+        "passed": true,
+        "locked": false,
+        "evidence": "slide-count and page-rhythm profile"
+      },
+      "visualTone": {
+        "score": 97.1,
+        "target": 70,
+        "weight": 5,
+        "passed": true,
+        "locked": false,
+        "evidence": "brightness, contrast, saturation and edge tone"
+      }
+    }
+  },
+  "aiLookScore": 4,
+  "issues": [],
+  "repairPass": 0
+}

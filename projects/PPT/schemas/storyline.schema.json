@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Storyline",
+  "type": "object",
+  "properties": {
+    "thesis": { "type": "string" },
+    "audience": { "type": "string" },
+    "purpose": { "type": "string" },
+    "sourceSummary": { "type": "string" },
+    "slides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slideIndex": { "type": "integer", "minimum": 1 },
+          "role": { "enum": ["cover", "executive_summary", "evidence", "comparison", "strategy", "conclusion", "ending"] },
+          "message": { "type": "string" },
+          "supportingPoints": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["slideIndex", "role", "message", "supportingPoints"]
+      }
+    }
+  },
+  "required": ["thesis", "audience", "purpose", "sourceSummary", "slides"]
+}

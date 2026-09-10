@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Golden Slide Library",
+  "type": "object",
+  "properties": {
+    "schema": { "const": "ppt-factory/golden-slides/v1" },
+    "referenceStyleId": { "type": "string" },
+    "sourceFile": { "type": "string" },
+    "usage": {
+      "type": "object",
+      "properties": {
+        "mode": { "enum": ["learn-style", "compatibility-only"] },
+        "retrievalEligible": { "type": "boolean" }
+      },
+      "required": ["mode", "retrievalEligible"]
+    },
+    "thresholds": {
+      "type": "object",
+      "properties": {
+        "candidate": { "type": "number", "minimum": 0, "maximum": 100 },
+        "retrieval": { "type": "number", "minimum": 0, "maximum": 100 }
+      },
+      "required": ["candidate", "retrieval"]
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "sourceSlide": { "type": "integer", "minimum": 1 },
+          "role": { "enum": ["cover", "agenda_section", "summary", "evidence_data", "comparison", "process_timeline", "closing", "other"] },
+          "layoutFamily": { "enum": ["COVER", "SECTION", "EXEC_SUMMARY", "DATA_LEFT_TEXT_RIGHT", "TEXT_LEFT_DATA_RIGHT", "FULL_CHART", "FULL_TABLE", "BIG_NUMBER", "TWO_COLUMN", "HERO_IMAGE", "COMPARISON", "PROCESS_TIMELINE", "OTHER"] },
+          "density": { "enum": ["sparse", "balanced", "dense"] },
+          "hasChart": { "type": "boolean" },
+          "score": { "type": "number", "minimum": 0, "maximum": 100 },
+          "candidateThreshold": { "type": "number", "minimum": 0, "maximum": 100 },
+          "eligible": { "type": "boolean" },
+          "dimensionScores": {
+            "type": "object",
+            "properties": {
+              "layoutQuality": { "$ref": "#/$defs/score" }, "clarity": { "$ref": "#/$defs/score" },
+              "reusability": { "$ref": "#/$defs/score" }, "styleRepresentativeness": { "$ref": "#/$defs/score" },
+              "hierarchy": { "$ref": "#/$defs/score" }, "balance": { "$ref": "#/$defs/score" }
+            },
+            "required": ["layoutQuality", "clarity", "reusability", "styleRepresentativeness", "hierarchy", "balance"]
+          },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["id", "sourceSlide", "role", "layoutFamily", "density", "hasChart", "score", "candidateThreshold", "eligible", "dimensionScores", "evidence"]
+      }
+    }
+  },
+  "required": ["schema", "referenceStyleId", "sourceFile", "usage", "thresholds", "candidates"],
+  "$defs": { "score": { "type": "number", "minimum": 0, "maximum": 100 } }
+}

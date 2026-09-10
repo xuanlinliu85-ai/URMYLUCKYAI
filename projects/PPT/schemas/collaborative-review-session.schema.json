@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Collaborative Review Session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "sessionId", "binding", "createdBy", "createdAt", "sessionHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/collaborative-review-session/v1" },
+    "sessionId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,120}$" },
+    "binding": { "$ref": "#/$defs/binding" },
+    "createdBy": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "sessionHash": { "$ref": "#/$defs/hash" }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["tenantId", "teamId", "projectId", "deckVersionId", "deckSha256", "deckManifestHash", "evidenceManifestHash", "brandDecisionHash", "brandDecision", "slides", "nativeTargets", "nativeTargetsHash"],
+      "properties": {
+        "tenantId": { "type": "string" }, "teamId": { "type": "string" }, "projectId": { "type": "string" }, "deckVersionId": { "type": "string" },
+        "deckSha256": { "$ref": "#/$defs/hash" }, "deckManifestHash": { "$ref": "#/$defs/hash" }, "evidenceManifestHash": { "$ref": "#/$defs/hash" }, "brandDecisionHash": { "$ref": "#/$defs/hash" },
+        "brandDecision": { "enum": ["ALLOW", "ALLOW_WITH_WARNINGS", "BLOCKED"] }, "slides": { "type": "integer", "minimum": 1, "maximum": 500 },
+        "nativeTargets": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" }, "uniqueItems": true } },
+        "nativeTargetsHash": { "$ref": "#/$defs/hash" }
+      }
+    }
+  }
+}

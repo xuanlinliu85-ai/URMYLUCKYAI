@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Chart Pack Library",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "defaultPackId", "packs"],
+  "properties": {
+    "schema": { "const": "ppt-factory/chart-pack-library/v1" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "defaultPackId": { "type": "string", "minLength": 1 },
+    "packs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["schema", "id", "version", "name", "description", "supportedNativeTypes", "treatment"],
+        "properties": {
+          "schema": { "const": "ppt-factory/chart-pack/v1" },
+          "id": { "type": "string", "minLength": 1 },
+          "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "supportedNativeTypes": { "type": "array", "minItems": 1, "items": { "enum": ["bar"] } },
+          "treatment": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["surface", "palette", "bar", "legend", "dataLabels", "axes"],
+            "properties": {
+              "surface": { "enum": ["light", "dark"] },
+              "palette": { "type": "array", "minItems": 2, "items": { "enum": ["accent", "secondary", "muted", "light"] } },
+              "bar": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["direction", "grouping", "gapWidth"],
+                "properties": {
+                  "direction": { "const": "column" },
+                  "grouping": { "const": "clustered" },
+                  "gapWidth": { "type": "integer", "minimum": 0, "maximum": 500 }
+                }
+              },
+              "legend": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["show", "position"],
+                "properties": { "show": { "type": "boolean" }, "position": { "enum": ["bottom"] } }
+              },
+              "dataLabels": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["showValue", "position", "fontSize", "bold"],
+                "properties": {
+                  "showValue": { "type": "boolean" },
+                  "position": { "enum": ["outEnd", "inEnd", "center"] },
+                  "fontSize": { "type": "number", "minimum": 10, "maximum": 24 },
+                  "bold": { "type": "boolean" }
+                }
+              },
+              "axes": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["categoryGridlines", "valueGridlines", "categoryFontSize", "valueFontSize"],
+                "properties": {
+                  "categoryGridlines": { "enum": ["none", "major"] },
+                  "valueGridlines": { "enum": ["none", "major"] },
+                  "categoryFontSize": { "type": "number", "minimum": 10, "maximum": 24 },
+                  "valueFontSize": { "type": "number", "minimum": 10, "maximum": 24 }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

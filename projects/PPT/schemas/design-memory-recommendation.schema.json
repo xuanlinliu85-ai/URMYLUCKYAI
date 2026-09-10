@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ppt-factory/design-memory-recommendation.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "recommendationId", "profileId", "profileHash", "scope", "mode", "automaticMutation", "requiresExplicitOptIn", "targets", "normalizedQuery", "queryHash", "candidates", "authorizedLearnedRecommendations", "suppressedLearnedRecommendations", "recommendationHash"],
+  "properties": {
+    "schema": { "const": "ppt-factory/design-memory-recommendation/v1" },
+    "recommendationId": { "type": "string", "pattern": "^design_recommendation_[a-f0-9]{24}$" },
+    "profileId": { "type": "string", "pattern": "^design_memory_[a-f0-9]{24}$" },
+    "profileHash": { "$ref": "#/$defs/hash" },
+    "scope": { "$ref": "#/$defs/scope" },
+    "mode": { "const": "advisory" }, "automaticMutation": { "const": false }, "requiresExplicitOptIn": { "const": true },
+    "targets": { "const": ["style-mix", "slide-plan", "pptx"] },
+    "normalizedQuery": { "$ref": "#/$defs/query" }, "queryHash": { "$ref": "#/$defs/hash" },
+    "candidates": { "type": "array", "items": { "$ref": "#/$defs/candidate" } },
+    "authorizedLearnedRecommendations": { "type": "array", "items": { "$ref": "#/$defs/learned" } },
+    "suppressedLearnedRecommendations": { "type": "array", "items": { "$ref": "#/$defs/suppressed" } },
+    "recommendationHash": { "$ref": "#/$defs/hash" }
+  },
+  "$defs": {
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "scope": {
+      "type": "object", "additionalProperties": false, "required": ["kind", "projectId", "userKey"],
+      "properties": { "kind": { "const": "local-project-user-placeholder" }, "projectId": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" }, "userKey": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" } }
+    },
+    "query": {
+      "type": "object", "additionalProperties": false, "required": ["chart", "limit", "minScore", "preferenceRanking"],
+      "properties": { "text": { "type": "string" }, "artifactTypes": { "type": "array", "items": { "enum": ["golden_slide", "style_pack"] } }, "roles": { "type": "array", "items": { "type": "string" } }, "layoutFamilies": { "type": "array", "items": { "type": "string" } }, "densities": { "type": "array", "items": { "enum": ["sparse", "balanced", "dense"] } }, "chart": { "enum": ["required", "excluded", "any"] }, "styleIds": { "type": "array", "items": { "type": "string" } }, "audienceTags": { "type": "array", "items": { "type": "string" } }, "limit": { "type": "integer", "minimum": 1, "maximum": 20 }, "minScore": { "type": "number", "minimum": 0, "maximum": 100 }, "preferenceRanking": { "const": "explicit" } }
+    },
+    "candidate": {
+      "type": "object", "additionalProperties": false, "required": ["id", "artifactType", "title", "score", "dimensions", "evidence", "source", "sourceArtifactHash", "sourceVersionHash"],
+      "properties": { "id": { "type": "string" }, "artifactType": { "enum": ["golden_slide", "style_pack"] }, "title": { "type": "string" }, "score": { "type": "number", "minimum": 0, "maximum": 100 }, "dimensions": { "$ref": "#/$defs/dimensions" }, "evidence": { "type": "array", "items": { "type": "string" } }, "source": { "$ref": "#/$defs/source" }, "sourceArtifactHash": { "$ref": "#/$defs/hash" }, "sourceVersionHash": { "$ref": "#/$defs/hash" } }
+    },
+    "dimensions": {
+      "type": "object", "additionalProperties": false, "required": ["semantic", "role", "layout", "density", "chart", "style", "audience", "quality"],
+      "properties": { "semantic": { "$ref": "#/$defs/score" }, "role": { "$ref": "#/$defs/score" }, "layout": { "$ref": "#/$defs/score" }, "density": { "$ref": "#/$defs/score" }, "chart": { "$ref": "#/$defs/score" }, "style": { "$ref": "#/$defs/score" }, "audience": { "$ref": "#/$defs/score" }, "quality": { "$ref": "#/$defs/score" }, "preference": { "$ref": "#/$defs/score" } }
+    },
+    "score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "properties": { "candidateId": { "type": "string" }, "sourceSlide": { "type": "integer", "minimum": 1 }, "stylePackId": { "type": "string" }, "version": { "type": "string" } },
+      "oneOf": [{ "required": ["candidateId", "sourceSlide"] }, { "required": ["stylePackId", "version"] }]
+    },
+    "learned": {
+      "type": "object", "additionalProperties": false, "required": ["recommendationId", "dimension", "path", "kind", "confidence", "evidenceCount", "independentDeckVersions", "decayedWeight", "competingWeight", "evidence"],
+      "properties": { "recommendationId": { "type": "string" }, "dimension": { "type": "string" }, "path": { "type": "string" }, "kind": { "enum": ["categorical-value", "numeric-direction"] }, "value": {}, "direction": { "enum": ["increase", "decrease"] }, "recommendedValue": { "type": "number" }, "confidence": { "type": "number" }, "evidenceCount": { "type": "integer" }, "independentDeckVersions": { "type": "integer" }, "decayedWeight": { "type": "number" }, "competingWeight": { "type": "number" }, "evidence": { "type": "array", "items": { "type": "string" } } }
+    },
+    "suppressed": { "type": "object", "additionalProperties": false, "required": ["recommendationId", "authorization"], "properties": { "recommendationId": { "type": "string" }, "authorization": { "enum": ["rejected", "pending", "conflicting"] } } }
+  }
+}

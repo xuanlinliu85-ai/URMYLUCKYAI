@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PPT Factory Repair Plan",
+  "type": "object",
+  "required": ["pass", "status", "targets", "createdAt"],
+  "properties": {
+    "pass": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "status": { "type": "string", "enum": ["planned", "applied", "rolled_back"] },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "issueId": { "type": "string" },
+          "slide": { "type": "integer", "minimum": 1 },
+          "category": { "type": "string" },
+          "dimension": { "enum": ["typography", "color", "layout", "chartStyle", "density", "composition", "storytelling", "visualTone", "contrast", "fontFallback", "imageDistortion", "chartLabelCollision"] },
+          "objectNames": { "type": "array", "items": { "type": "string" } },
+          "adjustments": {
+            "type": "object",
+            "properties": {
+              "fontScale": { "type": "number", "minimum": 0.9, "maximum": 1.15 },
+              "foregroundColor": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+              "backgroundColor": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+              "contrastRatio": { "type": "number", "minimum": 1, "maximum": 21 },
+              "contrastTarget": { "type": "number", "minimum": 3, "maximum": 7 },
+              "requestedTypeface": { "type": "string", "minLength": 1 },
+              "resolvedTypeface": { "type": "string", "minLength": 1 },
+              "replacementTypeface": { "type": "string", "minLength": 1 },
+              "imageFit": { "enum": ["contain", "cover"] },
+              "imageCrop": { "$ref": "#/$defs/imageCrop" },
+              "imagePosition": { "$ref": "#/$defs/imagePosition" },
+              "chartLabelPosition": { "enum": ["outEnd", "inEnd", "center"] },
+              "chartLabelFontSize": { "type": "number", "minimum": 10, "maximum": 24 },
+              "chartLabelDisplayStrategy": { "enum": ["all", "none"] }
+            }
+          },
+          "action": { "type": "string" }
+        },
+        "required": ["issueId", "category", "action"]
+      }
+    },
+    "createdAt": { "type": "string" }
+  },
+  "$defs": {
+    "imageCrop": {
+      "type": "object",
+      "properties": {
+        "left": { "type": "number", "minimum": 0, "maximum": 1 },
+        "top": { "type": "number", "minimum": 0, "maximum": 1 },
+        "right": { "type": "number", "minimum": 0, "maximum": 1 },
+        "bottom": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["left", "top", "right", "bottom"]
+    },
+    "imagePosition": {
+      "type": "object",
+      "properties": {
+        "left": { "type": "number" }, "top": { "type": "number" },
+        "width": { "type": "number", "exclusiveMinimum": 0 }, "height": { "type": "number", "exclusiveMinimum": 0 }
+      },
+      "required": ["left", "top", "width", "height"]
+    }
+  }
+}
