@@ -1,0 +1,8 @@
+{
+  "version": "2.0",
+  "envId": "urmylucky1234-d8gwk1uee6d4ab841",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "cloudrun": {
+    "name": "friends-table"
+  }
+}
