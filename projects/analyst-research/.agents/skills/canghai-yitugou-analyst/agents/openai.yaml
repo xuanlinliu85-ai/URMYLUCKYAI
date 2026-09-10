@@ -1,0 +1,4 @@
+interface:
+  display_name: "沧海一土狗分析引擎"
+  short_description: "制度、流动性、PPI、财政、美债、黄金、AI与资产定价"
+  default_prompt: "请用沧海一土狗分析框架拆解这个宏观或市场问题，并用最新数据验证。"

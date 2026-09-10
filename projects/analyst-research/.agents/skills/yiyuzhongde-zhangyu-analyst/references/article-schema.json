@@ -1,0 +1,17 @@
+{
+  "fields": [
+    "title",
+    "date",
+    "author",
+    "authorship_type",
+    "text_length",
+    "length_weight",
+    "framework_density",
+    "core_thesis",
+    "causal_chain",
+    "key_indicators",
+    "asset_mapping",
+    "falsification",
+    "framework_change"
+  ]
+}

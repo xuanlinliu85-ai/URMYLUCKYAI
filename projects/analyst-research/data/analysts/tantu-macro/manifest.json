@@ -1,0 +1,13 @@
+{
+  "analyst": "tantu-macro",
+  "skill": "tantu-macro-analyst",
+  "version": "3.0.0",
+  "released_at": "2026-08-31",
+  "corpus_schema": "2.1",
+  "dna_schema": "1.0",
+  "corpus_path": "corpus/index.jsonl",
+  "evidence_path": "dna-evidence.json",
+  "corpus_isolation": "data/analysts/tantu-macro",
+  "source_policy": "metadata and distilled evidence only",
+  "update_command": ".venv\\Scripts\\python.exe data/analysts/tantu-macro/scripts/build_corpus.py"
+}

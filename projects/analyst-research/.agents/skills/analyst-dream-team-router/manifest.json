@@ -1,0 +1,9 @@
+{
+  "name": "Analyst Dream Team Router",
+  "skill": "analyst-dream-team-router",
+  "version": "3.1.0",
+  "updated_at": "2026-09-02",
+  "registered_analysts": 7,
+  "registry": "ANALYST_REGISTRY.json",
+  "routing_matrix": "references/routing-matrix.md"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Analyst Dream Team Codex Framework",
+  "version": "3.3.0",
+  "generated": "2026-09-09",
+  "skills": [
+    {
+      "name": "analyst-dream-team-router",
+      "role": "router/chief strategist"
+    },
+    {
+      "name": "canghai-yitugou-analyst",
+      "role": "China institutions/PPI/industry/H"
+    },
+    {
+      "name": "tantu-macro-analyst",
+      "role": "Fed/Treasury/fiscal/quant scenarios"
+    },
+    {
+      "name": "kevin-strategy-research",
+      "role": "pricing/flows/crowding/odds"
+    },
+    {
+      "name": "wisburg-mikko-analyst",
+      "role": "Money View/balance sheets/USD plumbing"
+    },
+    {
+      "name": "spread-trading-analyst",
+      "role": "global macro trading/curves/RV/AI ROI/commodities/trade expression"
+    },
+    {
+      "name": "yiyuzhongde-zhangyu-analyst",
+      "role": "China macro/household deposits/policy/stock-bond/transformation"
+    },
+    {
+      "name": "qinhan-fixed-income-analyst",
+      "role": "China rates/interbank liquidity/institutional behavior/curve trading"
+    }
+  ],
+  "extensible": true,
+  "extension_guide": "EXTENDING.md",
+  "registry": "ANALYST_REGISTRY.json",
+  "skill_template": "EXTENSION_KIT/skill-template",
+  "corpus_policy": "CORPUS_POLICY.md",
+  "corpus_audit": "CORPUS_AUDIT_V2.1.json",
+  "release_status": "mixed-grade-corpus-audited",
+  "codex_ready": true,
+  "entrypoint": "CODEX_START_HERE.md",
+  "architecture": "FRAMEWORK.md",
+  "extension_api": "EXTENSION_API.md",
+  "self_check": "tools/self_check.py"
+}

@@ -1,0 +1,22 @@
+{
+  "analyst": "canghai-yitugou",
+  "captured_at": "2026-08-31",
+  "archive": "https://www.jintiankansha.com/column/tTDbsew7RC",
+  "identity": "专栏标题为沈海一土狗，简介与已验证公众号一致",
+  "pages_reviewed": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "items_per_reviewed_page": 20,
+  "discovered_entries": 280,
+  "window": {
+    "earliest_verified_fulltext": "2023-06-17",
+    "latest_local_fulltext": "2026-08-29"
+  },
+  "treatment": "目录条目只用于发现与时间线；只有本地正文和明确标注原作者的公开完整转载进入 DNA 证据。",
+  "older_topic_coverage": [
+    "中美货币机制与价格/数量约束",
+    "美元流动性与美债曲线",
+    "A股定价权、制度与市场摩擦",
+    "汇率、跨境资本与主权信用",
+    "资管资金池与无风险利率",
+    "财政债务、产业租金与再工业化"
+  ]
+}

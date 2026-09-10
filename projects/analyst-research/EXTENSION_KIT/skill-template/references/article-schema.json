@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analyst Article Record",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "core_thesis",
+    "falsification"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "authorship_type": {
+      "type": "string"
+    },
+    "fulltext_status": {
+      "enum": [
+        "full",
+        "partial",
+        "title_only"
+      ]
+    },
+    "core_thesis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "framework_modules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "key_indicators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "asset_mapping": {
+      "type": "object"
+    },
+    "falsification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_to_prior": {
+      "enum": [
+        "NEW",
+        "REINFORCE",
+        "REVISE",
+        "CONTRADICT",
+        "APPLICATION"
+      ]
+    }
+  }
+}

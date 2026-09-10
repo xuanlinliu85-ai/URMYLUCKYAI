@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kevin Strategy Research Article Record",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "core_thesis",
+    "numerator_denominator",
+    "pricing",
+    "falsification"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_type": {
+      "enum": [
+        "original",
+        "repost",
+        "index",
+        "partial",
+        "unknown"
+      ]
+    },
+    "fulltext_status": {
+      "enum": [
+        "full",
+        "partial",
+        "title_only"
+      ]
+    },
+    "core_thesis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "numerator_denominator": {
+      "type": "object",
+      "properties": {
+        "numerator": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "denominator": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "pricing": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "valuation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "positioning": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "flows": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "crowding": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "asset_mapping": {
+      "type": "object"
+    },
+    "win_probability": {
+      "type": "string"
+    },
+    "payoff_odds": {
+      "type": "string"
+    },
+    "falsification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_to_prior": {
+      "enum": [
+        "NEW",
+        "REINFORCE",
+        "REVISE",
+        "CONTRADICT",
+        "APPLICATION"
+      ]
+    },
+    "confidence": {
+      "type": "object",
+      "properties": {
+        "source_quality": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "framework_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

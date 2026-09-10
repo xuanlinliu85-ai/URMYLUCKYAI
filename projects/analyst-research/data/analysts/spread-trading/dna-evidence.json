@@ -1,0 +1,96 @@
+{
+  "analyst": "spread-trading",
+  "object_type": "ANALYST_DNA",
+  "version": "3.0.0",
+  "as_of": "2026-09-02",
+  "rules": [
+    {
+      "id": "ST-DNA-01",
+      "rule": "先识别宏观制度与周期状态，再选择资产定价锚；历史相关性需要经过当期机制复核。",
+      "supporting_articles": ["spread-958930ac6c26", "spread-2b42efade556", "spread-7dab53ca600f", "spread-c332f0a4b562"],
+      "contradicting_articles": [],
+      "first_seen": "2022-03-30",
+      "last_seen": "2026-05-18",
+      "quarters_seen": ["2022Q1", "2022Q3", "2023Q1", "2026Q2"],
+      "weighted_support": 3.04,
+      "confidence": "High"
+    },
+    {
+      "id": "ST-DNA-02",
+      "rule": "长端利率由政策路径、通胀风险、期限溢价、财政供给与制度信用共同决定，曲线形态承载比单点收益率更多的信息。",
+      "supporting_articles": ["spread-277ea2621321", "spread-7c2ff6336dcd", "spread-6b250495a294", "spread-363f9f23a635"],
+      "contradicting_articles": ["spread-958930ac6c26"],
+      "first_seen": "2022-03-30",
+      "last_seen": "2026-08-26",
+      "quarters_seen": ["2022Q1", "2022Q3", "2023Q3", "2023Q4", "2026Q3"],
+      "weighted_support": 3.16,
+      "confidence": "High"
+    },
+    {
+      "id": "ST-DNA-03",
+      "rule": "财政赤字与债务滚续要沿债务人、债权人、利息收入和再投资闭环分析，债券供给与边际买家共同塑造期限溢价。",
+      "supporting_articles": ["spread-20a233f2662b", "spread-7c2ff6336dcd", "spread-6b250495a294", "spread-363f9f23a635"],
+      "contradicting_articles": [],
+      "first_seen": "2023-05-06",
+      "last_seen": "2026-08-26",
+      "quarters_seen": ["2023Q2", "2023Q3", "2023Q4", "2026Q3"],
+      "weighted_support": 3.04,
+      "confidence": "High"
+    },
+    {
+      "id": "ST-DNA-04",
+      "rule": "政治安全约束会改变产业、库存、能源与资本流向；实物供给约束把地缘事件传导到通胀、汇率、利率和股票。",
+      "supporting_articles": ["spread-06f30454f3b2", "spread-4a95fe99653c", "spread-bb278ec2de82", "spread-4286c60d076f"],
+      "contradicting_articles": [],
+      "first_seen": "2022-04-04",
+      "last_seen": "2024-04-15",
+      "quarters_seen": ["2022Q2", "2023Q2", "2023Q4", "2024Q2"],
+      "weighted_support": 3.16,
+      "confidence": "High"
+    },
+    {
+      "id": "ST-DNA-05",
+      "rule": "单一资产观点需要债、汇、股、商品的交叉验证，并优先转化为相对价值表达、催化剂与首个证伪条件。",
+      "supporting_articles": ["spread-4a82ec62ad9b", "spread-e94b9cdce79e", "spread-797793e0fcac", "spread-925a0f54705c"],
+      "contradicting_articles": [],
+      "first_seen": "2022-08-07",
+      "last_seen": "2026-08-03",
+      "quarters_seen": ["2022Q3", "2023Q4", "2026Q3"],
+      "weighted_support": 2.45,
+      "confidence": "High"
+    },
+    {
+      "id": "ST-DNA-06",
+      "rule": "价格变化先拆分基本面、仓位、杠杆、期权 Gamma 与再平衡资金，短期风格切换属于交易结构信号。",
+      "supporting_articles": ["spread-123ab0a343da", "spread-797793e0fcac", "spread-c332f0a4b562", "spread-925a0f54705c"],
+      "contradicting_articles": [],
+      "first_seen": "2023-02-20",
+      "last_seen": "2026-08-03",
+      "quarters_seen": ["2023Q1", "2023Q4", "2026Q2", "2026Q3"],
+      "weighted_support": 2.96,
+      "confidence": "High"
+    },
+    {
+      "id": "ST-DNA-07",
+      "rule": "AI投资从资本开支规模进入回报验证阶段，估值同时检查折旧、自由现金流、融资结构、PB、PS与收入兑现。",
+      "supporting_articles": ["spread-c332f0a4b562", "spread-bdf39583c46d", "spread-021e9a4fa8ff", "spread-925a0f54705c"],
+      "contradicting_articles": [],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-08-03",
+      "quarters_seen": ["2026Q2", "2026Q3"],
+      "weighted_support": 3.42,
+      "confidence": "Medium"
+    },
+    {
+      "id": "ST-DNA-08",
+      "rule": "美元是制度信用、国际收支融资、生产率与相对竞争力的复合资产，利差只是其中一个传导变量。",
+      "supporting_articles": ["spread-95a8259f3fa1", "spread-e94b9cdce79e", "spread-f2ee3e4d4f07", "spread-d6a6ef7ac129"],
+      "contradicting_articles": [],
+      "first_seen": "2023-04-11",
+      "last_seen": "2026-07-13",
+      "quarters_seen": ["2023Q2", "2023Q4", "2024Q1", "2026Q3"],
+      "weighted_support": 3.03,
+      "confidence": "High"
+    }
+  ]
+}

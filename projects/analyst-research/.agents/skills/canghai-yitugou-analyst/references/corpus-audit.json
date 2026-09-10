@@ -1,0 +1,35 @@
+{
+  "skill": "canghai-yitugou-analyst",
+  "version": "3.0.0",
+  "status": "STABLE_ANALYST_DNA",
+  "audit_date": "2026-08-31",
+  "earliest_date": "2023-06-17",
+  "latest_date": "2026-08-29",
+  "span_months": 38,
+  "discovered_articles": 280,
+  "fulltext_articles": 75,
+  "longform_articles": 66,
+  "short_articles": 8,
+  "title_only_articles": 205,
+  "quarters_covered": ["2023-Q2", "2023-Q4", "2024-Q1", "2024-Q2", "2024-Q3", "2024-Q4", "2025-Q1", "2025-Q2", "2025-Q3", "2025-Q4", "2026-Q1", "2026-Q2", "2026-Q3"],
+  "quarter_count": 13,
+  "original_articles": 75,
+  "verified_reprint_fulltext": 13,
+  "translation_or_guest_articles": 0,
+  "effective_weighted_articles": 56.96,
+  "local_fulltext_articles": 62,
+  "local_character_count": 363845,
+  "corpus_grade": "A",
+  "limitations": [
+    "2023-2025 historical fulltext is represented by a selected high-density sample; the public title index is broader than the distilled historical fulltext set.",
+    "Historical fulltext uses clearly attributed mainstream reprints when the original WeChat page is unavailable to automated retrieval.",
+    "Current View continues to require fresh market and policy data at invocation time."
+  ],
+  "gate": {
+    "span_at_least_30_months": true,
+    "discovered_at_least_100": true,
+    "fulltext_at_least_60": true,
+    "longform_at_least_40": true,
+    "quarters_at_least_8": true
+  }
+}

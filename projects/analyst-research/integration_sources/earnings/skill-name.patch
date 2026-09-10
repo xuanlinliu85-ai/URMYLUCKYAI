@@ -1,0 +1,23 @@
+diff --git a/.agents/skills/earnings-analysis/SKILL.md b/.agents/skills/earnings-analysis/SKILL.md
+--- a/.agents/skills/earnings-analysis/SKILL.md
++++ b/.agents/skills/earnings-analysis/SKILL.md
+@@ -1,4 +1,4 @@
+ ---
+-name: earnings-company-research
++name: earnings-analysis
+ description: Analyze a public company's latest or specified financial report from one natural-language request. Automatically retrieve official filings and licensed market data, verify reported facts, compare results and guidance against pre-earnings professional consensus, identify expectation gaps, analyze the company's business/industry/valuation context, synthesize relevant Analyst TianTuan views, and produce a rigorous PPT-ready research report. Use iFinD MCP as the preferred China/HK/consensus/valuation source and EdgarTools/SEC as the preferred US official-filing source. PPT generation is optional and only triggered when explicitly requested.
+ ---
+@@ -34,5 +34,13 @@
+ ```
+ 
+ No video or voice generation.
++
++Canonical integration output:
++
++```text
++RESEARCH_ARTIFACT.json (schema 1.0.0)
++```
++
++Generate it from completed run packs with `scripts/export_research_artifact.py`. Renderers consume this file and preserve its facts, sources, quality flags and provenance. PPT generation uses the PPT Factory Research Artifact endpoint and performs no additional research.
+ 
+ ---

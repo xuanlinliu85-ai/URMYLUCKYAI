@@ -1,0 +1,19 @@
+{
+  "analyst_id": "canghai-yitugou",
+  "display_name": "沧海一土狗",
+  "wechat_name": "沧海一土狗",
+  "wechat_public_id": "canghaiyitugou",
+  "wechat_mp_id": "MP_WXS_3516156250",
+  "verified_article_url": "https://mp.weixin.qq.com/s/fFTNKAVDA0fiMp74vSYlYA",
+  "verified": true,
+  "identity_evidence": [
+    {
+      "url": "https://www.huxiu.com/article/1762731.html",
+      "claim": "转载页明确标注微信公众号名称、作者及 ID canghaiyitugou"
+    },
+    {
+      "url": "https://mp.weixin.qq.com/s/fFTNKAVDA0fiMp74vSYlYA",
+      "claim": "微信原文页面标题为《关于美国货币政策和产业趋势的联动》，作者与公众号均为沧海一土狗"
+    }
+  ]
+}

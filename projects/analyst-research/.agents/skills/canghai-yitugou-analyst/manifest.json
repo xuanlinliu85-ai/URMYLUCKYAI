@@ -1,0 +1,9 @@
+{
+  "name": "canghai-yitugou-analyst",
+  "version": "3.0.0",
+  "dna_version": "3.0.0",
+  "corpus_version": "3.0.0",
+  "corpus_grade": "A",
+  "released": "2026-08-31",
+  "evidence": {"discovered_articles": 280, "fulltext_articles": 75, "longform_articles": 66, "quarters": 13}
+}

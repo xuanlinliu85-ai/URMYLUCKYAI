@@ -1,0 +1,21 @@
+{
+  "analyst": "spread-trading",
+  "scan_window": {"from": "2026-09-02", "through": "2026-09-09"},
+  "scan_date": "2026-09-09",
+  "sources_checked": [
+    "public web search for Spread Trading, behumble369, 李易骏, and Trading Dog",
+    "https://www.huxiu.com/article/3619884.html",
+    "https://www.huxiu.com/article/668634.html"
+  ],
+  "accepted_increment": {"discovered": 0, "verified_fulltext": 0, "dna_evidence": 0},
+  "audit_recommendation": {
+    "version_action": "retain the current version",
+    "grade_action": "retain the current grade",
+    "dna_action": "retain the existing DNA evidence ledger",
+    "next_source_priority": ["公众号原始标题目录", "李易骏署名公开转载", "Trading Dog署名公开转载", "作者归属明确的授权转载"]
+  },
+  "limitations": [
+    "Indexed results surfaced older authorized republications; the scan-window accepted increment remains zero.",
+    "Author identity remains a mandatory filter before a future increment enters DNA."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "一瑜中的-张瑜 Analyst Skill",
+  "skill": "yiyuzhongde-zhangyu-analyst",
+  "version": "1.1.0",
+  "dna_version": "1.1.0",
+  "corpus_version": "2026-08-31.a",
+  "updated_at": "2026-08-31",
+  "corpus_grade": "A",
+  "corpus_status": "STABLE_DNA",
+  "corpus_file": "data/analysts/yiyuzhongde-zhangyu/corpus/articles.jsonl",
+  "corpus_sha256": "7d669f351adbfb4a81e3da39319ef0271b9dc9086cb3a8296d6ff4487d473bd9"
+}

@@ -1,0 +1,25 @@
+{
+  "analyst": "spread-trading",
+  "object_type": "CURRENT_VIEW",
+  "as_of": "2026-09-02",
+  "lookback_months": 6,
+  "status": "historical snapshot requiring fresh-data verification",
+  "themes": [
+    {
+      "theme": "AI ROI and cross-market profit capture",
+      "article_ids": ["spread-c332f0a4b562", "spread-bdf39583c46d", "spread-021e9a4fa8ff", "spread-925a0f54705c"],
+      "snapshot": "AI定价重心由资本开支规模转向利润质量、折旧、现金流、Token商品化与产业链利润分配。"
+    },
+    {
+      "theme": "Dollar and long-end credibility",
+      "article_ids": ["spread-d6a6ef7ac129", "spread-363f9f23a635", "spread-92703d36dc77"],
+      "snapshot": "美元与长端利率同时受制度信用、财政供给、私人信用中介与政策沟通影响。"
+    },
+    {
+      "theme": "Strategic commodities and geopolitical transmission",
+      "article_ids": ["spread-5852bfbc9af8", "spread-ce4764950658"],
+      "snapshot": "能源通道和关键矿产库存成为安全优先制度下的宏观传导节点。"
+    }
+  ],
+  "usage_rule": "回答当前市场问题时先查询最新官方与市场数据，再把本对象作为待验证的历史观点快照。"
+}

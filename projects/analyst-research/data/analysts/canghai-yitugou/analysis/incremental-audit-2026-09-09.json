@@ -1,0 +1,22 @@
+{
+  "analyst": "canghai-yitugou",
+  "scan_window": {"from": "2026-09-02", "through": "2026-09-09"},
+  "scan_date": "2026-09-09",
+  "sources_checked": [
+    "https://www.gelonghui.com/user/257810",
+    "https://finance.sina.com.cn/money/forex/forexinfo/2026-09-02/doc-iniqkzky4564640.shtml",
+    "https://www.huxiu.com/article/4887863.html",
+    "https://www.jintiankansha.com/column/tTDbsew7RC?type=recent"
+  ],
+  "accepted_increment": {"discovered": 1, "verified_fulltext": 1, "longform": 1, "dna_evidence": 1},
+  "audit_recommendation": {
+    "version_action": "advance corpus and DNA patch version after root audit integration",
+    "grade_action": "retain current grade; one article reinforces an existing framework and leaves corpus thresholds unchanged",
+    "dna_action": "add the reserve-regime-to-curve-pricing chain as fresh support for the existing liquidity-control rule",
+    "current_view_action": "record tighter US financial conditions and the two-year/ten-year burden split as a dated current view"
+  },
+  "limitations": [
+    "The public archive showed one attributable item in the scan window.",
+    "The scan records a structured summary and source metadata rather than a mirrored article body."
+  ]
+}

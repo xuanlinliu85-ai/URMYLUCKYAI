@@ -1,0 +1,4 @@
+interface:
+  display_name: "智堡Mikko分析引擎"
+  short_description: "Money View、美元流动性、资产负债表、跨境融资与政策传导"
+  default_prompt: "请用智堡Mikko的Money View/资产负债表框架分析这个问题：先定义货币层级，再拆资产负债表、对手方、融资工具、抵押品和监管约束，最后用最新数据映射资产。"

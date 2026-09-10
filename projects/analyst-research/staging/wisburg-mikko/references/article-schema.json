@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wisburg Mikko Article Record",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "authorship_type",
+    "authorship_evidence",
+    "content_type",
+    "fulltext_status",
+    "estimated_chars",
+    "article_weight",
+    "core_thesis",
+    "balance_sheet_logic",
+    "falsification"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "authorship_type": {
+      "enum": [
+        "mikko_original",
+        "wisburg_team",
+        "translation",
+        "guest",
+        "aggregation",
+        "unknown"
+      ]
+    },
+    "authorship_evidence": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_type": {
+      "type": "string"
+    },
+    "fulltext_status": {
+      "enum": [
+        "full",
+        "partial",
+        "title_only"
+      ]
+    },
+    "estimated_chars": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "article_weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "core_thesis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "money_layer": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "balance_sheet_logic": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "counterparties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "instruments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collateral": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regulatory_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cross_border": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "asset_mapping": {
+      "type": "object"
+    },
+    "falsification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_to_prior": {
+      "enum": [
+        "NEW",
+        "REINFORCE",
+        "REVISE",
+        "CONTRADICT",
+        "APPLICATION"
+      ]
+    },
+    "confidence": {
+      "type": "object"
+    }
+  }
+}

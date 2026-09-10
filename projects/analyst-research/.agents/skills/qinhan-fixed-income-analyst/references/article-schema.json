@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "authorship_type": {
+      "enum": [
+        "qinhan_lead",
+        "qinhan_coauthored",
+        "team_member",
+        "team_summary",
+        "survey",
+        "event_promo",
+        "unknown"
+      ]
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "text_length": {
+      "type": "integer"
+    },
+    "core_thesis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "liquidity": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "institution_behavior": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "curve_view": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "priced_in": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trade_expression": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "falsification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

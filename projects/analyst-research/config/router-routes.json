@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "max_default_analysts": 3,
+  "routes": [
+    {"topic":"china_macro_deposits","primary":"yiyuzhongde-zhangyu-analyst","support":["canghai-yitugou-analyst","kevin-strategy-research"]},
+    {"topic":"china_rates","primary":"qinhan-fixed-income-analyst","support":["yiyuzhongde-zhangyu-analyst","spread-trading-analyst"]},
+    {"topic":"china_bond_trading","primary":"qinhan-fixed-income-analyst","support":["spread-trading-analyst"]},
+    {"topic":"china_stock_bond","primary":"yiyuzhongde-zhangyu-analyst","support":["qinhan-fixed-income-analyst","kevin-strategy-research"]},
+    {"topic":"china_ppi_equity_style","primary":"canghai-yitugou-analyst","support":["kevin-strategy-research"]},
+    {"topic":"fed_treasury","primary":"tantu-macro-analyst","support":["kevin-strategy-research","wisburg-mikko-analyst"]},
+    {"topic":"dollar_plumbing","primary":"wisburg-mikko-analyst","support":["tantu-macro-analyst"]},
+    {"topic":"hong_kong","primary":"kevin-strategy-research","support":["tantu-macro-analyst"]},
+    {"topic":"global_rates_relative_value","primary":"spread-trading-analyst","support":["tantu-macro-analyst","qinhan-fixed-income-analyst"]},
+    {"topic":"gold","primary":"kevin-strategy-research","support":["wisburg-mikko-analyst","canghai-yitugou-analyst"]},
+    {"topic":"ai_cross_asset","primary":"kevin-strategy-research","support":["canghai-yitugou-analyst","spread-trading-analyst"]},
+    {"topic":"global_monetary_system","primary":"wisburg-mikko-analyst","support":["canghai-yitugou-analyst","tantu-macro-analyst"]}
+  ],
+  "separation_invariants": [
+    {
+      "pair":["yiyuzhongde-zhangyu-analyst","qinhan-fixed-income-analyst"],
+      "left_scope":"居民与企业存款、宏观循环、政策、盈利与股债配置",
+      "right_scope":"银行间资金、机构负债、机构行为、曲线、品种与交易"
+    }
+  ]
+}

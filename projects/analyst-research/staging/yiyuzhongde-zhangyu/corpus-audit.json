@@ -1,0 +1,47 @@
+{
+  "status": "STABLE_DNA",
+  "audit_date": "2026-08-31",
+  "earliest_date": "2023-09-03",
+  "latest_date": "2026-08-25",
+  "span_months": 36,
+  "discovered_articles": 420,
+  "accepted_articles": 196,
+  "fulltext_articles": 142,
+  "longform_articles": 118,
+  "short_articles": 39,
+  "title_only_articles": 15,
+  "quarters_covered": 13,
+  "original_or_named_articles": 172,
+  "team_articles": 24,
+  "translation_or_guest_articles": 0,
+  "unique_normalized_titles": 194,
+  "effective_weighted_articles": 94.5,
+  "corpus_grade": "A",
+  "source_mix": {
+    "public_syndicated_fulltext": 196,
+    "primary_platform": "Sina Finance",
+    "source_quality": 0.8
+  },
+  "quarter_distribution": {
+    "2023Q3": 6,
+    "2023Q4": 23,
+    "2024Q1": 20,
+    "2024Q2": 14,
+    "2024Q3": 15,
+    "2024Q4": 23,
+    "2025Q1": 14,
+    "2025Q2": 15,
+    "2025Q3": 13,
+    "2025Q4": 15,
+    "2026Q1": 18,
+    "2026Q2": 7,
+    "2026Q3": 13
+  },
+  "corpus_file": "data/analysts/yiyuzhongde-zhangyu/corpus/articles.jsonl",
+  "corpus_sha256": "7d669f351adbfb4a81e3da39319ef0271b9dc9086cb3a8296d6ff4487d473bd9",
+  "limitations": [
+    "语料主要来自公开转载归档，原始公众号链接用于渠道确认，转载正文用于可审计提取",
+    "访谈、视频页和标题页按正文长度与作者归属降权",
+    "团队署名材料保留 team 边界，个人 DNA 优先采用张瑜明确署名或具名研究"
+  ]
+}

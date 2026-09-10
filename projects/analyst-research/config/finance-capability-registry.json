@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "3.1",
+  "asOf": "2026-09-09T23:59:00+08:00",
+  "productionOrchestrator": {"id": "deerflow", "path": "C:\\Users\\urmylucky\\Documents\\DeerFlow", "upstream": "https://github.com/bytedance/deer-flow", "upstreamCommit": "0d4925305a6330a3442dcd336ed25750aea87cbd"},
+  "canonicalContract": "C:\\Users\\urmylucky\\Documents\\DeerFlow\\contracts\\finance\\research-artifact.schema.json",
+  "projects": [
+    {"id": "analyst-dream-team", "codexLabel": "分析师天团", "path": "C:\\Users\\urmylucky\\Documents\\ChatGPT\\公众号炼化", "productionRole": "multi_framework_router", "entrypoint": "analyst-dream-team-router", "status": "active"},
+    {"id": "mikko-kevin", "codexLabel": "MIKKO+KEVIN", "path": "C:\\Users\\urmylucky\\Documents\\MIKKO", "productionRole": "personal_default_macro_framework", "entrypoint": "mikko-kevin-research-system", "status": "active"},
+    {"id": "matt", "codexLabel": "叙事判断", "path": "C:\\Users\\urmylucky\\Documents\\MATT", "productionRole": "a_share_narrative_valuation_execution", "entrypoint": "urmylucky-narrative-judgment", "status": "active"},
+    {"id": "daily-review", "codexLabel": "每日复盘更新", "path": "C:\\Users\\urmylucky\\Documents\\每日复盘更新", "productionRole": "a_share_market_data_and_classification", "entrypoint": "scripts/export-research-artifact.mjs", "status": "active"},
+    {"id": "earnings-analysis", "codexLabel": "财报PPT计划", "path": "C:\\Users\\urmylucky\\Documents\\ChatGPT\\生图", "productionRole": "earnings_research", "entrypoint": ".agents/skills/earnings-analysis/SKILL.md", "status": "active"},
+    {"id": "ppt-factory", "codexLabel": "PPT", "path": "C:\\Users\\urmylucky\\Documents\\ChatGPT\\PPT", "productionRole": "presentation_renderer_and_qa", "entrypoint": "app/api/materials/research-artifact/route.ts", "status": "active"},
+    {"id": "fund-manager", "codexLabel": "基金经理", "path": "C:\\Users\\urmylucky\\Documents\\基金经理", "productionRole": "fund_data_prototype", "entrypoint": null, "status": "registered_non_production"},
+    {"id": "aa20", "codexLabel": "AA20", "path": "C:\\Users\\urmylucky\\Documents\\ChatGPT\\AA20", "productionRole": "independent_entertainment_product", "entrypoint": null, "status": "isolated"}
+  ],
+  "singleOwners": {
+    "production_orchestration": "deerflow",
+    "multi_framework_routing": "analyst-dream-team",
+    "personal_macro_default": "mikko-kevin",
+    "a_share_narrative_judgment": "matt",
+    "a_share_market_data": "daily-review",
+    "turnover_classification": "daily-review",
+    "ifind_market_connection": "daily-review",
+    "earnings_research": "earnings-analysis",
+    "fundamental_review": "fundamental-review",
+    "presentation_rendering": "ppt-factory"
+  },
+  "interfaces": {
+    "dailyReviewInputs": ["public/market-snapshot.json", "public/dashboard-snapshot.json", "public/attribution-snapshot.json", "public/turnover-template.json"],
+    "dailyReviewProducer": "npm run artifact:export",
+    "earningsProducer": "python .agents/skills/earnings-analysis/scripts/export_research_artifact.py <run_root>",
+    "pptConsumer": "POST /api/materials/research-artifact",
+    "contract": "RESEARCH_ARTIFACT 1.0.0"
+  },
+  "flows": {
+    "market_to_presentation": ["daily-review", "deerflow", "ppt-factory"],
+    "earnings_to_presentation": ["earnings-analysis", "deerflow", "ppt-factory"],
+    "macro_to_presentation": ["analyst-dream-team", "deerflow", "ppt-factory"]
+  },
+  "dedupeDecisions": {
+    "earnings-company-research": "renamed_and_merged_into_earnings-analysis",
+    "earnings-research": "merged_into_earnings-analysis",
+    "analyst-consensus": "merged_into_analyst-dream-team-router",
+    "market-daily-review": "thin_orchestration_skill_over_existing_daily-review_pipeline"
+  }
+}

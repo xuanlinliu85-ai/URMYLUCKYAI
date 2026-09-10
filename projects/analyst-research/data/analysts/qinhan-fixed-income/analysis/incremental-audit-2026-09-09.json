@@ -1,0 +1,21 @@
+{
+  "analyst": "qinhan-fixed-income",
+  "scan_window": {"from": "2026-09-02", "through": "2026-09-09"},
+  "scan_date": "2026-09-09",
+  "sources_checked": [
+    "https://mp.data258.com/article/category/quakeqin21",
+    "https://www.jintiankansha.com/column/LMiT2g98sx",
+    "https://ficcresearch.site/sellside-tracker"
+  ],
+  "accepted_increment": {"discovered": 1, "verified_fulltext": 0, "personal_dna_evidence": 0, "team_current_view_leads": 1},
+  "audit_recommendation": {
+    "version_action": "hold the corpus version until article authorship and substantive text are verified",
+    "grade_action": "retain Grade B and the personal/team boundary status",
+    "dna_action": "preserve personal DNA unchanged",
+    "current_view_action": "track the二永债从价差到票息线索 as a team-level lead with minimal weight"
+  },
+  "limitations": [
+    "The live public index resolves one scan-window title and date; author-level attribution and substantive text remain pending.",
+    "The TodayRss archive page visible to search remained dated to late July; only absolute dates entered the audit."
+  ]
+}

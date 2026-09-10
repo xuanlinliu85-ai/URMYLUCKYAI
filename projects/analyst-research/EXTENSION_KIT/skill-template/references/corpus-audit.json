@@ -1,0 +1,14 @@
+{
+  "status": "NOT_AUDITED",
+  "earliest_date": null,
+  "latest_date": null,
+  "span_months": 0,
+  "discovered_articles": 0,
+  "fulltext_articles": 0,
+  "longform_articles": 0,
+  "short_articles": 0,
+  "quarters_covered": 0,
+  "effective_weighted_articles": 0,
+  "corpus_grade": "D",
+  "limitations": []
+}

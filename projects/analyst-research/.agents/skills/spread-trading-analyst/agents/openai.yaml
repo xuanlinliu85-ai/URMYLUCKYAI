@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spread Trading分析引擎"
+  short_description: "全球宏观交易、曲线、跨资产、AI ROI、商品与Trade Expression"
+  default_prompt: "请用Spread Trading框架分析这个问题：识别Macro Regime与定价锚，用跨资产验证和仓位判断，最后给出最合适的Trade Expression、Catalyst和反证条件。"

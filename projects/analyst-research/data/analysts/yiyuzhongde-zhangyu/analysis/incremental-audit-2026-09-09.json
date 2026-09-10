@@ -1,0 +1,23 @@
+{
+  "analyst": "yiyuzhongde-zhangyu",
+  "scan_window": {"from": "2026-09-02", "through": "2026-09-09"},
+  "scan_date": "2026-09-09",
+  "sources_checked": [
+    "https://stock.finance.sina.com.cn/stock/go.php/vReport_List/kind/macro/index.phtml",
+    "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/842033580241/index.phtml",
+    "https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/macro/rptid/842056980241/index.phtml",
+    "https://finance.sina.com.cn/money/nmetal/hjfx/2026-09-06/doc-iniqyrkc0443293.shtml"
+  ],
+  "accepted_increment": {"discovered": 6, "substantive_public_summaries": 2, "metadata_only": 3, "secondary_partial": 1},
+  "audit_recommendation": {
+    "version_action": "advance corpus patch version after root audit integration",
+    "grade_action": "retain current grade; the increment adds current evidence and does not reduce historical coverage requirements",
+    "dna_action": "use the fund-flow decomposition and weekly high-frequency indicator stack as additional support for existing rules",
+    "current_view_action": "refresh global risk appetite, China equity flow pressure, export high-frequency weakness, and policy-finance deployment",
+    "framework_evolution_action": "record the K-shaped divergence series and the policy-investment/debt-management pairing as candidate extensions"
+  },
+  "limitations": [
+    "Three research records expose verified authorship and metadata while their public pages provide limited report text.",
+    "The closed-door research summary is retained as low-weight current-view evidence."
+  ]
+}

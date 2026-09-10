@@ -1,0 +1,14 @@
+{
+  "analyst": "spread-trading",
+  "skill": "spread-trading-analyst",
+  "version": "3.0.0",
+  "released_at": "2026-09-02",
+  "corpus_schema": "2.1",
+  "dna_schema": "1.0",
+  "corpus_path": "corpus/index.jsonl",
+  "evidence_path": "dna-evidence.json",
+  "current_view_path": "current-view.json",
+  "corpus_isolation": "data/analysts/spread-trading",
+  "source_policy": "metadata, measurements, and distilled evidence only",
+  "update_command": ".venv\\Scripts\\python.exe data/analysts/spread-trading/scripts/build_corpus.py"
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tantu Macro Article Record",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "core_question",
+    "mechanism",
+    "falsification"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_type": {
+      "enum": [
+        "original",
+        "repost",
+        "weibo",
+        "index",
+        "partial",
+        "unknown"
+      ]
+    },
+    "fulltext_status": {
+      "enum": [
+        "full",
+        "partial",
+        "title_only"
+      ]
+    },
+    "core_question": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mechanism": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quant_methods": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "historical_analogues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "asset_mapping": {
+      "type": "object"
+    },
+    "key_indicators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "falsification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_to_prior": {
+      "enum": [
+        "NEW",
+        "REINFORCE",
+        "REVISE",
+        "CONTRADICT",
+        "APPLICATION"
+      ]
+    },
+    "confidence": {
+      "type": "object",
+      "properties": {
+        "source_quality": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "framework_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

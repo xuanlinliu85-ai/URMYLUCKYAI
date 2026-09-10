@@ -1,0 +1,11 @@
+{
+  "name": "wisburg-mikko-analyst",
+  "version": "3.3.0",
+  "corpus_version": "3.3.0-author-filtered",
+  "dna_version": "3.3.0-evidence-ledger",
+  "status": "PROVISIONAL_AUTHOR_FILTERED",
+  "entrypoint": "SKILL.md",
+  "audit": "references/corpus-audit.json",
+  "evidence": "references/dna-evidence.md",
+  "released_at": "2026-09-09"
+}

@@ -1,0 +1,62 @@
+{
+  "skill": "kevin-strategy-research",
+  "version": "1.3.0-stable-b",
+  "audit_date": "2026-09-09",
+  "status": "STABLE_ANALYST_DNA",
+  "corpus_grade": "B",
+  "earliest_date": "2021-11-21",
+  "latest_date": "2026-08-30",
+  "span_months": 57,
+  "discovered_articles": 184,
+  "fulltext_articles": 44,
+  "partial_articles": 16,
+  "longform_articles": 60,
+  "short_or_title_only_articles": 124,
+  "title_only_articles": 124,
+  "quarters_covered": [
+    "2021Q4", "2022Q1", "2022Q2", "2022Q3", "2022Q4",
+    "2023Q1", "2023Q2", "2023Q3", "2023Q4", "2024Q1",
+    "2024Q2", "2024Q3", "2024Q4", "2025Q1", "2025Q2",
+    "2025Q3", "2025Q4", "2026Q1", "2026Q3"
+  ],
+  "original_articles": 44,
+  "official_team_research_extracts": 16,
+  "translation_or_guest_articles": 4,
+  "flow_briefs": 17,
+  "effective_weighted_articles": 58.8,
+  "attribution": {
+    "liugang_attributed_or_lead": 44,
+    "cicc_overseas_team": 59,
+    "zhang_weihan_coauthored_official_extracts": 4,
+    "unverified_team_index": 59,
+    "third_party_reposts": 4
+  },
+  "topic_coverage": {
+    "global_macro": 66,
+    "hong_kong": 54,
+    "flows_and_positioning": 49,
+    "us_rates_and_fed": 42,
+    "us_equities": 24,
+    "allocation_and_valuation": 22,
+    "technology_and_ai": 17,
+    "china_assets": 16,
+    "gold_and_commodities": 6
+  },
+  "gate_results": {
+    "discovered_gte_100": true,
+    "fulltext_gte_60": false,
+    "longform_gte_40": true,
+    "grade_b_fulltext_gte_40": true,
+    "grade_b_longform_gte_25": true,
+    "quarters_gte_8": true,
+    "span_gte_30_months": true
+  },
+  "limitations": [
+    "公众号原文跳转触发反爬验证，124条索引记录仅保存标题与短摘要，不能计作全文。",
+    "16条高权重材料来自中金公司官方《研报精选》长篇摘录，属于团队研究摘录，不等于完整原始研报。",
+    "2026年材料以索引和资金流短评为主，只进入Current View候选层。",
+    "张巍瀚共同署名材料保留共著标记；其独立观点不能归入刘刚个人DNA。"
+    ,"44条WallstreetCN公共URL已通过正文长度、域名与刘刚可见署名校验并进入全文证据层；其中42条为明确共同署名，2条为明确单独署名。"
+  ],
+  "next_gate": "继续补足16篇可验证完整正文，在现有60篇长文与57个月跨度基础上达到Grade A。"
+}

@@ -1,0 +1,95 @@
+{
+  "analyst": "tantu-macro",
+  "version": "3.0.0",
+  "as_of": "2026-08-31",
+  "rules": [
+    {
+      "id": "TANTU-DNA-01",
+      "rule": "以制度和资产负债表机制定义问题，再解释资产价格。",
+      "supporting_articles": ["tantu-7b5bc39b6d05", "tantu-837ecf270827", "tantu-244f08a25cbd", "tantu-664b44831be0", "tantu-a78d0b6cd72d"],
+      "contradicting_articles": [],
+      "first_seen": "2023-09-25",
+      "last_seen": "2025-06-20",
+      "quarters_seen": ["2023Q3", "2024Q4", "2025Q2"],
+      "weighted_support": 4.7,
+      "confidence": "High"
+    },
+    {
+      "id": "TANTU-DNA-02",
+      "rule": "美元流动性采用广义风险因子、在岸拆借、离岸基差和央行资产负债表四层验证。",
+      "supporting_articles": ["tantu-837ecf270827", "tantu-1620d5090106", "tantu-e9df51d62de6"],
+      "contradicting_articles": [],
+      "first_seen": "2024-10-03",
+      "last_seen": "2026-02-09",
+      "quarters_seen": ["2024Q4", "2025Q2", "2026Q1"],
+      "weighted_support": 2.8,
+      "confidence": "Medium"
+    },
+    {
+      "id": "TANTU-DNA-03",
+      "rule": "长端利率按短端路径、实际利率、通胀补偿、期限溢价与久期供需分解。",
+      "supporting_articles": ["tantu-92e61ef09ad9", "tantu-7b5bc39b6d05", "tantu-a78d0b6cd72d", "tantu-b60940cd34dd"],
+      "contradicting_articles": [],
+      "first_seen": "2023-09-25",
+      "last_seen": "2026-04-02",
+      "quarters_seen": ["2023Q3", "2025Q1", "2025Q2", "2026Q2"],
+      "weighted_support": 3.8,
+      "confidence": "High"
+    },
+    {
+      "id": "TANTU-DNA-04",
+      "rule": "异常汇率波动先检查金融机构的存量外币敲口、对冲比率与被迫再平衡。",
+      "supporting_articles": ["tantu-905254ba1b4c", "tantu-664b44831be0", "tantu-ff2cbf48809e", "tantu-2bb610d3a0f8"],
+      "contradicting_articles": [],
+      "first_seen": "2024",
+      "last_seen": "2025-06-20",
+      "quarters_seen": ["2024Q1", "2024Q3", "2025Q2"],
+      "weighted_support": 3.55,
+      "confidence": "High"
+    },
+    {
+      "id": "TANTU-DNA-05",
+      "rule": "新增资金对资产的影响以可投资规模、期限匹配、进入速度和存量市场占比评估。",
+      "supporting_articles": ["tantu-a78d0b6cd72d", "tantu-664b44831be0", "tantu-905254ba1b4c"],
+      "contradicting_articles": [],
+      "first_seen": "2025-05-08",
+      "last_seen": "2025-06-20",
+      "quarters_seen": ["2025Q2", "2025Q3"],
+      "weighted_support": 2.85,
+      "confidence": "Medium"
+    },
+    {
+      "id": "TANTU-DNA-06",
+      "rule": "历史类比先对齐机制、制度约束和市场结构，再对齐价格形态。",
+      "supporting_articles": ["tantu-4615a0ff2cbd", "tantu-53a13dc47759", "tantu-29d0d4941aff", "tantu-b59f7493a56b"],
+      "contradicting_articles": [],
+      "first_seen": "2024-03-27",
+      "last_seen": "2026",
+      "quarters_seen": ["2024Q1", "2024Q3", "2026Q3"],
+      "weighted_support": 3.4,
+      "confidence": "High"
+    },
+    {
+      "id": "TANTU-DNA-07",
+      "rule": "地缘事件通过能源、运输、通胀、政策反应和金融杠杆传导到资产。",
+      "supporting_articles": ["tantu-27a931f03f09", "tantu-b60940cd34dd", "tantu-dce41515fc87"],
+      "contradicting_articles": [],
+      "first_seen": "2025",
+      "last_seen": "2026-04-16",
+      "quarters_seen": ["2025Q2", "2026Q1", "2026Q2"],
+      "weighted_support": 2.7,
+      "confidence": "Medium"
+    },
+    {
+      "id": "TANTU-DNA-08",
+      "rule": "结论以情景树、资产评分、触发条件和第一反证条件收口。",
+      "supporting_articles": ["tantu-b60940cd34dd", "tantu-1620d5090106", "tantu-92e61ef09ad9", "tantu-915952e3be40"],
+      "contradicting_articles": [],
+      "first_seen": "2025-01-12",
+      "last_seen": "2026-04-02",
+      "quarters_seen": ["2025Q1", "2025Q2", "2026Q2"],
+      "weighted_support": 3.7,
+      "confidence": "High"
+    }
+  ]
+}

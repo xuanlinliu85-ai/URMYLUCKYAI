@@ -1,0 +1,4 @@
+interface:
+  display_name: "REPLACE"
+  short_description: "REPLACE"
+  default_prompt: "请使用该分析师框架分析这个问题，并用最新数据验证。"

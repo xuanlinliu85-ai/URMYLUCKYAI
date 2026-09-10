@@ -1,0 +1,45 @@
+{
+  "skill": "tantu-macro-analyst",
+  "analyst": "tantu-macro",
+  "version": "3.0.0",
+  "audit_version": "2.1",
+  "as_of": "2026-08-31",
+  "status": "STABLE",
+  "earliest_date": "2023-09-25",
+  "latest_date": "2026-08-30",
+  "span_months": 35,
+  "discovered_articles": 206,
+  "structured_articles": 106,
+  "fulltext_articles": 103,
+  "longform_articles": 63,
+  "short_articles": 0,
+  "title_only_articles": 3,
+  "quarters_covered": 8,
+  "covered_quarters": ["2023Q3", "2024Q1", "2024Q4", "2025Q1", "2025Q2", "2026Q1", "2026Q2", "2026Q3"],
+  "original_articles": 103,
+  "translation_or_guest_articles": 3,
+  "effective_weighted_articles": 76.18,
+  "content_types": {
+    "original_depth": 25,
+    "original_research": 42,
+    "original_market": 17,
+    "literature_distillation": 19,
+    "translation_or_guest": 3
+  },
+  "corpus_grade": "A",
+  "dna_evidence_rules": 8,
+  "high_confidence_rules": 5,
+  "medium_confidence_rules": 3,
+  "limitations": [
+    "2024年部分记录的日粒度由年度目录继承，实际分析时使用原文日期。",
+    "原文正文保留在来源站点，本项目保存元数据、分类和证据引用。",
+    "年度目录中的翻译、市场转述与活动信息按内容类型降权。"
+  ],
+  "source_evidence": [
+    "https://www.weibo.com/2453509265/P7B3xg5lp",
+    "https://www.jintiankansha.com/column/4zPjhwNTu7",
+    "https://weibo.com/ttarticle/p/show?id=2309404949982980735577",
+    "https://weibo.com/ttarticle/p/show?id=2309405085530042794191",
+    "https://www.weibo.com/ttarticle/p/show?id=2309405152381334585482"
+  ]
+}

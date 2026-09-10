@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Spread Trading Article Record",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "authorship_type",
+    "core_thesis",
+    "pricing_anchor",
+    "trade_expression",
+    "falsification"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "authorship_type": {
+      "enum": [
+        "founder_original",
+        "trading_dog",
+        "ai_assisted",
+        "third_party_analysis",
+        "unknown"
+      ]
+    },
+    "fulltext_status": {
+      "enum": [
+        "full",
+        "partial",
+        "title_only"
+      ]
+    },
+    "framework_module": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "macro_regime": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "core_thesis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pricing_anchor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cross_asset_confirmation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "positioning": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relative_value": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "catalysts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trade_expression": {
+      "type": "object"
+    },
+    "falsification": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relationship_to_prior": {
+      "enum": [
+        "NEW",
+        "REINFORCE",
+        "REVISE",
+        "CONTRADICT",
+        "APPLICATION"
+      ]
+    },
+    "confidence": {
+      "type": "object"
+    }
+  }
+}

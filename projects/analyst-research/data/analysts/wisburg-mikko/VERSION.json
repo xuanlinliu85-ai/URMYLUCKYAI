@@ -1,0 +1,9 @@
+{
+  "analyst_id": "wisburg-mikko",
+  "skill_version": "3.3.0",
+  "corpus_version": "3.3.0-author-filtered",
+  "dna_version": "3.3.0-evidence-ledger",
+  "status": "PROVISIONAL_AUTHOR_FILTERED",
+  "released_at": "2026-09-09",
+  "breaking_change": "作者级证据增加完整公开访谈与逐时市场日志；外部报告摘要保持来源归属，Corpus Gate继续采用作者级高质量全文硬门槛。"
+}

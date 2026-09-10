@@ -1,0 +1,4 @@
+interface:
+  display_name: "分析师天团总控"
+  short_description: "自动路由七位分析师，统一事实口径并完成观点裁决"
+  default_prompt: "请由分析师天团自动选择最合适的2-3位分析师研究这个问题，先统一最新事实底稿，再比较框架并给出总控裁决。"

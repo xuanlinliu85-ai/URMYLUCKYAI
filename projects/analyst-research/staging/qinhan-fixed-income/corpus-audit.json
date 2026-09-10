@@ -1,0 +1,39 @@
+{
+  "status": "STABLE_TEAM_DNA_PERSONAL_BOUNDARY",
+  "audit_date": "2026-09-01",
+  "earliest_date": "2023-03-17",
+  "latest_date": "2026-08-31",
+  "span_months": 42,
+  "discovered_articles": 146,
+  "accepted_articles": 125,
+  "fulltext_articles": 44,
+  "longform_articles": 42,
+  "short_articles": 0,
+  "title_only_articles": 66,
+  "structured_anchor_articles": 15,
+  "quarters_covered": 14,
+  "original_articles": 30,
+  "qinhan_named_fulltext": 27,
+  "team_platform_articles": 81,
+  "translation_or_guest_articles": 0,
+  "effective_weighted_articles": 15.36,
+  "corpus_grade": "B",
+  "corpus_file": "data/analysts/qinhan-fixed-income/corpus/articles.jsonl",
+  "corpus_sha256": "d3f4b8f9879e446d9cd1e14056a6e54ce30ed379d4cbd0d4dcab6ab639e8aa34",
+  "quarter_list": [
+    "2023Q1", "2023Q2", "2023Q3", "2023Q4",
+    "2024Q2", "2024Q3", "2024Q4",
+    "2025Q1", "2025Q2", "2025Q3", "2025Q4",
+    "2026Q1", "2026Q2", "2026Q3"
+  ],
+  "source_mix": {
+    "verified_public_fulltext": 44,
+    "public_archive_title_index": 66,
+    "structured_import_anchor": 15
+  },
+  "limitations": [
+    "稳定等级适用于覃汉研究笔记团队能力，覃汉个人 DNA 采用27篇具名正文和个人锚点单独判断",
+    "2026年公开索引中的66篇材料保留团队平台未决边界，并以标题索引权重参与主题发现",
+    "年度回顾中的团队文章继续作为研究覆盖证据，个人归属依赖明确署名"
+  ]
+}

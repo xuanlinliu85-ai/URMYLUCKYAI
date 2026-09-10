@@ -1,0 +1,18 @@
+{
+  "analyst": "kevin-strategy-research",
+  "version": "1.3.0-stable-b",
+  "corpus_schema_version": "2.1",
+  "updated_at": "2026-09-09",
+  "corpus_files": [
+    "corpus/articles.jsonl",
+    "corpus/official-evidence.jsonl",
+    "corpus/public-url-candidates.jsonl",
+    "corpus/verified-fulltext.jsonl"
+  ],
+  "analysis_files": [
+    "analysis/dna-evidence.json",
+    "analysis/audit-metrics.json"
+  ],
+  "skill_path": ".agents/skills/kevin-strategy-research",
+  "status": "STABLE_ANALYST_DNA"
+}

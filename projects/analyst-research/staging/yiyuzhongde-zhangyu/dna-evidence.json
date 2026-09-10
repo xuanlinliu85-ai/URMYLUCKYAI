@@ -1,0 +1,80 @@
+{
+  "analyst_id": "yiyuzhongde-zhangyu",
+  "dna_version": "1.1.0",
+  "generated_at": "2026-08-31",
+  "rules": [
+    {
+      "rule": "居民存款通过经济循环、非银流动性和股债配置三条路径影响资产价格",
+      "supporting_articles": [
+        "2024-12-10｜坐在居民存款的‘火山口’",
+        "2025-03-07｜居民存款搬家与非银流动性",
+        "2025-07-29｜股债历史性切换拐点正在形成",
+        "2025-12-06｜没有股债双牛，只有股债跷跷板",
+        "2026-08-23｜四重拐点交织，股债天平回归中立位"
+      ],
+      "contradicting_articles": [],
+      "first_seen": "2024-12-10",
+      "last_seen": "2026-08-23",
+      "quarters_seen": 5,
+      "weighted_support": 3.8,
+      "confidence": "High"
+    },
+    {
+      "rule": "政策文本中的首次出现、排序和措辞变化构成可交易的增量信息",
+      "supporting_articles": [
+        "2024-03-06｜读懂增量信息",
+        "2025-01-20｜2025年地方两会的七大增量信息",
+        "2026-03-17｜十大增量信息——‘十五五’规划纲要学习心得"
+      ],
+      "contradicting_articles": [],
+      "first_seen": "2024-03-06",
+      "last_seen": "2026-03-17",
+      "quarters_seen": 3,
+      "weighted_support": 2.9,
+      "confidence": "Medium"
+    },
+    {
+      "rule": "地产与居民财富变化经信用循环和高收益资产供给形成资产荒",
+      "supporting_articles": [
+        "2024-08-12｜拆解‘资产荒’",
+        "2024-11-20｜解开物价、房价、股价三螺旋",
+        "2024-12-10｜坐在居民存款的‘火山口’",
+        "2025-03-07｜居民存款搬家与非银流动性"
+      ],
+      "contradicting_articles": [],
+      "first_seen": "2024-08-12",
+      "last_seen": "2025-03-07",
+      "quarters_seen": 3,
+      "weighted_support": 3.6,
+      "confidence": "Medium"
+    },
+    {
+      "rule": "转型期 A 股基本面由上市公司利润结构、中游竞争力与海外收入共同刻画",
+      "supporting_articles": [
+        "2025-12-24｜2026年中游制造配置方向",
+        "2026-04-18｜经济在复苏，中游在受益",
+        "2026-05-30｜旧尺难刻新舟，胜负定于中游"
+      ],
+      "contradicting_articles": [],
+      "first_seen": "2025-12-24",
+      "last_seen": "2026-05-30",
+      "quarters_seen": 3,
+      "weighted_support": 2.7,
+      "confidence": "Medium"
+    },
+    {
+      "rule": "人民币采用基本面、预期、交易与逆周期政策的多面框架",
+      "supporting_articles": [
+        "2025-01-04｜人民币汇率弹性释放",
+        "2025-09-12｜人民币汇率保持稳定波动",
+        "2026-03-19｜人民币缓慢升值阶段"
+      ],
+      "contradicting_articles": [],
+      "first_seen": "2025-01-04",
+      "last_seen": "2026-03-19",
+      "quarters_seen": 3,
+      "weighted_support": 2.4,
+      "confidence": "Medium"
+    }
+  ]
+}

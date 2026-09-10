@@ -1,0 +1,4 @@
+interface:
+  display_name: "坦途宏观分析引擎"
+  short_description: "Fed、美债、美元流动性、财政、外汇与全球资产配置"
+  default_prompt: "请使用坦途宏观/GMF Research的分析框架拆解这个问题，并用最新数据验证，给出机制、归因、情景树和资产映射。"

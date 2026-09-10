@@ -1,0 +1,20 @@
+{
+  "analyst": "tantu-macro",
+  "scan_window": {"from": "2026-09-02", "through": "2026-09-09"},
+  "scan_date": "2026-09-09",
+  "sources_checked": [
+    "public web search for 坦途宏观, GMF Research, and 程坦",
+    "https://wallstreetcn.com/articles/3763862"
+  ],
+  "accepted_increment": {"discovered": 0, "verified_fulltext": 0, "dna_evidence": 0},
+  "audit_recommendation": {
+    "version_action": "retain the current version",
+    "grade_action": "retain the current grade",
+    "dna_action": "retain the existing DNA evidence ledger",
+    "next_source_priority": ["GMF Research official public posts", "程坦署名公开演讲或访谈", "authorized full-text republications"]
+  },
+  "limitations": [
+    "Search results in the scan window returned unrelated macro reports and older event promotion pages.",
+    "Indexed public coverage currently ends with older event-promotion material; the next pass should begin at GMF Research official posts."
+  ]
+}

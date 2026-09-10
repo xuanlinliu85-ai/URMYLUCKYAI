@@ -1,0 +1,49 @@
+{
+  "audit_date": "2026-09-09",
+  "earliest_date": "2021-11-21",
+  "latest_date": "2026-08-30",
+  "span_months": 57,
+  "discovered_articles": 184,
+  "fulltext_articles": 44,
+  "partial_articles": 16,
+  "longform_articles": 60,
+  "title_only_articles": 124,
+  "quarters_covered": [
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q3"
+  ],
+  "corpus_grade": "B",
+  "gate_results": {
+    "discovered_gte_100": true,
+    "fulltext_gte_60": false,
+    "longform_gte_40": true,
+    "grade_b_fulltext_gte_40": true,
+    "grade_b_longform_gte_25": true,
+    "quarters_gte_8": true,
+    "span_gte_30_months": true
+  },
+  "verified_domains": {
+    "wallstreetcn.com": 44
+  },
+  "verified_attribution": {
+    "liugang-explicit-coauthored": 42,
+    "liugang-explicit-solo": 2
+  }
+}

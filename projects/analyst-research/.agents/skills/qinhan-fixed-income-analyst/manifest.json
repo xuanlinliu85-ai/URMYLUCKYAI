@@ -1,0 +1,12 @@
+{
+  "name": "覃汉研究笔记 Analyst Skill",
+  "skill": "qinhan-fixed-income-analyst",
+  "version": "1.1.0",
+  "dna_version": "1.1.0",
+  "corpus_version": "2026-09-01.b",
+  "updated_at": "2026-09-01",
+  "corpus_grade": "B",
+  "corpus_status": "STABLE_TEAM_DNA_PERSONAL_BOUNDARY",
+  "corpus_file": "data/analysts/qinhan-fixed-income/corpus/articles.jsonl",
+  "corpus_sha256": "d3f4b8f9879e446d9cd1e14056a6e54ce30ed379d4cbd0d4dcab6ab639e8aa34"
+}

@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "team_name": "Analyst Dream Team",
+  "extension_policy": "See EXTENDING.md",
+  "analysts": [
+    {
+      "name": "沧海一土狗",
+      "skill_name": "canghai-yitugou-analyst",
+      "status": "active",
+      "role": "China institutions / PPI / industry / market-state H",
+      "strengths": [
+        "中国制度",
+        "PPI",
+        "剩余价值",
+        "产业资本开支",
+        "A股结构",
+        "市场摩擦H"
+      ],
+      "avoid_overlap_with": [
+        "kevin-strategy-research"
+      ],
+      "preferred_partners": [
+        "kevin-strategy-research",
+        "tantu-macro-analyst"
+      ],
+      "source_note": "Framework distilled from public/historical article corpus; not prose imitation.",
+      "corpus_status": "STABLE_ANALYST_DNA",
+      "corpus_grade": "A",
+      "version_manifest": ".agents/skills/canghai-yitugou-analyst/manifest.json",
+      "data_dir": "data/analysts/canghai-yitugou",
+      "corpus_policy": "CORPUS_POLICY.md"
+    },
+    {
+      "name": "坦途宏观",
+      "skill_name": "tantu-macro-analyst",
+      "status": "active",
+      "role": "Fed / Treasury / fiscal / term premium / macro scenarios",
+      "strengths": [
+        "FOMC",
+        "美国财政",
+        "美债",
+        "期限溢价",
+        "美元流动性量化",
+        "情景树"
+      ],
+      "avoid_overlap_with": [
+        "wisburg-mikko-analyst"
+      ],
+      "preferred_partners": [
+        "kevin-strategy-research",
+        "wisburg-mikko-analyst",
+        "spread-trading-analyst"
+      ],
+      "source_note": "Institutional macro and cross-asset framework.",
+      "corpus_status": "STABLE",
+      "corpus_grade": "A",
+      "version_manifest": "data/analysts/tantu-macro/manifest.json",
+      "data_dir": "data/analysts/tantu-macro",
+      "corpus_policy": "CORPUS_POLICY.md"
+    },
+    {
+      "name": "Kevin策略研究",
+      "skill_name": "kevin-strategy-research",
+      "status": "active",
+      "role": "pricing / numerator-denominator / flows / crowding / odds",
+      "strengths": [
+        "分子分母",
+        "实际利率",
+        "港股",
+        "外资",
+        "南向",
+        "拥挤",
+        "赔率胜率"
+      ],
+      "avoid_overlap_with": [
+        "canghai-yitugou-analyst",
+        "spread-trading-analyst"
+      ],
+      "preferred_partners": [
+        "canghai-yitugou-analyst",
+        "tantu-macro-analyst",
+        "spread-trading-analyst"
+      ],
+      "source_note": "Overseas strategy and market-pricing framework.",
+      "corpus_status": "STABLE_ANALYST_DNA",
+      "corpus_grade": "B",
+      "version_manifest": "data/analysts/kevin-strategy-research/manifest.json",
+      "data_dir": "data/analysts/kevin-strategy-research",
+      "corpus_policy": "CORPUS_POLICY.md"
+    },
+    {
+      "name": "智堡Mikko",
+      "skill_name": "wisburg-mikko-analyst",
+      "status": "active",
+      "role": "Money View / balance sheets / global dollar plumbing",
+      "strengths": [
+        "资产负债表",
+        "Eurodollar",
+        "FX swap",
+        "XCCY",
+        "准备金",
+        "抵押品",
+        "货币层级"
+      ],
+      "avoid_overlap_with": [
+        "tantu-macro-analyst"
+      ],
+      "preferred_partners": [
+        "tantu-macro-analyst",
+        "kevin-strategy-research"
+      ],
+      "source_note": "Strict authorship separation between Mikko original, Wisburg team, translations and guests.",
+      "corpus_status": "PROVISIONAL_AUTHOR_FILTERED",
+      "corpus_grade": "C",
+      "version_manifest": ".agents/skills/wisburg-mikko-analyst/manifest.json",
+      "data_dir": "data/analysts/wisburg-mikko",
+      "corpus_policy": "CORPUS_POLICY.md"
+    },
+    {
+      "name": "Spread Trading",
+      "skill_name": "spread-trading-analyst",
+      "status": "active",
+      "role": "Global macro trading / curves / RV / trade expression",
+      "strengths": [
+        "收益率曲线",
+        "Relative Value",
+        "AI ROI",
+        "Gamma/再平衡",
+        "商品安全",
+        "Trade Expression"
+      ],
+      "avoid_overlap_with": [
+        "kevin-strategy-research",
+        "tantu-macro-analyst"
+      ],
+      "preferred_partners": [
+        "tantu-macro-analyst",
+        "kevin-strategy-research",
+        "canghai-yitugou-analyst"
+      ],
+      "source_note": "Cross-asset macro trading framework; preserve authorship distinctions.",
+      "corpus_status": "STABLE",
+      "corpus_grade": "A",
+      "version_manifest": "data/analysts/spread-trading/manifest.json",
+      "data_dir": "data/analysts/spread-trading",
+      "corpus_policy": "CORPUS_POLICY.md"
+    },
+    {
+      "name": "一瑜中的｜张瑜",
+      "skill_name": "yiyuzhongde-zhangyu-analyst",
+      "status": "active",
+      "role": "China macro / household deposits / policy reaction / transformation macro",
+      "strengths": [
+        "居民存款",
+        "部门资产负债表",
+        "政策增量信息",
+        "人民币",
+        "A股利润结构",
+        "中游制造",
+        "股债配置"
+      ],
+      "avoid_overlap_with": [
+        "canghai-yitugou-analyst",
+        "qinhan-fixed-income-analyst"
+      ],
+      "preferred_partners": [
+        "qinhan-fixed-income-analyst",
+        "canghai-yitugou-analyst",
+        "kevin-strategy-research"
+      ],
+      "source_note": "Public syndicated corpus with named-author and team attribution preserved.",
+      "corpus_status": "STABLE_DNA",
+      "corpus_grade": "A",
+      "version_manifest": ".agents/skills/yiyuzhongde-zhangyu-analyst/manifest.json",
+      "data_dir": "data/analysts/yiyuzhongde-zhangyu",
+      "corpus_policy": "CORPUS_POLICY.md"
+    },
+    {
+      "name": "覃汉研究笔记",
+      "skill_name": "qinhan-fixed-income-analyst",
+      "status": "active",
+      "role": "China rates / interbank liquidity / institutional behavior / curve trading",
+      "strengths": [
+        "银行间资金",
+        "机构负债",
+        "机构行为",
+        "收益率曲线",
+        "长债与超长债",
+        "信用债与转债",
+        "趋势与预期差"
+      ],
+      "avoid_overlap_with": [
+        "yiyuzhongde-zhangyu-analyst",
+        "spread-trading-analyst"
+      ],
+      "preferred_partners": [
+        "yiyuzhongde-zhangyu-analyst",
+        "spread-trading-analyst",
+        "kevin-strategy-research"
+      ],
+      "source_note": "Qin Han named research and team-platform capabilities are maintained as separate evidence layers.",
+      "corpus_status": "STABLE_TEAM_DNA_PERSONAL_BOUNDARY",
+      "corpus_grade": "B",
+      "version_manifest": ".agents/skills/qinhan-fixed-income-analyst/manifest.json",
+      "data_dir": "data/analysts/qinhan-fixed-income",
+      "corpus_policy": "CORPUS_POLICY.md"
+    }
+  ]
+}

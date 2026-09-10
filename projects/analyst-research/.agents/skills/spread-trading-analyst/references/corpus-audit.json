@@ -1,0 +1,55 @@
+{
+  "analyst": "spread-trading",
+  "skill": "spread-trading-analyst",
+  "version": "3.0.0",
+  "audit_standard": "Corpus Gate v2.1",
+  "audit_date": "2026-09-02",
+  "status": "STABLE",
+  "corpus_grade": "A",
+  "earliest_date": "2022-03-20",
+  "latest_date": "2026-08-31",
+  "span_months": 53,
+  "discovered_articles": 176,
+  "structured_articles": 176,
+  "fulltext_articles": 76,
+  "longform_articles": 67,
+  "short_articles": 9,
+  "title_only_articles": 100,
+  "quarters_covered": 16,
+  "original_articles": 81,
+  "translation_or_guest_articles": 11,
+  "unknown_authorship_indexes": 84,
+  "effective_weighted_articles": 57.07,
+  "authorship_breakdown": {
+    "founder_original": 69,
+    "trading_dog": 11,
+    "ai_assisted": 1,
+    "translation": 6,
+    "guest_interview": 3,
+    "third_party_analysis": 2,
+    "unknown": 84
+  },
+  "fulltext_authorship_breakdown": {
+    "founder_original": 69,
+    "translation": 4,
+    "guest_interview": 2,
+    "third_party_analysis": 1
+  },
+  "topic_breakdown": {
+    "global_macro_cross_asset": 100,
+    "rates_fiscal": 37,
+    "dollar_monetary_order": 12,
+    "ai_valuation": 10,
+    "political_economy": 9,
+    "china_cross_asset": 4,
+    "commodities_geopolitics": 4
+  },
+  "method": "Public 格隆汇 column metadata/fulltext measurement, authorized Huxiu reprints, attributed public reprints, and historical original-link discovery. Article bodies are excluded from the repository.",
+  "limitations": [
+    "2025公开完整正文可用量较低，2025材料主要承担演化桥接与当前观点定位。",
+    "历史原文链接索引中的84条作者归属保持待核状态，并按标题索引权重计入。",
+    "Trading Dog与AI-assisted条目按明确署名独立标注，其正文可用性低于李易骏公开专栏主体样本。",
+    "当前观点统一进入Current View，并在实战调用时通过最新数据重新验证。"
+  ],
+  "gate_result": "PASS"
+}

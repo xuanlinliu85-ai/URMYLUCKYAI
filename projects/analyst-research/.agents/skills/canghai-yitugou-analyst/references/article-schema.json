@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canghai Yitugou Article Record",
+  "type": "object",
+  "required": ["title", "date", "core_thesis", "causal_chain", "falsification"],
+  "properties": {
+    "title": {"type": "string"},
+    "date": {"type": "string"},
+    "source": {"type": "string"},
+    "source_type": {"enum": ["original", "repost", "rss", "index", "unknown"]},
+    "fulltext_status": {"enum": ["full", "partial", "title_only"]},
+    "core_thesis": {"type": "array", "items": {"type": "string"}},
+    "causal_chain": {"type": "array", "items": {"type": "string"}},
+    "variables": {"type": "object"},
+    "asset_mapping": {"type": "object"},
+    "key_indicators": {"type": "array", "items": {"type": "string"}},
+    "falsification": {"type": "array", "items": {"type": "string"}},
+    "relationship_to_prior": {"enum": ["NEW", "REINFORCE", "REVISE", "CONTRADICT", "APPLICATION"]},
+    "confidence": {"type": "object"}
+  }
+}

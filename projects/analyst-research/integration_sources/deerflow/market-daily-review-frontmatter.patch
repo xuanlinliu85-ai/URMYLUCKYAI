@@ -1,0 +1,12 @@
+diff --git a/skills/custom/market-daily-review/SKILL.md b/skills/custom/market-daily-review/SKILL.md
+--- a/skills/custom/market-daily-review/SKILL.md
++++ b/skills/custom/market-daily-review/SKILL.md
+@@ -1,6 +1,7 @@
+ ---
+ name: market-daily-review
+-description: Use this skill for A-share intraday, midday, or closing market reviews when DeerFlow needs to orchestrate the existing daily-review data capability, reconstruct sector rotation, validate catalysts, and package the result into the shared Research Artifact. This skill is an orchestration/methodology layer only: it must not reimplement the daily-review project's data pipeline, classification rules, website, or create a second financial data stack.
++description: >-
++  Use this skill for A-share intraday, midday, or closing market reviews when DeerFlow needs to orchestrate the existing daily-review data capability, reconstruct sector rotation, validate catalysts, and package the result into the shared Research Artifact. This skill is an orchestration/methodology layer only: it must not reimplement the daily-review project's data pipeline, classification rules, website, or create a second financial data stack.
+ ---
+ 
+ # A-Share Daily Market Review — Orchestration Layer

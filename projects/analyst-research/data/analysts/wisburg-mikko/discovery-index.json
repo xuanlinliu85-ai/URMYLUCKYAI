@@ -1,0 +1,36 @@
+{
+  "analyst_id": "wisburg-mikko",
+  "generated_at": "2026-09-09",
+  "discovery_scope": "author-filtered public web archive",
+  "aggregate_sources": [
+    {
+      "source": "https://wisburg.blog.caixin.com/",
+      "reported_total": 154,
+      "archive_breakdown": {"2018": 35, "2019": 115, "2021": 1, "2022": 3},
+      "classification": "wisburg_team_platform_mixed",
+      "note": "平台文章含原创、团队稿、翻译和嘉宾，154篇仅计入发现量。"
+    },
+    {
+      "source": "https://wallstreetcn.com/",
+      "reported_total": 7,
+      "classification": "channel_mixed",
+      "note": "逐篇核验正文后再区分Mikko原创、讲话实录、外部周报与翻译。"
+    },
+    {
+      "source": "public reposts and Wisburg-hosted PDFs",
+      "reported_total": 6,
+      "classification": "secondary_or_first_party_file",
+      "note": "转载页需要明确作者行；PDF需要标题或文内作者证据。"
+    }
+  ],
+  "discovered_candidates": 185,
+  "normalized_records": 42,
+  "latest_author_verified_batch": {
+    "added_records": 16,
+    "fulltext_records": 11,
+    "partial_records": 5,
+    "scope": "2018-2026 author bylines, paragraph-labelled interviews, first-party channel audio/course indexes, public reposts and an author-labelled market log",
+    "note": "作者原话、第一人称日志、嘉宾原话、外部译文和结构化摘要分别计权；日志内外部研究摘要维持原始来源归属。"
+  },
+  "copyright_policy": "仅保存元数据、机制摘要与证据字段，不保存文章全文。"
+}
