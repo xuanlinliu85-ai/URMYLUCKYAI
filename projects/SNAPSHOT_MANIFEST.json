@@ -24,10 +24,10 @@
       "id": "earnings-analysis",
       "path": "projects/earnings-images",
       "status": "active",
-      "source": "codex_local_workspace_snapshot",
+      "source": "github:xuanlinliu85-ai/URMYLUCKYAI",
       "source_commit": null,
-      "canonical": false,
-      "sync_mode": "snapshot_managed"
+      "canonical": true,
+      "sync_mode": "git_managed"
     },
     {
       "id": "fund-manager",
