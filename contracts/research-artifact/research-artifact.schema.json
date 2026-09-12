@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/xuanlinliu85-ai/URMYLUCKYAI/contracts/research-artifact/research-artifact.schema.json",
+  "title": "URMYLUCKY Research Artifact",
+  "description": "Canonical exchange contract between Research OS producers and presentation, article, image and UI consumers.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artifact_id",
+    "artifact_type",
+    "title",
+    "as_of",
+    "generated_at",
+    "subject",
+    "request",
+    "facts",
+    "conclusions",
+    "sources",
+    "quality",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "artifact_id": { "type": "string", "minLength": 1 },
+    "artifact_type": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "as_of": { "type": "string", "minLength": 1 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "subject": {
+      "type": "object",
+      "required": ["kind", "name"],
+      "properties": {
+        "kind": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "identifiers": { "type": "object" },
+        "market": { "type": ["string", "null"] },
+        "period": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "request": {
+      "type": "object",
+      "required": ["user_goal", "requested_outputs", "constraints"],
+      "properties": {
+        "user_goal": { "type": "string" },
+        "requested_outputs": { "type": "array", "items": { "type": "string" } },
+        "constraints": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["fact_id", "statement", "status", "source_ids"],
+        "properties": {
+          "fact_id": { "type": "string", "minLength": 1 },
+          "statement": { "type": "string", "minLength": 1 },
+          "value": {},
+          "unit": { "type": ["string", "null"] },
+          "timestamp": { "type": ["string", "null"] },
+          "status": { "enum": ["verified", "unverified", "disputed"] },
+          "source_ids": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": true
+      }
+    },
+    "timeline": { "type": "array" },
+    "drivers": { "type": "array" },
+    "conclusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["conclusion_id", "statement", "fact_ids", "source_ids", "confidence"],
+        "properties": {
+          "conclusion_id": { "type": "string", "minLength": 1 },
+          "statement": { "type": "string", "minLength": 1 },
+          "fact_ids": { "type": "array", "items": { "type": "string" } },
+          "driver_ids": { "type": "array", "items": { "type": "string" } },
+          "source_ids": { "type": "array", "items": { "type": "string" } },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "risks": { "type": "array" },
+    "watchpoints": { "type": "array" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "title", "source_type"],
+        "properties": {
+          "source_id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "source_type": { "type": "string", "minLength": 1 },
+          "provider": { "type": ["string", "null"] },
+          "url": { "type": ["string", "null"] }
+        },
+        "additionalProperties": true
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["unresolved_conflicts", "warnings"],
+      "properties": {
+        "unresolved_conflicts": { "type": "array" },
+        "warnings": { "type": "array" }
+      },
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["project_owners", "capabilities_used", "skills_used", "tools_used", "knowledge_refs"],
+      "properties": {
+        "orchestration_mode": { "enum": ["direct_research_os", "external_orchestrator", "historical"] },
+        "orchestrator": { "type": ["string", "null"] },
+        "project_owners": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "capabilities_used": { "type": "array", "items": { "type": "string" } },
+        "skills_used": { "type": "array", "items": { "type": "string" } },
+        "tools_used": { "type": "array", "items": { "type": "string" } },
+        "knowledge_refs": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

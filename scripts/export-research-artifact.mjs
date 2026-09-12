@@ -69,7 +69,7 @@ export async function buildMarketReviewArtifact() {
       { source_id: "S2", title: "iFinD MCP compatibility audit", source_type: "structured_data", provider: "iFinD MCP", url: null, published_at: audit.checkedAt, accessed_at: new Date().toISOString(), notes: `tools=${(audit.requiredTools || []).join(",")}` },
     ],
     quality: { date_verified: true, fiscal_period_verified: null, consensus_verified: null, intraday_granularity: "daily_close", unresolved_conflicts: [], warnings: [] },
-    provenance: { orchestrator: "deerflow", project_owners: ["daily-review"], capabilities_used: ["a_share_market_review", "ifind_market_data"], skills_used: ["market-daily-review"], tools_used: audit.requiredTools || [], knowledge_refs: sourceFiles.map((name) => `public/${name}`) },
+    provenance: { orchestration_mode: "direct_research_os", orchestrator: null, project_owners: ["daily-review"], capabilities_used: ["a_share_market_review", "ifind_market_data"], skills_used: ["market-daily-review"], tools_used: audit.requiredTools || [], knowledge_refs: sourceFiles.map((name) => `public/${name}`) },
   };
 }
 

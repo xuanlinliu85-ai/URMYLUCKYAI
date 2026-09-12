@@ -1,15 +1,7 @@
-# Codex 项目集合
+# Research OS project snapshots
 
-此目录按项目保存 Codex 中的本地工作区快照。仓库根目录为“每日复盘更新”项目。
+This directory contains controlled snapshots of systems that existed before the repository governance layer. Their unique roles and status are defined once in `../PROJECT_REGISTRY.json`; snapshot provenance is defined in `SNAPSHOT_MANIFEST.json`.
 
-| 目录 | 原项目 |
-| --- | --- |
-| `AA20/` | AA20 |
-| `analyst-research/` | 分析师天团（公众号炼化） |
-| `earnings-images/` | 财报 PPT 计划（生图） |
-| `fund-manager/` | 基金经理 |
-| `MATT/` | 叙事判断 |
-| `MIKKO/` | MIKKO+KEVIN |
-| `PPT/` | PPT |
+Active Skill discovery for Analyst Dream Team is limited to `analyst-research/.agents/skills`. Staging and historical integration material remain evidence rather than active capabilities.
 
-归档保留源码、配置、文档、数据与成果文件。依赖目录、虚拟环境、构建缓存、临时目录、嵌套 Git 元数据和本地凭据不进入仓库。
+Each project moves from `snapshot_managed` to `git_managed` only after its real workspace, remote, branch, local changes, repository diff and tests are verified. AA20 is `isolated_frozen` and outside Research OS CI. DeerFlow material is archived experimental evidence and outside the production path.

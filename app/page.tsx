@@ -207,17 +207,22 @@ export default function Home(){
 function KlinePanel({instrument,expectedDate}:{instrument:{name:string;code:string};expectedDate:string}){
   const [period,setPeriod]=useState<"day"|"week"|"month">("day");
   const [days,setDays]=useState(90);
-  const [candles,setCandles]=useState<Candle[]>([]);
-  const [source,setSource]=useState("同花顺行情");
-  const [failure,setFailure]=useState("");
-  const [state,setState]=useState<"loading"|"ready"|"unsupported"|"error">("loading");
+  const supported=/^(sh|sz|bj|hk|ti|us)\w+$/i.test(instrument.code);
+  const requestKey=`${instrument.code}:${period}:${expectedDate}`;
+  const [result,setResult]=useState<{key:string;candles:Candle[];source:string;failure:string;state:"ready"|"unsupported"|"error"}>({key:"",candles:[],source:"同花顺行情",failure:"",state:"unsupported"});
   useEffect(()=>{
-    if(!/^(sh|sz|bj|hk|ti|us)\w+$/i.test(instrument.code)){setState("unsupported");setCandles([]);return}
-    setState("loading");setFailure("");
+    if(!supported)return;
+    let active=true;
     fetchPreferredCandles(instrument.code,period,expectedDate)
-      .then(result=>{setCandles(result.candles);setSource(result.source);setState(result.candles.length?"ready":"unsupported")})
-      .catch(error=>{setCandles([]);setFailure(error instanceof Error?error.message:String(error));setState("error")});
-  },[instrument.code,period,expectedDate]);
+      .then(response=>{if(active)setResult({key:requestKey,candles:response.candles,source:response.source,failure:"",state:response.candles.length?"ready":"unsupported"})})
+      .catch(error=>{if(active)setResult({key:requestKey,candles:[],source:"同花顺行情",failure:error instanceof Error?error.message:String(error),state:"error"})});
+    return()=>{active=false};
+  },[instrument.code,period,expectedDate,requestKey,supported]);
+  const current=result.key===requestKey?result:null;
+  const candles=current?.candles||[];
+  const source=current?.source||"同花顺行情";
+  const failure=current?.failure||"";
+  const state:"loading"|"ready"|"unsupported"|"error"=!supported?"unsupported":current?current.state:"loading";
   const view=candles.slice(-days);
   const last=view.at(-1);
   return <section className="klinePanel">
@@ -243,8 +248,8 @@ function movingAverage(candles:Candle[],period:number){
 function CandlestickCanvas({candles,source}:{candles:Candle[];source:string}){
   const canvasRef=useRef<HTMLCanvasElement>(null);
   const [hover,setHover]=useState<number|null>(null);
-  const maDefs=[{n:5,color:"#f1f1f1"},{n:10,color:"#f2cb4c"},{n:20,color:"#c778ff"},{n:30,color:"#4da7ff"},{n:60,color:"#34ce74"}];
-  const averages=maDefs.map(def=>movingAverage(candles,def.n));
+  const maDefs=useMemo(()=>[{n:5,color:"#f1f1f1"},{n:10,color:"#f2cb4c"},{n:20,color:"#c778ff"},{n:30,color:"#4da7ff"},{n:60,color:"#34ce74"}],[]);
+  const averages=useMemo(()=>maDefs.map(def=>movingAverage(candles,def.n)),[candles,maDefs]);
   const focus=hover===null?candles.length-1:hover;
   const current=candles[focus];
   const currentMas=averages.map(values=>values[focus]);
@@ -291,7 +296,7 @@ function CandlestickCanvas({candles,source}:{candles:Candle[];source:string}){
       ctx.beginPath();ctx.moveTo(cx,T);ctx.lineTo(cx,volBottom);ctx.stroke();ctx.beginPath();ctx.moveTo(L,cy);ctx.lineTo(W-R,cy);ctx.stroke();ctx.setLineDash([]);
       const label=c.close.toFixed(2);ctx.font="10px ui-monospace, monospace";const tw=ctx.measureText(label).width+10;ctx.fillStyle=c.close>=c.open?"#ef3b3b":"#00a65a";ctx.fillRect(W-R,cy-9,tw,18);ctx.fillStyle="#fff";ctx.textAlign="left";ctx.fillText(label,W-R+5,cy+4);
     }
-  },[candles,hover]);
+  },[averages,candles,hover,maDefs]);
 
   const locate=(clientX:number)=>{
     const canvas=canvasRef.current;if(!canvas)return;
@@ -344,16 +349,19 @@ function fitCompositeCandles(series:Candle[][]){
 }
 
 function CompositeTop10Kline({items,expectedDate}:{items:MarketItem[];expectedDate:string}){
-  const [candles,setCandles]=useState<Candle[]>([]);
   const [days,setDays]=useState(90);
-  const [state,setState]=useState<"loading"|"ready"|"error">("loading");
+  const requestKey=`${expectedDate}:${items.map(item=>`${item.market||"sz"}${item.code}`).join(",")}`;
+  const [result,setResult]=useState<{key:string;candles:Candle[];state:"ready"|"error"}>({key:"",candles:[],state:"error"});
   useEffect(()=>{
-    let active=true;setState("loading");
+    let active=true;
     Promise.all(items.map(item=>fetchPreferredCandles(`${item.market||"sz"}${item.code}`,"day",expectedDate)))
-      .then(results=>{if(!active)return;const fitted=fitCompositeCandles(results.map(result=>result.candles));setCandles(fitted);setState(fitted.length?"ready":"error")})
-      .catch(()=>active&&setState("error"));
+      .then(results=>{if(!active)return;const fitted=fitCompositeCandles(results.map(item=>item.candles));setResult({key:requestKey,candles:fitted,state:fitted.length?"ready":"error"})})
+      .catch(()=>{if(active)setResult({key:requestKey,candles:[],state:"error"})});
     return()=>{active=false};
-  },[items,expectedDate]);
+  },[items,expectedDate,requestKey]);
+  const current=result.key===requestKey?result:null;
+  const candles=current?.candles||[];
+  const state:"loading"|"ready"|"error"=current?current.state:"loading";
   const view=candles.slice(-days);
   return <section className="klinePanel compositeKline">
     <div className="klineHead"><div><span className="eyebrow">EQUAL-WEIGHT SYNTHETIC K-LINE</span><h3>当日成交前十 · 等权拟合 K 线 <small>归一基点 100</small></h3></div><div className="chartControls"><div className="periods">{[30,60,90,120].map(n=><button key={n} className={days===n?"active":""} onClick={()=>setDays(n)}>{n}</button>)}</div><span className="adjustBadge">动态成分</span></div></div>

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_id": "macro-example-2026-09-12",
+  "artifact_type": "macro_research",
+  "title": "Synthetic macro research",
+  "as_of": "2026-09-12",
+  "generated_at": "2026-09-12T08:00:00Z",
+  "subject": { "kind": "macro", "name": "Synthetic macro fixture", "identifiers": {}, "market": "GLOBAL", "period": "current" },
+  "request": { "user_goal": "Validate the macro contract", "requested_outputs": ["article", "ppt"], "constraints": ["synthetic fixture", "route only required capabilities"] },
+  "facts": [{ "fact_id": "M1", "statement": "Synthetic policy rate", "value": 2.5, "unit": "%", "timestamp": "2026-09-12", "status": "verified", "source_ids": ["S1"] }],
+  "timeline": [],
+  "drivers": [],
+  "conclusions": [{ "conclusion_id": "C1", "statement": "Synthetic macro conclusion", "type": "primary", "fact_ids": ["M1"], "driver_ids": [], "source_ids": ["S1"], "confidence": 0.7 }],
+  "risks": [],
+  "watchpoints": [],
+  "sources": [{ "source_id": "S1", "title": "Synthetic macro fixture", "source_type": "synthetic", "provider": null, "url": null }],
+  "quality": { "date_verified": true, "fiscal_period_verified": null, "consensus_verified": null, "intraday_granularity": null, "unresolved_conflicts": [], "warnings": [] },
+  "provenance": { "orchestration_mode": "direct_research_os", "orchestrator": null, "project_owners": ["analyst-dream-team", "mikko-kevin"], "capabilities_used": ["multi_framework_routing", "personal_macro_default"], "skills_used": ["analyst-dream-team-router", "mikko-kevin-research-system"], "tools_used": [], "knowledge_refs": [] }
+}

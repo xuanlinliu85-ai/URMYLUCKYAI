@@ -1,0 +1,41 @@
+name: Research OS Governance
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, "codex/**"]
+
+jobs:
+  root:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - run: npm run lint
+      - run: npm run artifact:validate
+      - run: npm run macro:test:offline
+      - run: npm run governance:validate
+
+  ppt-contract:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/PPT
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run typecheck
+      - run: pnpm run test

@@ -1,100 +1,78 @@
-# URMYLUCKYAI
+# URMYLUCKY Research OS
 
-## 每日复盘更新
+URMYLUCKY Research OS is a Git-managed personal financial research system. It connects market data, specialist research frameworks, earnings analysis and presentation production through one canonical `RESEARCH_ARTIFACT 1.0.0` contract.
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+```text
+data -> specialist research -> existing research router -> RESEARCH_ARTIFACT -> article / PPT / image / UI
+```
 
-## Prerequisites
+The production path is directly orchestrated by Research OS. DeerFlow is a deferred optional orchestrator. AA20 remains an isolated frozen product.
 
-- Node.js `>=22.13.0`
+## Project map
 
-## Quick Start
+| System | Path | Status | Unique responsibility |
+| --- | --- | --- | --- |
+| Daily Review | `.` | active | A-share market data, snapshots and daily review |
+| Analyst Dream Team | `projects/analyst-research` | active | Existing multi-framework research router |
+| MIKKO+KEVIN | `projects/MIKKO` | active | Personal macro framework and conditional China/HK overlay |
+| MATT | `projects/MATT` | active | A-share narrative mapping and execution |
+| earnings-analysis | `projects/earnings-images` | active | Earnings facts, expectation gaps and company research |
+| PPT Factory | `projects/PPT` | active | Presentation rendering and visual QA |
+| Fund Manager | `projects/fund-manager` | prototype | Fund research prototype |
+| AA20 | `projects/AA20` | isolated_frozen | Independent product; excluded from Research OS changes and CI |
+
+The machine-readable source is [`PROJECT_REGISTRY.json`](PROJECT_REGISTRY.json). Snapshot provenance and migration state are recorded in [`projects/SNAPSHOT_MANIFEST.json`](projects/SNAPSHOT_MANIFEST.json).
+
+## Research Artifact
+
+The canonical contract lives in [`contracts/research-artifact`](contracts/research-artifact). Producers own research; consumers preserve the artifact and only transform presentation shape.
 
 ```bash
-npm install
-npm run dev
+npm run artifact:validate
+npm run macro:test:offline
+npm run ppt:contract:test
+```
+
+## Develop and test
+
+Requirements: Node.js `>=22.13.0`; root package manager: npm.
+
+```bash
+npm ci
 npm run build
+npm test
+npm run lint
+npm run governance:validate
 ```
 
-This starter does not use `wrangler.jsonc`.
+Each nested snapshot keeps its own package manager and lockfile. Root lint and CI treat project snapshots as independent boundaries.
 
-## Included Shape
+## Run Daily Review
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+npm run data:update
+npm run artifact:export
+npm run dev
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+Live iFinD access requires local environment credentials. Public source control contains configuration names and risk policy only.
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+## Run earnings-analysis
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+Invoke the canonical Skill at `projects/earnings-images/.agents/skills/earnings-analysis`. A completed run can export `RESEARCH_ARTIFACT.json` through its existing `scripts/export_research_artifact.py` entrypoint.
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+## Send research to PPT Factory
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
+Generate a valid Research Artifact, then provide it to the existing PPT Factory Research Artifact consumer. The contract smoke test verifies that the consumer preserves the canonical input.
 
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
+## Governance
 
-## Useful Commands
+- [Architecture](docs/ARCHITECTURE.md)
+- [Project status](docs/PROJECT_STATUS.md)
+- [Data source policy](docs/DATA_SOURCE_POLICY.md)
+- [Development workflow](docs/DEVELOPMENT_WORKFLOW.md)
+- [Generated data policy](docs/GENERATED_DATA_POLICY.md)
+- [DeerFlow deferred status](docs/DEERFLOW_DEFERRED.md)
+- [Hosting and starter details](docs/HOSTING.md)
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+Repository content is public-safe source code, Skills, schemas, prompts, tests, synthetic fixtures and governance documentation. Secrets, private business material, customer data, dynamic databases, caches and large generated outputs stay outside Git.
