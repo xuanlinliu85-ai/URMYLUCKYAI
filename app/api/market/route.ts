@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 type Quote = { code: string; name: string; price: number; change: number; turnover: number; market?: "sh" | "sz" | "bj" };
+type MarketRow = { f12?: unknown; f14?: unknown; f2?: unknown; f3?: unknown; f6?: unknown };
 
 const fields = "f12,f14,f2,f3,f6";
 const url = (fs: string, fid: string, pz = 100) =>
@@ -15,10 +16,13 @@ async function list(fs: string, fid: string, pz = 100) {
   const res = await fetch(url(fs, fid, pz), { next: { revalidate: 900 } });
   if (!res.ok) throw new Error("market source unavailable");
   const payload = await res.json();
-  return Object.values(payload?.data?.diff || {}).map((row: any) => ({
-    code: String(row.f12 || ""), name: String(row.f14 || ""), price: Number(row.f2 || 0),
-    change: Number(row.f3 || 0), turnover: Number(row.f6 || 0),
-  }));
+  return Object.values(payload?.data?.diff || {}).map((row) => {
+    const item = row as MarketRow;
+    return ({
+    code: String(item.f12 || ""), name: String(item.f14 || ""), price: Number(item.f2 || 0),
+    change: Number(item.f3 || 0), turnover: Number(item.f6 || 0),
+  });
+  });
 }
 
 async function majorIndexes() {
@@ -26,7 +30,7 @@ async function majorIndexes() {
   const res = await fetch(endpoint, { next: { revalidate: 900 } });
   if (!res.ok) throw new Error("index source unavailable");
   const payload = await res.json();
-  return (payload?.data?.diff || []).map((row: any) => ({
+  return (payload?.data?.diff || []).map((row: MarketRow) => ({
     code: String(row.f12 || ""), name: String(row.f14 || ""), price: Number(row.f2 || 0),
     change: Number(row.f3 || 0), turnover: Number(row.f6 || 0),
   }));

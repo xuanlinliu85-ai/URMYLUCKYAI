@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_id": "earnings-example-synthetic-q2",
+  "artifact_type": "earnings_analysis",
+  "title": "Synthetic company Q2 earnings review",
+  "as_of": "2026-Q2",
+  "generated_at": "2026-09-12T08:00:00Z",
+  "subject": { "kind": "company", "name": "Synthetic Company", "identifiers": { "ticker": "DEMO" }, "market": "TEST", "period": "2026-Q2" },
+  "request": { "user_goal": "Validate the earnings contract", "requested_outputs": ["research_report", "ppt"], "constraints": ["synthetic fixture"] },
+  "facts": [{ "fact_id": "E1", "statement": "Synthetic quarterly revenue", "value": 100, "unit": "CNY million", "timestamp": "2026-Q2", "status": "verified", "source_ids": ["S1"] }],
+  "timeline": [],
+  "drivers": [],
+  "conclusions": [{ "conclusion_id": "C1", "statement": "Synthetic earnings conclusion", "type": "primary", "fact_ids": ["E1"], "driver_ids": [], "source_ids": ["S1"], "confidence": 0.75 }],
+  "risks": [],
+  "watchpoints": [],
+  "sources": [{ "source_id": "S1", "title": "Synthetic filing fixture", "source_type": "synthetic", "provider": null, "url": null }],
+  "quality": { "date_verified": true, "fiscal_period_verified": true, "consensus_verified": false, "intraday_granularity": null, "unresolved_conflicts": [], "warnings": ["Synthetic fixture has no live consensus."] },
+  "provenance": { "orchestration_mode": "direct_research_os", "orchestrator": null, "project_owners": ["earnings-analysis"], "capabilities_used": ["earnings_research"], "skills_used": ["earnings-analysis"], "tools_used": [], "knowledge_refs": [] }
+}

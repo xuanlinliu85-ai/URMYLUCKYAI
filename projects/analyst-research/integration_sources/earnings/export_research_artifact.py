@@ -68,7 +68,7 @@ def build(run_root: Path) -> dict:
         "watchpoints": [],
         "sources": list(sources.values()),
         "quality": {"date_verified": True, "fiscal_period_verified": True, "consensus_verified": consensus_verified, "intraday_granularity": None, "unresolved_conflicts": [], "warnings": [] if consensus_verified else ["部分报告期专业一致预期快照缺失，预期差结论保留口径限制。"]},
-        "provenance": {"orchestrator": "deerflow", "project_owners": ["earnings-analysis"], "capabilities_used": ["earnings_research", "ifind_company_data"], "skills_used": ["earnings-analysis", "fundamental-review", "analyst-dream-team-router"], "tools_used": ["iFinD MCP"], "knowledge_refs": [f"{name}:sha256:{digest(run_root / name)}" for name in manifest["artifacts"] if (run_root / name).is_file()]},
+        "provenance": {"orchestration_mode": "direct_research_os", "orchestrator": None, "project_owners": ["earnings-analysis"], "capabilities_used": ["earnings_research", "ifind_company_data"], "skills_used": ["earnings-analysis", "fundamental-review", "analyst-dream-team-router"], "tools_used": ["iFinD MCP"], "knowledge_refs": [f"{name}:sha256:{digest(run_root / name)}" for name in manifest["artifacts"] if (run_root / name).is_file()]},
     }
 
 

@@ -232,6 +232,7 @@
     "warnings": []
   },
   "provenance": {
+    "orchestration_mode": "historical",
     "orchestrator": "deerflow",
     "project_owners": [
       "daily-review"

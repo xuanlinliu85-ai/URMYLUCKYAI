@@ -8,6 +8,7 @@
 // 这里不再用 React 重写一套同功能面板，而是把它嵌进站点，
 // 保证「页面看到的数」与「交付给别人的文件」永远是同一份。
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function MacroMonitorPage() {
   const [meta, setMeta] = useState<{ asOf?: string; label?: string; composite?: number | null; generatedAt?: string } | null>(null);
@@ -48,10 +49,10 @@ export default function MacroMonitorPage() {
               borderRadius: 7, padding: "4px 11px" }}>
             原始快照 JSON
           </a>
-          <a href="/" style={{ fontSize: 12.5, color: "#374151", textDecoration: "none", border: "1px solid #e5e7eb",
+          <Link href="/" style={{ fontSize: 12.5, color: "#374151", textDecoration: "none", border: "1px solid #e5e7eb",
             borderRadius: 7, padding: "4px 11px" }}>
             返回复盘台
-          </a>
+          </Link>
         </div>
       </div>
       <iframe

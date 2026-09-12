@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { connectIfind } from "../../../scripts/ifind-mcp-client.mjs";
 
 type CandleLike = {date:string;open:number;close:number;high:number;low:number;volume:number};
+type IfindCandleRow = {time?:unknown;open?:unknown;close?:unknown;high?:unknown;low?:unknown;volume?:unknown};
 
 function ifindCode(code:string) {
   const mainland=code.match(/^(sh|sz|bj)(\d+)$/i);
@@ -49,7 +50,7 @@ async function ifindCandles(code:string, days:number) {
       begintime:begin.toISOString().slice(0,10),
       endtime:end.toISOString().slice(0,10),
     });
-    return (payload?.data||[]).map((row:any)=>({
+    return (payload?.data||[]).map((row:IfindCandleRow)=>({
       date:String(row.time||"").slice(0,10),open:Number(row.open),close:Number(row.close),
       high:Number(row.high),low:Number(row.low),volume:Number(row.volume||0),
     })).filter((row:CandleLike)=>/^\d{4}-\d{2}-\d{2}$/.test(row.date)&&[row.open,row.close,row.high,row.low,row.volume].every(Number.isFinite));

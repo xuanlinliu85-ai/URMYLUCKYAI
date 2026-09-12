@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "system": "URMYLUCKY Research OS",
+  "projects": [
+    {
+      "id": "daily-review",
+      "path": ".",
+      "status": "active",
+      "role": "a_share_market_data_and_daily_review",
+      "entrypoints": ["npm run dev", "npm run data:update", "npm run artifact:export"],
+      "capabilities": ["a_share_market_data", "daily_review", "market_research_artifact"]
+    },
+    {
+      "id": "analyst-dream-team",
+      "path": "projects/analyst-research",
+      "status": "active",
+      "role": "multi_framework_research_router",
+      "entrypoints": ["analyst-team"],
+      "capabilities": ["research_routing", "multi_framework_synthesis"]
+    },
+    {
+      "id": "mikko-kevin",
+      "path": "projects/MIKKO",
+      "status": "active",
+      "role": "personal_macro_research_framework",
+      "capabilities": ["macro_research", "china_hk_credit_policy_overlay"]
+    },
+    {
+      "id": "matt",
+      "path": "projects/MATT",
+      "status": "active",
+      "role": "a_share_narrative_mapping_execution",
+      "capabilities": ["narrative_judgment", "a_share_mapping", "execution_framework"]
+    },
+    {
+      "id": "earnings-analysis",
+      "path": "projects/earnings-images",
+      "status": "active",
+      "role": "earnings_research",
+      "entrypoints": [".agents/skills/earnings-analysis/SKILL.md"],
+      "capabilities": ["earnings_research", "expectation_gap", "earnings_research_artifact"]
+    },
+    {
+      "id": "ppt-factory",
+      "path": "projects/PPT",
+      "status": "active",
+      "role": "presentation_renderer_and_qa",
+      "entrypoints": ["npm run typecheck", "npm test"],
+      "capabilities": ["presentation_rendering", "visual_qa", "research_artifact_consumption"]
+    },
+    {
+      "id": "fund-manager",
+      "path": "projects/fund-manager",
+      "status": "prototype",
+      "role": "fund_data_prototype",
+      "capabilities": ["fund_research_prototype"]
+    },
+    {
+      "id": "aa20",
+      "path": "projects/AA20",
+      "status": "isolated_frozen",
+      "role": "independent_entertainment_product",
+      "capabilities": []
+    }
+  ],
+  "orchestration": {
+    "production_mode": "direct_research_os",
+    "production_orchestrator": null,
+    "optional_future_orchestrators": [
+      {
+        "id": "deerflow",
+        "status": "deferred"
+      }
+    ]
+  },
+  "contracts": {
+    "research_artifact": "contracts/research-artifact/research-artifact.schema.json"
+  }
+}

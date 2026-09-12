@@ -1,5 +1,6 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { SSEClientTransport } from "@modelcontextprotocol/sdk/client/sse.js";
+import { assessIfindTransport } from "./ifind-transport-policy.mjs";
 
 const DEFAULT_BASE_URL = "http://219.141.246.230:5223/sse";
 const REQUIRED_TOOLS = [
@@ -23,6 +24,8 @@ function configuredUrl() {
   const apiKey = String(process.env.IFIND_API_KEY || "").trim();
   if (!apiKey) return null;
   const url = new URL(String(process.env.IFIND_MCP_BASE_URL || DEFAULT_BASE_URL));
+  const transportPolicy = assessIfindTransport(url);
+  if (transportPolicy.warning) console.warn(`[iFinD transport] ${transportPolicy.warning}`);
   url.searchParams.set("api_key", apiKey);
   return url;
 }
