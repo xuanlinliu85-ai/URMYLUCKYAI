@@ -17,8 +17,29 @@ function assert(condition, message) {
 assert(registry.system === "URMYLUCKY Research OS", "Registry system name is invalid");
 assert(registry.orchestration?.production_mode === "direct_research_os", "Production mode must be direct_research_os");
 assert(registry.orchestration?.production_orchestrator === null, "Production orchestrator must be null");
-assert(registry.orchestration?.optional_future_orchestrators?.some((item) => item.id === "deerflow" && item.status === "deferred"), "DeerFlow must be deferred");
+const deerflow = registry.orchestration?.optional_future_orchestrators?.find((item) => item.id === "deerflow");
+assert(deerflow?.status === "deferred", "DeerFlow must be deferred");
 const byId = new Map(registry.projects.map((item) => [item.id, item]));
+const manifestById = new Map(manifest.projects.map((item) => [item.id, item]));
+const gitManagedProjectIds = [
+  "daily-review",
+  "analyst-dream-team",
+  "earnings-analysis",
+  "fund-manager",
+  "matt",
+  "mikko-kevin",
+  "ppt-factory",
+];
+
+for (const projectId of gitManagedProjectIds) {
+  const project = manifestById.get(projectId);
+  assert(project?.sync_mode === "git_managed", `${projectId} must be git_managed`);
+  assert(project?.canonical === true, `${projectId} must be canonical`);
+}
+
+assert(manifestById.get("aa20")?.sync_mode === "frozen_snapshot", "AA20 must remain a frozen snapshot");
+assert(manifestById.get("fund-manager")?.status === "prototype", "Fund Manager manifest status must remain prototype");
+assert(manifestById.get("aa20")?.status === "isolated_frozen", "AA20 manifest status must remain isolated_frozen");
 assert(byId.get("aa20")?.status === "isolated_frozen", "AA20 must be isolated_frozen");
 assert(byId.get("fund-manager")?.status === "prototype", "Fund Manager must remain prototype");
 assert(!/[A-Za-z]:[\\/](?:Users|Documents)[\\/]/.test(JSON.stringify(registry)), "Registry contains an absolute Windows path");
